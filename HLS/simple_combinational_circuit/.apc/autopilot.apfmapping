@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="simple_combinational_circuit.cpp" path="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/simple_combinational_circuit/.apc/simple_combinational_circuit.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="simple_combinational_circuit-tb.cpp" path="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/simple_combinational_circuit/.apc/.tb/simple_combinational_circuit-tb.cpp"/>
+    <originFiles name="simple_combinational_circuit-tb.h" path="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/simple_combinational_circuit/.apc/.tb/simple_combinational_circuit-tb.h"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

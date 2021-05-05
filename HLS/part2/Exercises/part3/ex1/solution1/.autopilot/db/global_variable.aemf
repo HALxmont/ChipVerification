@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1618531007921">
+  <ports id="1" name="d" type="PortType" originalName="d" coreId="0" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="q1" type="PortType" originalName="q1" coreId="0" bitwidth="1" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="3" name="q2" type="PortType" originalName="q2" coreId="0" bitwidth="1" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="4" name="q3" type="PortType" originalName="q3" coreId="0" bitwidth="1" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="31" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="32" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="33" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="34" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="35" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="36" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="37" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="40" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@ports.1"/>
+  <edges id="41" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="43" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@ports.2"/>
+  <edges id="44" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="46" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@ports.3"/>
+  <edges id="47" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="155" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="156" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.3"/>
+  <blocks id="28" name="global_variable" type="BlockType">
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="d_read" lineNumber="21" originalName="d" fileName="ex1/global_varibale.cpp" fileDirectory=".." coreId="0" contextFuncName="global_variable" bitwidth="1" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="ex1/global_varibale.cpp" linenumber="21" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/Exercises/part3" functionName="global_variable"/>
+      <dataInputObjs>d</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="dff2_load" lineNumber="29" fileName="ex1/global_varibale.cpp" fileDirectory=".." coreId="0" contextFuncName="global_variable" bitwidth="1" opcode="load" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="ex1/global_varibale.cpp" linenumber="29" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/Exercises/part3" functionName="global_variable"/>
+      <dataOutputObjs>write</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="dff1_load" lineNumber="30" fileName="ex1/global_varibale.cpp" fileDirectory=".." coreId="49" contextFuncName="global_variable" bitwidth="1" opcode="load" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="ex1/global_varibale.cpp" linenumber="30" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/Exercises/part3" functionName="global_variable"/>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="dff2_write_ln30" lineNumber="30" fileName="ex1/global_varibale.cpp" fileDirectory=".." coreId="1601466981" contextFuncName="global_variable" opcode="store" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="ex1/global_varibale.cpp" linenumber="30" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/Exercises/part3" functionName="global_variable"/>
+      <dataInputObjs>load</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="dff1_write_ln31" lineNumber="31" fileName="ex1/global_varibale.cpp" fileDirectory=".." coreId="740797456" contextFuncName="global_variable" opcode="store" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="ex1/global_varibale.cpp" linenumber="31" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/Exercises/part3" functionName="global_variable"/>
+      <dataInputObjs>read</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="q1_write_ln33" lineNumber="33" fileName="ex1/global_varibale.cpp" fileDirectory=".." coreId="0" contextFuncName="global_variable" opcode="write" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="ex1/global_varibale.cpp" linenumber="33" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/Exercises/part3" functionName="global_variable"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>q1</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="q2_write_ln34" lineNumber="34" fileName="ex1/global_varibale.cpp" fileDirectory=".." coreId="49" contextFuncName="global_variable" opcode="write" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="ex1/global_varibale.cpp" linenumber="34" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/Exercises/part3" functionName="global_variable"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>q2</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="q3_write_ln35" lineNumber="35" fileName="ex1/global_varibale.cpp" fileDirectory=".." coreId="2348810368" contextFuncName="global_variable" opcode="write" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="ex1/global_varibale.cpp" linenumber="35" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/Exercises/part3" functionName="global_variable"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>q3</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="_ln36" lineNumber="36" fileName="ex1/global_varibale.cpp" fileDirectory=".." coreId="28271" contextFuncName="global_variable" opcode="ret" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="ex1/global_varibale.cpp" linenumber="36" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/Exercises/part3" functionName="global_variable"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="ex1/global_varibale.cpp">
+      <validLinenumbers>21</validLinenumbers>
+      <validLinenumbers>29</validLinenumbers>
+      <validLinenumbers>30</validLinenumbers>
+      <validLinenumbers>31</validLinenumbers>
+      <validLinenumbers>33</validLinenumbers>
+      <validLinenumbers>34</validLinenumbers>
+      <validLinenumbers>35</validLinenumbers>
+      <validLinenumbers>36</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ioNodes realName="dff1_load_load_fu_65">
+    <nodeIds>21</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln31_store_fu_76">
+    <nodeIds>23</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln33_write_fu_38">
+    <nodeIds>24</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln30_store_fu_70">
+    <nodeIds>22</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln34_write_fu_46">
+    <nodeIds>25</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln35_write_fu_53">
+    <nodeIds>26</nodeIds>
+  </ioNodes>
+  <ioNodes realName="d_read_read_fu_32">
+    <nodeIds>19</nodeIds>
+  </ioNodes>
+  <ioNodes realName="dff2_load_load_fu_60">
+    <nodeIds>20</nodeIds>
+  </ioNodes>
+  <ioPorts name="d">
+    <contents name="read">
+      <nodeIds>19</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="q1">
+    <contents name="write">
+      <nodeIds>24</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="q2">
+    <contents name="write">
+      <nodeIds>25</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="q3">
+    <contents name="write">
+      <nodeIds>26</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+    </states>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="global_variable" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>28</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

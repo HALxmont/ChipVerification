@@ -1,0 +1,43 @@
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'mxmont' on host 'HALx1' (Linux_x86_64 version 5.8.0-48-generic) on Sun Apr 18 23:33:17 -04 2021
+INFO: [HLS 200-10] On os Ubuntu 20.04.1 LTS
+INFO: [HLS 200-10] In directory '/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/ParallelToSerial'
+Sourcing Tcl script '/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/ParallelToSerial/ParallelToSerial/solution1/export.tcl'
+INFO: [HLS 200-1510] Running: open_project ParallelToSerial 
+INFO: [HLS 200-10] Opening project '/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/ParallelToSerial/ParallelToSerial'.
+INFO: [HLS 200-1510] Running: set_top p2s 
+INFO: [HLS 200-1510] Running: add_files ParallelToSerial/p2s.cpp 
+INFO: [HLS 200-10] Adding design file 'ParallelToSerial/p2s.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files ParallelToSerial/p2s.h 
+INFO: [HLS 200-10] Adding design file 'ParallelToSerial/p2s.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ParallelToSerial/p2s_tb.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'ParallelToSerial/p2s_tb.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ParallelToSerial/p2s_tb.h -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'ParallelToSerial/p2s_tb.h' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution '/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/ParallelToSerial/ParallelToSerial/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xcvu11p-flga2577-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name p2s p2s 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 18 23:33:54 2021...
+INFO: [HLS 200-802] Generated output file ParallelToSerial/solution1/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 29.29 seconds. CPU system time: 2.03 seconds. Elapsed time: 34.1 seconds; current allocated memory: 214.900 MB.

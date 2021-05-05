@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="pwm.wdb" id="1">
+         <top_modules>
+            <top_module name="\$unit_dataflow_monitor_sv " />
+            <top_module name="apatb_pwm_top" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0ns"></ZoomStartTime>
+      <ZoomEndTime time="2000ns"></ZoomEndTime>
+      <Cursor1Time time="0ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="257"></NameColumnWidth>
+      <ValueColumnWidth column_width="84"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="3" />
+   <wvobject type="group" fp_name="HLS Process Summary Group">
+      <obj_property name="label">HLS Process Summary</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group2">
+      <obj_property name="label">Design Top Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="group" fp_name="group3">
+         <obj_property name="label">C Outputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="group4">
+            <obj_property name="label">holding_voltage(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_pwm_top/AESL_inst_pwm/holding_voltage_ap_vld">
+               <obj_property name="ElementShortName">holding_voltage_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">holding_voltage_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_pwm_top/AESL_inst_pwm/holding_voltage">
+               <obj_property name="ElementShortName">holding_voltage</obj_property>
+               <obj_property name="ObjectShortName">holding_voltage</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="group7">
+            <obj_property name="label">end(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_pwm_top/AESL_inst_pwm/end_r">
+               <obj_property name="ElementShortName">end_r</obj_property>
+               <obj_property name="ObjectShortName">end_r</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="group9">
+            <obj_property name="label">pwm_out(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_pwm_top/AESL_inst_pwm/pwm_out">
+               <obj_property name="ElementShortName">pwm_out</obj_property>
+               <obj_property name="ObjectShortName">pwm_out</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group11">
+         <obj_property name="label">C Inputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="group12">
+            <obj_property name="label">cycles_hold(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_pwm_top/AESL_inst_pwm/cycles_hold">
+               <obj_property name="ElementShortName">cycles_hold[63:0]</obj_property>
+               <obj_property name="ObjectShortName">cycles_hold[63:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="group14">
+            <obj_property name="label">cycles_high(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_pwm_top/AESL_inst_pwm/cycles_high">
+               <obj_property name="ElementShortName">cycles_high[63:0]</obj_property>
+               <obj_property name="ObjectShortName">cycles_high[63:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="group16">
+            <obj_property name="label">max_cycles(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_pwm_top/AESL_inst_pwm/max_cycles">
+               <obj_property name="ElementShortName">max_cycles[63:0]</obj_property>
+               <obj_property name="ObjectShortName">max_cycles[63:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="group18">
+            <obj_property name="label">hold(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_pwm_top/AESL_inst_pwm/hold">
+               <obj_property name="ElementShortName">hold</obj_property>
+               <obj_property name="ObjectShortName">hold</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="group20">
+            <obj_property name="label">start(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_pwm_top/AESL_inst_pwm/start_r">
+               <obj_property name="ElementShortName">start_r</obj_property>
+               <obj_property name="ObjectShortName">start_r</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group22">
+         <obj_property name="label">Reset</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_pwm_top/AESL_inst_pwm/ap_rst">
+            <obj_property name="ElementShortName">ap_rst</obj_property>
+            <obj_property name="ObjectShortName">ap_rst</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group24">
+         <obj_property name="label">Clock</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_pwm_top/AESL_inst_pwm/ap_clk">
+            <obj_property name="ElementShortName">ap_clk</obj_property>
+            <obj_property name="ObjectShortName">ap_clk</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group26">
+      <obj_property name="label">Test Bench Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="group" fp_name="group27">
+         <obj_property name="label">Internal Signals</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="group28">
+            <obj_property name="label">Simulation Status</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_pwm_top/AUTOTB_TRANSACTION_NUM">
+               <obj_property name="ElementShortName">AUTOTB_TRANSACTION_NUM[31:0]</obj_property>
+               <obj_property name="ObjectShortName">AUTOTB_TRANSACTION_NUM[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_pwm_top/ready_cnt">
+               <obj_property name="ElementShortName">ready_cnt[31:0]</obj_property>
+               <obj_property name="ObjectShortName">ready_cnt[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_pwm_top/done_cnt">
+               <obj_property name="ElementShortName">done_cnt[31:0]</obj_property>
+               <obj_property name="ObjectShortName">done_cnt[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="group29">
+            <obj_property name="label">Port Depth</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_pwm_top/LENGTH_start_r">
+               <obj_property name="ElementShortName">LENGTH_start_r[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_start_r[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_pwm_top/LENGTH_hold">
+               <obj_property name="ElementShortName">LENGTH_hold[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_hold[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_pwm_top/LENGTH_max_cycles">
+               <obj_property name="ElementShortName">LENGTH_max_cycles[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_max_cycles[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_pwm_top/LENGTH_cycles_high">
+               <obj_property name="ElementShortName">LENGTH_cycles_high[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_cycles_high[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_pwm_top/LENGTH_cycles_hold">
+               <obj_property name="ElementShortName">LENGTH_cycles_hold[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_cycles_hold[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_pwm_top/LENGTH_pwm_out">
+               <obj_property name="ElementShortName">LENGTH_pwm_out[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_pwm_out[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_pwm_top/LENGTH_end_r">
+               <obj_property name="ElementShortName">LENGTH_end_r[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_end_r[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_pwm_top/LENGTH_holding_voltage">
+               <obj_property name="ElementShortName">LENGTH_holding_voltage[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_holding_voltage[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group41">
+         <obj_property name="label">C Outputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="group42">
+            <obj_property name="label">holding_voltage(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_pwm_top/holding_voltage_ap_vld">
+               <obj_property name="ElementShortName">holding_voltage_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">holding_voltage_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_pwm_top/holding_voltage">
+               <obj_property name="ElementShortName">holding_voltage</obj_property>
+               <obj_property name="ObjectShortName">holding_voltage</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="group45">
+            <obj_property name="label">end(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_pwm_top/end_r">
+               <obj_property name="ElementShortName">end_r</obj_property>
+               <obj_property name="ObjectShortName">end_r</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="group47">
+            <obj_property name="label">pwm_out(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_pwm_top/pwm_out">
+               <obj_property name="ElementShortName">pwm_out</obj_property>
+               <obj_property name="ObjectShortName">pwm_out</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group49">
+         <obj_property name="label">C Inputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="group50">
+            <obj_property name="label">cycles_hold(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_pwm_top/cycles_hold">
+               <obj_property name="ElementShortName">cycles_hold[63:0]</obj_property>
+               <obj_property name="ObjectShortName">cycles_hold[63:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="group52">
+            <obj_property name="label">cycles_high(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_pwm_top/cycles_high">
+               <obj_property name="ElementShortName">cycles_high[63:0]</obj_property>
+               <obj_property name="ObjectShortName">cycles_high[63:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="group54">
+            <obj_property name="label">max_cycles(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_pwm_top/max_cycles">
+               <obj_property name="ElementShortName">max_cycles[63:0]</obj_property>
+               <obj_property name="ObjectShortName">max_cycles[63:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="group56">
+            <obj_property name="label">hold(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_pwm_top/hold">
+               <obj_property name="ElementShortName">hold</obj_property>
+               <obj_property name="ObjectShortName">hold</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="group58">
+            <obj_property name="label">start(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_pwm_top/start_r">
+               <obj_property name="ElementShortName">start_r</obj_property>
+               <obj_property name="ObjectShortName">start_r</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

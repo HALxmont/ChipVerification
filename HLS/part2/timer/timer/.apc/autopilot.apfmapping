@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="timer.cpp" path="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/timer/timer/timer.cpp"/>
+    <originFiles name="timer.h" path="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/timer/timer/timer.h"/>
+  </source>
+  <testbench>
+    <originFiles name="timer_tb.cpp" path="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/timer/timer/timer_tb.cpp"/>
+    <originFiles name="timer_tb.h" path="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/timer/timer/timer_tb.h"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

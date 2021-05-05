@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="p2s.h" path="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/ParallelToSerial/ParallelToSerial/p2s.h"/>
+    <originFiles name="p2s.cpp" path="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/ParallelToSerial/ParallelToSerial/p2s.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="p2s_tb.h" path="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/ParallelToSerial/ParallelToSerial/p2s_tb.h"/>
+    <originFiles name="p2s_tb.cpp" path="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/ParallelToSerial/ParallelToSerial/p2s_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/ParallelToSerial/ParallelToSerial/solution1/./sim/autowrap/testbench/p2s.cpp_pre.cpp.tb.cpp

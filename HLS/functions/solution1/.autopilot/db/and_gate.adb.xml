@@ -1,0 +1,104 @@
+<stg><name>and_gate</name>
+
+
+<trans_list>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="2" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="3" bw="1" op_0_bw="1" op_1_bw="1">
+<![CDATA[
+:0  %b_read = call i1 @_ssdm_op_Read.ap_auto.i1(i1 %b) nounwind
+
+]]></Node>
+<StgValue><ssdm name="b_read"/></StgValue>
+</operation>
+
+<operation id="3" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="4" bw="1" op_0_bw="1" op_1_bw="1">
+<![CDATA[
+:1  %a_read = call i1 @_ssdm_op_Read.ap_auto.i1(i1 %a) nounwind
+
+]]></Node>
+<StgValue><ssdm name="a_read"/></StgValue>
+</operation>
+
+<operation id="4" st_id="1" stage="1" lat="1">
+<core>LogicGate</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="5" bw="1" op_0_bw="1" op_1_bw="1">
+<![CDATA[
+:2  %and_ln9 = and i1 %a_read, %b_read
+
+]]></Node>
+<StgValue><ssdm name="and_ln9"/></StgValue>
+</operation>
+
+<operation id="5" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="6" bw="0" op_0_bw="1">
+<![CDATA[
+:3  ret i1 %and_ln9
+
+]]></Node>
+<StgValue><ssdm name="ret_ln9"/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+<port id="6" name="a" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="a"/></StgValue>
+</port>
+<port id="7" name="b" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="b"/></StgValue>
+</port>
+</ports>
+
+
+<dataflows>
+<dataflow id="9" from="_ssdm_op_Read.ap_auto.i1" to="b_read" fromId="8" toId="2">
+</dataflow>
+<dataflow id="10" from="b" to="b_read" fromId="7" toId="2">
+</dataflow>
+<dataflow id="11" from="_ssdm_op_Read.ap_auto.i1" to="a_read" fromId="8" toId="3">
+</dataflow>
+<dataflow id="12" from="a" to="a_read" fromId="6" toId="3">
+</dataflow>
+<dataflow id="13" from="a_read" to="and_ln9" fromId="3" toId="4">
+</dataflow>
+<dataflow id="14" from="b_read" to="and_ln9" fromId="2" toId="4">
+</dataflow>
+<dataflow id="15" from="and_ln9" to="ret_ln9" fromId="4" toId="5">
+</dataflow>
+</dataflows>
+
+
+</stg>

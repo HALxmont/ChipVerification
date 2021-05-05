@@ -1,0 +1,25 @@
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2020.1/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'mxmont' on host 'HALx1' (Linux_x86_64 version 5.8.0-48-generic) on Sat Apr 03 13:58:36 -03 2021
+INFO: [HLS 200-10] On os Ubuntu 20.04.1 LTS
+INFO: [HLS 200-10] In directory '/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS'
+Sourcing Tcl script '/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/simple_combinational_circuit/solution1/csim.tcl'
+INFO: [HLS 200-10] Opening project '/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/simple_combinational_circuit'.
+INFO: [HLS 200-10] Opening solution '/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/simple_combinational_circuit/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7a35t-cpg236-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [HLS 200-627] Cannot find C test bench. Please specify test bench files using 'add_files -tb'.
+ERROR: [SIM 211-100] CSim failed with errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+4
+    while executing
+"source /home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/simple_combinational_circuit/solution1/csim.tcl"
+    invoked from within
+"hls::main /home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/simple_combinational_circuit/solution1/csim.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$args"
+    (procedure "hls_proc" line 5)
+    invoked from within
+"hls_proc $argv"

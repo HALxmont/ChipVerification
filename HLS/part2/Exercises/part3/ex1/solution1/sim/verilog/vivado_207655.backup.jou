@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Apr 15 20:01:58 2021
+# Process ID: 207655
+# Current directory: /home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/Exercises/part3/ex1/solution1/sim/verilog
+# Command line: vivado -source open_wave.tcl
+# Log file: /home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/Exercises/part3/ex1/solution1/sim/verilog/vivado.log
+# Journal file: /home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/Exercises/part3/ex1/solution1/sim/verilog/vivado.jou
+#-----------------------------------------------------------
+start_gui
+source open_wave.tcl
+open_wave_config /home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/Exercises/part3/ex1/solution1/sim/verilog/global_variable.wcfg
+close_sim

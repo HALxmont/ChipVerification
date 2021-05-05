@@ -1,0 +1,109 @@
+
+
+================================================================
+== Vivado HLS Report for 'and_gate'
+================================================================
+* Date:           Fri Apr  2 14:06:12 2021
+
+* Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
+* Project:        functions
+* Solution:       solution1
+* Product family: artix7
+* Target device:  xc7a35t-cpg236-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 10.00 ns | 0.978 ns |   1.25 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|   0 ns   |   0 ns   |    0|    0|   none  |
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 0
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.97>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%b_read = call i1 @_ssdm_op_Read.ap_auto.i1(i1 %b) nounwind" [functions/.apc/.src/top-function.cpp:7]   --->   Operation 2 'read' 'b_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%a_read = call i1 @_ssdm_op_Read.ap_auto.i1(i1 %a) nounwind" [functions/.apc/.src/top-function.cpp:7]   --->   Operation 3 'read' 'a_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.97ns)   --->   "%and_ln9 = and i1 %a_read, %b_read" [functions/.apc/.src/top-function.cpp:9]   --->   Operation 4 'and' 'and_ln9' <Predicate = true> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "ret i1 %and_ln9" [functions/.apc/.src/top-function.cpp:9]   --->   Operation 5 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 0.978ns
+The critical path consists of the following:
+	wire read on port 'b' (functions/.apc/.src/top-function.cpp:7) [3]  (0 ns)
+	'and' operation ('and_ln9', functions/.apc/.src/top-function.cpp:9) [5]  (0.978 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

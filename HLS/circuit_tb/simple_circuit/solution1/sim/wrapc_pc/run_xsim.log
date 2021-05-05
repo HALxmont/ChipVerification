@@ -1,0 +1,99 @@
+1
+0
+1
+0
+1
+0
+1
+1
+----------------
+1
+0
+1
+0
+1
+0
+1
+1
+---- SIMULATION COMPLETE. ALL OK! -----
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/tools/Xilinx/Vivado/2020.1/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.1/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_simple_circuit_top glbl -prj simple_circuit.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile /tools/Xilinx/Vivado/2020.1/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s simple_circuit 
+Multi-threading is on. Using 6 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/circuit_tb/simple_circuit/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/circuit_tb/simple_circuit/solution1/sim/verilog/simple_circuit.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_simple_circuit_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/circuit_tb/simple_circuit/solution1/sim/verilog/simple_circuit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simple_circuit
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.simple_circuit
+Compiling module xil_defaultlib.apatb_simple_circuit_top
+Compiling module work.glbl
+Built simulation snapshot simple_circuit
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source /home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/circuit_tb/simple_circuit/solution1/sim/verilog/xsim.dir/simple_circuit/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] '/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/circuit_tb/simple_circuit/solution1/sim/verilog/xsim.dir/simple_circuit/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Apr  5 16:28:29 2021. For additional details about this file, please refer to the WebTalk help file at /tools/Xilinx/Vivado/2020.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon Apr  5 16:28:29 2021...
+
+****** xsim v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/simple_circuit/xsim_script.tcl
+# xsim {simple_circuit} -autoloadwcfg -tclbatch {simple_circuit.tcl}
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source simple_circuit.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 8 [n/a] @ "125000"
+// RTL Simulation : 1 / 8 [n/a] @ "145000"
+// RTL Simulation : 2 / 8 [n/a] @ "155000"
+// RTL Simulation : 3 / 8 [n/a] @ "165000"
+// RTL Simulation : 4 / 8 [n/a] @ "175000"
+// RTL Simulation : 5 / 8 [n/a] @ "185000"
+// RTL Simulation : 6 / 8 [n/a] @ "195000"
+// RTL Simulation : 7 / 8 [n/a] @ "205000"
+// RTL Simulation : 8 / 8 [n/a] @ "215000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 245 ns : File "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/circuit_tb/simple_circuit/solution1/sim/verilog/simple_circuit.autotb.v" Line 358
+## quit
+INFO: [Common 17-206] Exiting xsim at Mon Apr  5 16:28:46 2021...
+1
+0
+1
+0
+1
+0
+1
+1
+----------------
+1
+0
+1
+0
+1
+0
+1
+1
+---- SIMULATION COMPLETE. ALL OK! -----

@@ -1,0 +1,15 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [{
+          "functionName": "right_rotate_with_load",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "right_rotate_with_load"
+              }]
+          }
+        }]
+    }]}

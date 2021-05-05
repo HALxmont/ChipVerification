@@ -1,0 +1,10 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../p2s_tb.cpp in debug mode
+../../../p2s_tb.cpp: In function ‘int main()’:
+../../../p2s_tb.cpp:27:3: error: expected ‘;’ before ‘std’
+   std::cout << " data_out = "
+   ^~~
+make: *** [csim.mk:77: obj/p2s_tb.o] Error 1
+ERR: [SIM 100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 3] *************** CSIM finish ***************

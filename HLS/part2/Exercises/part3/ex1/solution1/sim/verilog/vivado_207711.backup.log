@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Apr 15 20:02:09 2021
+# Process ID: 207711
+# Current directory: /home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/Exercises/part3/ex1/solution1/sim/verilog
+# Command line: vivado -source open_wave.tcl
+# Log file: /home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/Exercises/part3/ex1/solution1/sim/verilog/vivado.log
+# Journal file: /home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/Exercises/part3/ex1/solution1/sim/verilog/vivado.jou
+#-----------------------------------------------------------
+start_gui
+source open_wave.tcl
+# current_fileset
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+current_fileset: Time (s): cpu = 00:00:24 ; elapsed = 00:00:11 . Memory (MB): peak = 7352.789 ; gain = 35.273 ; free physical = 627 ; free virtual = 3914
+# open_wave_database global_variable.wdb
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+open_wave_config /home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/Exercises/part3/ex1/solution1/sim/verilog/global_variable.wcfg
+INFO: [Common 17-344] 'source' was cancelled
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 15 20:03:10 2021...

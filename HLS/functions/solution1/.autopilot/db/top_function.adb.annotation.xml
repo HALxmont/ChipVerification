@@ -1,0 +1,6 @@
+<annotationInfo>
+<item  id="3" filename="functions/.apc/.src/top-function.cpp" linenumber="4" name="xor_ln4" contextFuncName="not_gate" moduleName="not_gate" rtlName="ap_return" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="2" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS"&gt;&lt;\/item&gt;
+<item  id="5" filename="functions/.apc/.src/top-function.cpp" linenumber="9" name="and_ln9" contextFuncName="and_gate" moduleName="and_gate" rtlName="ap_return" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="2" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS"&gt;&lt;\/item&gt;
+<item  id="14" filename="functions/.apc/.src/top-function.cpp" linenumber="19" name="tmp" contextFuncName="top_function" moduleName="top_function" rtlName="tmp_not_gate_fu_57" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS"><\/item>
+<item  id="15" filename="functions/.apc/.src/top-function.cpp" linenumber="19" name="tmp_1" contextFuncName="top_function" moduleName="top_function" rtlName="tmp_1_and_gate_fu_49" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS"><\/item>
+</annotationInfo>

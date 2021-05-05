@@ -1,0 +1,13 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../global_variable_tb.cpp in debug mode
+   Compiling ../../../global_varibale.cpp in debug mode
+   Generating csim.exe
+d|q1, q2, q3
+1, 1, 0, 1
+1, 1, 1, 0
+0, 0, 1, 1
+1, 1, 0, 1
+0, 0, 1, 0
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

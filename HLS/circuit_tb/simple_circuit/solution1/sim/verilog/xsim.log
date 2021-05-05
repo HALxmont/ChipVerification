@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# xsim v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Apr  5 16:28:30 2021
+# Process ID: 101454
+# Current directory: /home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/circuit_tb/simple_circuit/solution1/sim/verilog
+# Command line: xsim -mode tcl -source {xsim.dir/simple_circuit/xsim_script.tcl}
+# Log file: /home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/circuit_tb/simple_circuit/solution1/sim/verilog/xsim.log
+# Journal file: /home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/circuit_tb/simple_circuit/solution1/sim/verilog/xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/simple_circuit/xsim_script.tcl
+# xsim {simple_circuit} -autoloadwcfg -tclbatch {simple_circuit.tcl}
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source simple_circuit.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 8 [n/a] @ "125000"
+// RTL Simulation : 1 / 8 [n/a] @ "145000"
+// RTL Simulation : 2 / 8 [n/a] @ "155000"
+// RTL Simulation : 3 / 8 [n/a] @ "165000"
+// RTL Simulation : 4 / 8 [n/a] @ "175000"
+// RTL Simulation : 5 / 8 [n/a] @ "185000"
+// RTL Simulation : 6 / 8 [n/a] @ "195000"
+// RTL Simulation : 7 / 8 [n/a] @ "205000"
+// RTL Simulation : 8 / 8 [n/a] @ "215000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 245 ns : File "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/circuit_tb/simple_circuit/solution1/sim/verilog/simple_circuit.autotb.v" Line 358
+## quit
+INFO: [Common 17-206] Exiting xsim at Mon Apr  5 16:28:46 2021...

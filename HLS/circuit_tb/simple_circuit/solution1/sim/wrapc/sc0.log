@@ -1,0 +1,5 @@
+   Build using "/tools/Xilinx/Vivado/2020.1/tps/lnx64/gcc-6.2.0/bin/g++"
+   Compiling simple_circuit-tb.cpp_pre.cpp.tb.cpp
+   Compiling apatb_simple_circuit.cpp
+   Compiling simple_circuit.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe

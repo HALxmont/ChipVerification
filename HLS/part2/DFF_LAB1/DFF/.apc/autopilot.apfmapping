@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="dff.cpp" path="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/DFF_LAB1/DFF/dff.cpp"/>
+    <originFiles name="dff.h" path="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/DFF_LAB1/DFF/dff.h"/>
+  </source>
+  <testbench>
+    <originFiles name="dff-tb.cpp" path="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/DFF_LAB1/DFF/dff-tb.cpp"/>
+    <originFiles name="dff-tb.h" path="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/DFF_LAB1/DFF/dff-tb.h"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

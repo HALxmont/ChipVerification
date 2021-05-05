@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1618532594940">
+  <ports id="1" name="data_in" type="PortType" originalName="data_in" coreId="0" bitwidth="17">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="load" type="PortType" originalName="load" coreId="2296604913" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="rotate" type="PortType" originalName="rotate" coreId="0" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="4" name="data_out" type="PortType" originalName="data_out" coreId="4228300630" bitwidth="17" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="37" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="39" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="42" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="43" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="44" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="45" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="46" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="47" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="50" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="57" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="58" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="59" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="60" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="61" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="62" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="63" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="64" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="65" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="66" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="69" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@ports.3"/>
+  <edges id="70" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@blocks.0/@node_objs.11"/>
+  <edges id="71" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.0/@node_objs.12"/>
+  <edges id="72" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.0/@node_objs.12"/>
+  <edges id="73" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.12"/>
+  <edges id="74" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="75" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="76" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="165" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="166" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.2"/>
+  <edges id="167" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="168" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.1/@node_objs.0"/>
+  <blocks id="29" name="._crit_edge_ifconv" type="BlockType">
+    <controlOutputObjs>mergeST</controlOutputObjs>
+    <controlOutputObjs>._crit_edge1.new</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="rotate_read" lineNumber="3" originalName="rotate" fileName="right_rotate_with_load/right_rotate_with_load.cpp" fileDirectory=".." coreId="707460512" contextFuncName="right_rotate_with_load" bitwidth="1" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="right_rotate_with_load/right_rotate_with_load.cpp" linenumber="3" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/Exercises/part3/ex2" functionName="right_rotate_with_load"/>
+      <dataInputObjs>rotate</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="load_read" lineNumber="3" originalName="load" fileName="right_rotate_with_load/right_rotate_with_load.cpp" fileDirectory=".." coreId="0" contextFuncName="right_rotate_with_load" bitwidth="1" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="right_rotate_with_load/right_rotate_with_load.cpp" linenumber="3" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/Exercises/part3/ex2" functionName="right_rotate_with_load"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="data_in_read" lineNumber="3" originalName="data_in" fileName="right_rotate_with_load/right_rotate_with_load.cpp" fileDirectory=".." coreId="0" contextFuncName="right_rotate_with_load" bitwidth="17" opcode="read" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="right_rotate_with_load/right_rotate_with_load.cpp" linenumber="3" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/Exercises/part3/ex2" functionName="right_rotate_with_load"/>
+      <dataInputObjs>data_in</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="rotate_register_V_load" lineNumber="651" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." coreId="0" contextFuncName="rrotate" bitwidth="17" opcode="load" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" linenumber="651" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/Exercises/part3/ex2" functionName="rrotate"/>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="select_ln8" lineNumber="8" fileName="right_rotate_with_load/right_rotate_with_load.cpp" fileDirectory=".." rtlName="select_ln8_fu_67_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="right_rotate_with_load" bitwidth="17" opcode="select" m_display="0" m_delay="0.32" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="right_rotate_with_load/right_rotate_with_load.cpp" linenumber="8" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/Exercises/part3/ex2" functionName="right_rotate_with_load"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="trunc_ln653" lineNumber="653" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="trunc_ln653_fu_75_p1" coreId="132" contextFuncName="rrotate" bitwidth="1" opcode="trunc" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" linenumber="653" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/Exercises/part3/ex2" functionName="rrotate"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="lshr_ln" lineNumber="653" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="lshr_ln_fu_79_p4" coreId="155" contextFuncName="rrotate" bitwidth="16" opcode="partselect" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" linenumber="653" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/Exercises/part3/ex2" functionName="rrotate"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="or_ln" lineNumber="653" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="or_ln_fu_89_p3" coreId="707505065" contextFuncName="rrotate" bitwidth="17" opcode="bitconcatenate" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" linenumber="653" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/Exercises/part3/ex2" functionName="rrotate"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="or_ln3" lineNumber="3" fileName="right_rotate_with_load/right_rotate_with_load.cpp" fileDirectory=".." rtlName="or_ln3_fu_97_p2" opType="or" coreId="49" contextFuncName="right_rotate_with_load" bitwidth="1" opcode="or" m_display="0" m_delay="0.14" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="right_rotate_with_load/right_rotate_with_load.cpp" linenumber="3" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/Exercises/part3/ex2" functionName="right_rotate_with_load"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="select_ln3" lineNumber="3" fileName="right_rotate_with_load/right_rotate_with_load.cpp" fileDirectory=".." rtlName="select_ln3_fu_103_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="right_rotate_with_load" bitwidth="17" opcode="select" m_display="0" m_delay="0.32" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="right_rotate_with_load/right_rotate_with_load.cpp" linenumber="3" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/Exercises/part3/ex2" functionName="right_rotate_with_load"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="select_ln3_1" lineNumber="3" fileName="right_rotate_with_load/right_rotate_with_load.cpp" fileDirectory=".." rtlName="data_out" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="right_rotate_with_load" bitwidth="17" opcode="select" m_display="0" m_delay="0.32" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="right_rotate_with_load/right_rotate_with_load.cpp" linenumber="3" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/Exercises/part3/ex2" functionName="right_rotate_with_load"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="data_out_write_ln17" lineNumber="17" fileName="right_rotate_with_load/right_rotate_with_load.cpp" fileDirectory=".." coreId="2281701504" contextFuncName="right_rotate_with_load" opcode="write" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="right_rotate_with_load/right_rotate_with_load.cpp" linenumber="17" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/Exercises/part3/ex2" functionName="right_rotate_with_load"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>data_out</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="br_ln3" lineNumber="3" fileName="right_rotate_with_load/right_rotate_with_load.cpp" fileDirectory=".." coreId="49" contextFuncName="right_rotate_with_load" opcode="br" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="right_rotate_with_load/right_rotate_with_load.cpp" linenumber="3" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/Exercises/part3/ex2" functionName="right_rotate_with_load"/>
+      <dataInputObjs>or</dataInputObjs>
+      <controlInputObjs>._crit_edge1.new</controlInputObjs>
+      <controlInputObjs>mergeST</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="right_rotate_with_load/right_rotate_with_load.cpp">
+      <validLinenumbers>3</validLinenumbers>
+      <validLinenumbers>8</validLinenumbers>
+      <validLinenumbers>17</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h">
+      <validLinenumbers>651</validLinenumbers>
+      <validLinenumbers>653</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="32" name="mergeST" type="BlockType">
+    <controlInputObjs>._crit_edge_ifconv</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>._crit_edge1.new</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="rotate_register_V_write_ln9" lineNumber="9" fileName="right_rotate_with_load/right_rotate_with_load.cpp" fileDirectory=".." coreId="4071539" contextFuncName="right_rotate_with_load" opcode="store" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="right_rotate_with_load/right_rotate_with_load.cpp" linenumber="9" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/Exercises/part3/ex2" functionName="right_rotate_with_load"/>
+      <dataInputObjs>select</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="br_ln0" coreId="2003792416" opcode="br" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <controlInputObjs>._crit_edge1.new</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="right_rotate_with_load/right_rotate_with_load.cpp">
+      <validLinenumbers>9</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="34" name="._crit_edge1.new" type="BlockType">
+    <controlInputObjs>._crit_edge_ifconv</controlInputObjs>
+    <controlInputObjs>mergeST</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="_ln18" lineNumber="18" fileName="right_rotate_with_load/right_rotate_with_load.cpp" fileDirectory=".." coreId="0" contextFuncName="right_rotate_with_load" opcode="ret" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="right_rotate_with_load/right_rotate_with_load.cpp" linenumber="18" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/Exercises/part3/ex2" functionName="right_rotate_with_load"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="right_rotate_with_load/right_rotate_with_load.cpp">
+      <validLinenumbers>18</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <expressionNodes realName="lshr_ln_fu_79">
+    <nodeIds>22</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln653_fu_75">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln3_fu_97">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln3_1_fu_111">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln8_fu_67">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln3_fu_103">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln_fu_89">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="write_ln17_write_fu_56">
+    <nodeIds>27</nodeIds>
+  </ioNodes>
+  <ioNodes realName="data_in_read_read_fu_50">
+    <nodeIds>18</nodeIds>
+  </ioNodes>
+  <ioNodes realName="rotate_read_read_fu_38">
+    <nodeIds>16</nodeIds>
+  </ioNodes>
+  <ioNodes realName="load_read_read_fu_44">
+    <nodeIds>17</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln9_store_fu_120">
+    <nodeIds>30</nodeIds>
+  </ioNodes>
+  <ioNodes realName="rotate_register_V_load_load_fu_63">
+    <nodeIds>19</nodeIds>
+  </ioNodes>
+  <ioPorts name="data_in">
+    <contents name="read">
+      <nodeIds>18</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="data_out">
+    <contents name="write">
+      <nodeIds>27</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="load">
+    <contents name="read">
+      <nodeIds>17</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="rotate">
+    <contents name="read">
+      <nodeIds>16</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+    </states>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="right_rotate_with_load" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>29</basicBlocks>
+      <basicBlocks>32</basicBlocks>
+      <basicBlocks>34</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

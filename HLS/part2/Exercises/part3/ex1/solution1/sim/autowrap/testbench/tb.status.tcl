@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/Exercises/part3/ex1/solution1/./sim/autowrap/testbench/global_varibale.cpp_pre.cpp.tb.cpp

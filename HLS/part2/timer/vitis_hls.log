@@ -1,0 +1,72 @@
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'mxmont' on host 'HALx1' (Linux_x86_64 version 5.8.0-50-generic) on Sat Apr 24 19:40:12 -04 2021
+INFO: [HLS 200-10] On os Ubuntu 20.04.1 LTS
+INFO: [HLS 200-10] In directory '/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/timer'
+Sourcing Tcl script '/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/timer/timer/solution1/csynth.tcl'
+INFO: [HLS 200-1510] Running: open_project timer 
+INFO: [HLS 200-10] Opening project '/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/timer/timer'.
+INFO: [HLS 200-1510] Running: set_top timer 
+INFO: [HLS 200-1510] Running: add_files timer/timer.cpp 
+INFO: [HLS 200-10] Adding design file 'timer/timer.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files timer/timer.h 
+INFO: [HLS 200-10] Adding design file 'timer/timer.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb timer/timer_tb.cpp 
+INFO: [HLS 200-10] Adding test bench file 'timer/timer_tb.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb timer/timer_tb.h 
+INFO: [HLS 200-10] Adding test bench file 'timer/timer_tb.h' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution '/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/timer/timer/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xcvu11p-flga2577-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 206.754 MB.
+INFO: [HLS 200-10] Analyzing design file 'timer/timer.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3.65 seconds. CPU system time: 0.41 seconds. Elapsed time: 4.42 seconds; current allocated memory: 208.240 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 4.76 seconds. CPU system time: 0.51 seconds. Elapsed time: 5.44 seconds; current allocated memory: 209.884 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 209.885 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 213.927 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 218.247 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (timer/timer.cpp:54:1) in function 'timer'... converting 4 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 243.587 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 237.705 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'timer' ...
+WARNING: [SYN 201-107] Renaming port name 'timer/start' to 'timer/start_r' to avoid the conflict with HDL keywords or other object names.
+WARNING: [SYN 201-107] Renaming port name 'timer/end' to 'timer/end_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'timer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 237.965 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 238.148 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'timer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'timer/n' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'timer/start_r' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'timer/end_r' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'end_r' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on function 'timer' to 'ap_ctrl_none'.
+WARNING: [RTGEN 206-101] Register 'state' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'timer_variable' is power-on initialization.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'timer'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 238.436 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1.52 seconds. CPU system time: 0.05 seconds. Elapsed time: 1.58 seconds; current allocated memory: 245.095 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for timer.
+INFO: [VLOG 209-307] Generating Verilog RTL for timer.
+INFO: [HLS 200-789] **** Estimated Fmax: 369.96 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 10.35 seconds. CPU system time: 1.02 seconds. Elapsed time: 12 seconds; current allocated memory: 245.251 MB.
+INFO: [HLS 200-112] Total CPU user time: 14.53 seconds. Total CPU system time: 1.92 seconds. Total elapsed time: 16.03 seconds; peak allocated memory: 245.095 MB.

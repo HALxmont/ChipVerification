@@ -1,0 +1,5 @@
+<annotationInfo>
+<item  id="18" filename="simple_circuit/.apc/simple_circuit.cpp" linenumber="19" name="and_ln19" contextFuncName="simple_circuit" moduleName="simple_circuit" rtlName="and_ln19_fu_55_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="2" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/circuit_tb"><\/item>
+<item  id="19" filename="simple_circuit/.apc/simple_circuit.cpp" linenumber="19" name="xor_ln19" contextFuncName="simple_circuit" moduleName="simple_circuit" rtlName="xor_ln19_fu_61_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="2" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/circuit_tb"><\/item>
+<item  id="20" filename="simple_circuit/.apc/simple_circuit.cpp" linenumber="19" name="or_ln19" contextFuncName="simple_circuit" moduleName="simple_circuit" rtlName="d" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="2" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/circuit_tb"><\/item>
+</annotationInfo>

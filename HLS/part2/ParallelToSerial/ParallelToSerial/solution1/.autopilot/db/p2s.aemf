@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1618717065606">
+  <ports id="1" name="begin_r" type="PortType" originalName="begin" coreId="0" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="data_in" type="PortType" originalName="data_in.V" coreId="49" bitwidth="4">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="start_r" type="PortType" originalName="start" coreId="49" bitwidth="1" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="4" name="end_r" type="PortType" originalName="end" coreId="0" bitwidth="1" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="5" name="data_out" type="PortType" originalName="data_out" coreId="305" bitwidth="1" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="63" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="66" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="67" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="68" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="69" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="72" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="73" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="75" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="76" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="77" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="80" source_obj="//@blocks.6/@node_objs.0" sink_obj="//@ports.2"/>
+  <edges id="84" source_obj="//@blocks.6/@node_objs.1" sink_obj="//@ports.3"/>
+  <edges id="88" source_obj="//@blocks.6/@node_objs.2" sink_obj="//@ports.4"/>
+  <edges id="89" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.6/@node_objs.2"/>
+  <edges id="90" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.6/@node_objs.3"/>
+  <edges id="91" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="95" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@ports.2"/>
+  <edges id="97" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="98" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="99" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="101" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@ports.3"/>
+  <edges id="103" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.5/@node_objs.1"/>
+  <edges id="106" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.5/@node_objs.2"/>
+  <edges id="109" source_obj="//@blocks.5/@node_objs.2" sink_obj="//@blocks.5/@node_objs.3"/>
+  <edges id="110" source_obj="//@blocks.5/@node_objs.3" sink_obj="//@blocks.5/@node_objs.4"/>
+  <edges id="111" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.5/@node_objs.4"/>
+  <edges id="112" source_obj="//@blocks.5/@node_objs.4" sink_obj="//@blocks.5/@node_objs.5"/>
+  <edges id="116" source_obj="//@blocks.5/@node_objs.6" sink_obj="//@ports.4"/>
+  <edges id="117" source_obj="//@blocks.5/@node_objs.5" sink_obj="//@blocks.5/@node_objs.6"/>
+  <edges id="118" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.5/@node_objs.7"/>
+  <edges id="119" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="121" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="122" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="123" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="125" source_obj="//@blocks.4/@node_objs.0" sink_obj="//@ports.3"/>
+  <edges id="129" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.4/@node_objs.1"/>
+  <edges id="133" source_obj="//@blocks.4/@node_objs.2" sink_obj="//@ports.4"/>
+  <edges id="134" source_obj="//@blocks.4/@node_objs.1" sink_obj="//@blocks.4/@node_objs.2"/>
+  <edges id="135" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.4/@node_objs.3"/>
+  <edges id="137" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@ports.3"/>
+  <edges id="139" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="141" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.7/@node_objs.0"/>
+  <edges id="142" source_obj="//@blocks.5/@node_objs.1" sink_obj="//@blocks.7/@node_objs.0"/>
+  <edges id="143" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.7/@node_objs.0"/>
+  <edges id="145" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.7/@node_objs.0"/>
+  <edges id="147" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.7/@node_objs.0"/>
+  <edges id="148" source_obj="//@blocks.7/@node_objs.0" sink_obj="//@blocks.7/@node_objs.1"/>
+  <edges id="149" sink_obj="//@blocks.7/@node_objs.1"/>
+  <edges id="276" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.6"/>
+  <edges id="277" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="278" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.5"/>
+  <edges id="279" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="280" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.4"/>
+  <edges id="281" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3"/>
+  <edges id="282" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.7"/>
+  <edges id="283" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.7"/>
+  <edges id="284" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.7"/>
+  <edges id="285" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.7"/>
+  <edges id="286" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.7/@node_objs.1"/>
+  <blocks id="27" name="._crit_edge" type="BlockType">
+    <controlOutputObjs>block_56</controlOutputObjs>
+    <controlOutputObjs>block_31</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="data_in_read" coreId="0" bitwidth="4" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataInputObjs>data_in</dataInputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <dataOutputObjs>bitselect</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="begin_read" originalName="begin" coreId="0" bitwidth="1" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <dataInputObjs>begin_r</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="p_Result_s" originalName="__Result__" rtlName="p_Result_s_fu_107_p1" coreId="0" bitwidth="1" opcode="trunc" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="count_load" lineNumber="23" fileName="ParallelToSerial/p2s.cpp" fileDirectory=".." coreId="497" contextFuncName="p2s" bitwidth="8" opcode="load" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="ParallelToSerial/p2s.cpp" linenumber="23" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/ParallelToSerial" functionName="p2s"/>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="select_ln17" lineNumber="17" fileName="ParallelToSerial/p2s.cpp" fileDirectory=".." rtlName="select_ln17_fu_116_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="p2s" bitwidth="8" opcode="select" m_display="0" m_delay="0.4" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="ParallelToSerial/p2s.cpp" linenumber="17" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/ParallelToSerial" functionName="p2s"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="icmp_ln23" lineNumber="23" fileName="ParallelToSerial/p2s.cpp" fileDirectory=".." rtlName="icmp_ln23_fu_124_p2" opType="icmp" coreId="840979276" contextFuncName="p2s" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.7" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="ParallelToSerial/p2s.cpp" linenumber="23" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/ParallelToSerial" functionName="p2s"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="br_ln23" lineNumber="23" fileName="ParallelToSerial/p2s.cpp" fileDirectory=".." coreId="1123607024" contextFuncName="p2s" opcode="br" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="ParallelToSerial/p2s.cpp" linenumber="23" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/ParallelToSerial" functionName="p2s"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>block_31</controlInputObjs>
+      <controlInputObjs>block_56</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="ParallelToSerial/p2s.cpp">
+      <validLinenumbers>23</validLinenumbers>
+      <validLinenumbers>17</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="31" name="block_31" type="BlockType">
+    <controlInputObjs>._crit_edge</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_51</controlOutputObjs>
+    <controlOutputObjs>block_34</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="icmp_ln29" lineNumber="29" fileName="ParallelToSerial/p2s.cpp" fileDirectory=".." rtlName="icmp_ln29_fu_130_p2" opType="icmp" coreId="0" contextFuncName="p2s" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.7" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="ParallelToSerial/p2s.cpp" linenumber="29" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/ParallelToSerial" functionName="p2s"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="start_r_write_ln0" coreId="49" opcode="write" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <dataOutputObjs>start_r</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="br_ln29" lineNumber="29" fileName="ParallelToSerial/p2s.cpp" fileDirectory=".." coreId="0" contextFuncName="p2s" opcode="br" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="ParallelToSerial/p2s.cpp" linenumber="29" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/ParallelToSerial" functionName="p2s"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>block_34</controlInputObjs>
+      <controlInputObjs>block_51</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="ParallelToSerial/p2s.cpp">
+      <validLinenumbers>29</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="34" name="block_34" type="BlockType">
+    <controlInputObjs>block_31</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_42</controlOutputObjs>
+    <controlOutputObjs>block_37</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="icmp_ln35" lineNumber="35" fileName="ParallelToSerial/p2s.cpp" fileDirectory=".." rtlName="icmp_ln35_fu_136_p2" opType="icmp" coreId="49" contextFuncName="p2s" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.7" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="ParallelToSerial/p2s.cpp" linenumber="35" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/ParallelToSerial" functionName="p2s"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="br_ln35" lineNumber="35" fileName="ParallelToSerial/p2s.cpp" fileDirectory=".." coreId="1797278788" contextFuncName="p2s" opcode="br" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="ParallelToSerial/p2s.cpp" linenumber="35" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/ParallelToSerial" functionName="p2s"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>block_37</controlInputObjs>
+      <controlInputObjs>block_42</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="ParallelToSerial/p2s.cpp">
+      <validLinenumbers>35</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="37" name="block_37" type="BlockType">
+    <controlInputObjs>block_34</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>mergeST</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="end_r_write_ln44" lineNumber="44" fileName="ParallelToSerial/p2s.cpp" fileDirectory=".." coreId="1123621728" contextFuncName="p2s" opcode="write" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="ParallelToSerial/p2s.cpp" linenumber="44" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/ParallelToSerial" functionName="p2s"/>
+      <dataOutputObjs>end_r</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="br_ln0" coreId="0" opcode="br" m_display="0" m_delay="0.5" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <controlInputObjs>mergeST</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="ParallelToSerial/p2s.cpp">
+      <validLinenumbers>44</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="42" name="block_42" type="BlockType">
+    <controlInputObjs>block_34</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>mergeST</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="end_r_write_ln37" lineNumber="37" fileName="ParallelToSerial/p2s.cpp" fileDirectory=".." coreId="0" contextFuncName="p2s" opcode="write" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="ParallelToSerial/p2s.cpp" linenumber="37" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/ParallelToSerial" functionName="p2s"/>
+      <dataOutputObjs>end_r</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="39" name="p_Result_2" lineNumber="819" originalName="__Result__" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="data_out" coreId="1123622776" contextFuncName="operator_bool" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="819" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/ParallelToSerial" functionName="operator bool"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="40" name="data_out_write_ln38" lineNumber="38" fileName="ParallelToSerial/p2s.cpp" fileDirectory=".." coreId="49" contextFuncName="p2s" opcode="write" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="ParallelToSerial/p2s.cpp" linenumber="38" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/ParallelToSerial" functionName="p2s"/>
+      <dataInputObjs>bitselect</dataInputObjs>
+      <dataOutputObjs>data_out</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="br_ln40" lineNumber="40" fileName="ParallelToSerial/p2s.cpp" fileDirectory=".." coreId="12" contextFuncName="p2s" opcode="br" m_display="0" m_delay="0.5" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="ParallelToSerial/p2s.cpp" linenumber="40" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/ParallelToSerial" functionName="p2s"/>
+      <controlInputObjs>mergeST</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="ParallelToSerial/p2s.cpp">
+      <validLinenumbers>37</validLinenumbers>
+      <validLinenumbers>38</validLinenumbers>
+      <validLinenumbers>40</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h">
+      <validLinenumbers>819</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="51" name="block_51" type="BlockType">
+    <controlInputObjs>block_31</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>mergeST</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="43" name="end_r_write_ln31" lineNumber="31" fileName="ParallelToSerial/p2s.cpp" fileDirectory=".." coreId="132" contextFuncName="p2s" opcode="write" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="ParallelToSerial/p2s.cpp" linenumber="31" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/ParallelToSerial" functionName="p2s"/>
+      <dataOutputObjs>end_r</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="44" name="add_ln32" lineNumber="32" fileName="ParallelToSerial/p2s.cpp" fileDirectory=".." rtlName="add_ln32_fu_151_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="p2s" bitwidth="8" opcode="add" m_display="0" m_delay="0.87" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="ParallelToSerial/p2s.cpp" linenumber="32" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/ParallelToSerial" functionName="p2s"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="45" name="trunc_ln819" lineNumber="819" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="trunc_ln819_fu_158_p1" coreId="0" contextFuncName="operator_bool" bitwidth="4" opcode="trunc" m_display="0" m_topoIndex="21" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="819" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/ParallelToSerial" functionName="operator bool"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>shl</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="shl_ln819" lineNumber="819" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="shl_ln819_fu_162_p2" coreName="Shifter" implIndex="auto_pipe" control="auto" opType="shl" coreId="75" contextFuncName="operator_bool" bitwidth="4" opcode="shl" m_display="0" m_topoIndex="22" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="819" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/ParallelToSerial" functionName="operator bool"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="and_ln819" lineNumber="819" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="and_ln819_fu_168_p2" opType="and" coreId="1431323424" contextFuncName="operator_bool" bitwidth="4" opcode="and" m_display="0" m_topoIndex="23" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="819" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/ParallelToSerial" functionName="operator bool"/>
+      <dataInputObjs>shl</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="48" name="p_Result_1" lineNumber="819" originalName="__Result__" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="p_Result_1_fu_174_p2" opType="icmp" coreId="1948279913" contextFuncName="operator_bool" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.72" m_topoIndex="24" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="819" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/ParallelToSerial" functionName="operator bool"/>
+      <dataInputObjs>and</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="data_out_write_ln32" lineNumber="32" fileName="ParallelToSerial/p2s.cpp" fileDirectory=".." coreId="1685024032" contextFuncName="p2s" opcode="write" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="ParallelToSerial/p2s.cpp" linenumber="32" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/ParallelToSerial" functionName="p2s"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataOutputObjs>data_out</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="50" name="br_ln33" lineNumber="33" fileName="ParallelToSerial/p2s.cpp" fileDirectory=".." coreId="1953702003" contextFuncName="p2s" opcode="br" m_display="0" m_delay="0.5" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="ParallelToSerial/p2s.cpp" linenumber="33" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/ParallelToSerial" functionName="p2s"/>
+      <controlInputObjs>mergeST</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="ParallelToSerial/p2s.cpp">
+      <validLinenumbers>31</validLinenumbers>
+      <validLinenumbers>32</validLinenumbers>
+      <validLinenumbers>33</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h">
+      <validLinenumbers>819</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="56" name="block_56" type="BlockType">
+    <controlInputObjs>._crit_edge</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>mergeST</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="52" name="start_r_write_ln24" lineNumber="24" fileName="ParallelToSerial/p2s.cpp" fileDirectory=".." coreId="1814066273" contextFuncName="p2s" opcode="write" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="ParallelToSerial/p2s.cpp" linenumber="24" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/ParallelToSerial" functionName="p2s"/>
+      <dataOutputObjs>start_r</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="53" name="end_r_write_ln25" lineNumber="25" fileName="ParallelToSerial/p2s.cpp" fileDirectory=".." coreId="2617247408" contextFuncName="p2s" opcode="write" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="ParallelToSerial/p2s.cpp" linenumber="25" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/ParallelToSerial" functionName="p2s"/>
+      <dataOutputObjs>end_r</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="54" name="data_out_write_ln26" lineNumber="26" fileName="ParallelToSerial/p2s.cpp" fileDirectory=".." coreId="49" contextFuncName="p2s" opcode="write" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="ParallelToSerial/p2s.cpp" linenumber="26" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/ParallelToSerial" functionName="p2s"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>data_out</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="55" name="br_ln27" lineNumber="27" fileName="ParallelToSerial/p2s.cpp" fileDirectory=".." coreId="0" contextFuncName="p2s" opcode="br" m_display="0" m_delay="0.5" m_topoIndex="30" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="ParallelToSerial/p2s.cpp" linenumber="27" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/ParallelToSerial" functionName="p2s"/>
+      <controlInputObjs>mergeST</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="ParallelToSerial/p2s.cpp">
+      <validLinenumbers>24</validLinenumbers>
+      <validLinenumbers>25</validLinenumbers>
+      <validLinenumbers>26</validLinenumbers>
+      <validLinenumbers>27</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="60" name="mergeST" type="BlockType">
+    <controlInputObjs>block_37</controlInputObjs>
+    <controlInputObjs>block_42</controlInputObjs>
+    <controlInputObjs>block_51</controlInputObjs>
+    <controlInputObjs>block_56</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="57" name="count_new_0" lineNumber="32" fileName="ParallelToSerial/p2s.cpp" fileDirectory=".." coreId="0" contextFuncName="p2s" bitwidth="8" opcode="phi" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="ParallelToSerial/p2s.cpp" linenumber="32" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/ParallelToSerial" functionName="p2s"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <controlInputObjs>block_56</controlInputObjs>
+      <controlInputObjs>block_51</controlInputObjs>
+      <controlInputObjs>block_42</controlInputObjs>
+      <controlInputObjs>block_37</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="58" name="count_write_ln19" lineNumber="19" fileName="ParallelToSerial/p2s.cpp" fileDirectory=".." coreId="49" contextFuncName="p2s" opcode="store" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="ParallelToSerial/p2s.cpp" linenumber="19" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/ParallelToSerial" functionName="p2s"/>
+      <dataInputObjs>phi</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="59" name="_ln47" lineNumber="47" fileName="ParallelToSerial/p2s.cpp" fileDirectory=".." coreId="1123661680" contextFuncName="p2s" opcode="ret" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="ParallelToSerial/p2s.cpp" linenumber="47" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/ParallelToSerial" functionName="p2s"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="ParallelToSerial/p2s.cpp">
+      <validLinenumbers>32</validLinenumbers>
+      <validLinenumbers>19</validLinenumbers>
+      <validLinenumbers>47</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <regnodes realName="count_new_0_reg_91">
+    <nodeIds>57</nodeIds>
+  </regnodes>
+  <expressionNodes realName="and_ln819_fu_168">
+    <nodeIds>47</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln29_fu_130">
+    <nodeIds>28</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Result_s_fu_107">
+    <nodeIds>10</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln23_fu_124">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Result_2_fu_142">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="count_new_0_phi_fu_94">
+    <nodeIds>57</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln35_fu_136">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Result_1_fu_174">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln17_fu_116">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln819_fu_158">
+    <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="shl_ln819_fu_162">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln32_fu_151">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="data_in_read_read_fu_54">
+    <nodeIds>8</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln19_store_fu_181">
+    <nodeIds>58</nodeIds>
+  </ioNodes>
+  <ioNodes realName="begin_read_read_fu_60">
+    <nodeIds>9</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_write_fu_66">
+    <nodeIds>29</nodeIds>
+    <nodeIds>52</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_write_fu_83">
+    <nodeIds>40</nodeIds>
+    <nodeIds>49</nodeIds>
+    <nodeIds>54</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_write_fu_74">
+    <nodeIds>35</nodeIds>
+    <nodeIds>38</nodeIds>
+    <nodeIds>43</nodeIds>
+    <nodeIds>53</nodeIds>
+  </ioNodes>
+  <ioNodes realName="count_load_load_fu_112">
+    <nodeIds>23</nodeIds>
+  </ioNodes>
+  <ioPorts name="begin_r">
+    <contents name="read">
+      <nodeIds>9</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="data_in">
+    <contents name="read">
+      <nodeIds>8</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="data_out">
+    <contents name="write">
+      <nodeIds>54</nodeIds>
+      <nodeIds>49</nodeIds>
+      <nodeIds>40</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="end_r">
+    <contents name="write">
+      <nodeIds>53</nodeIds>
+      <nodeIds>43</nodeIds>
+      <nodeIds>38</nodeIds>
+      <nodeIds>35</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="start_r">
+    <contents name="write">
+      <nodeIds>52</nodeIds>
+      <nodeIds>29</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+    </states>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="p2s" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>27</basicBlocks>
+      <basicBlocks>31</basicBlocks>
+      <basicBlocks>34</basicBlocks>
+      <basicBlocks>37</basicBlocks>
+      <basicBlocks>42</basicBlocks>
+      <basicBlocks>51</basicBlocks>
+      <basicBlocks>56</basicBlocks>
+      <basicBlocks>60</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

@@ -1,0 +1,5 @@
+<annotationInfo>
+<item  id="18" filename="simple_combinational_circuit/.apc/simple_combinational_circuit.cpp" linenumber="14" name="and_ln14" contextFuncName="simple_combinational_circuit" moduleName="simple_combinational_circuit" rtlName="and_ln14_fu_55_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="2" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS"><\/item>
+<item  id="19" filename="simple_combinational_circuit/.apc/simple_combinational_circuit.cpp" linenumber="14" name="xor_ln14" contextFuncName="simple_combinational_circuit" moduleName="simple_combinational_circuit" rtlName="xor_ln14_fu_61_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="2" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS"><\/item>
+<item  id="20" filename="simple_combinational_circuit/.apc/simple_combinational_circuit.cpp" linenumber="14" name="or_ln14" contextFuncName="simple_combinational_circuit" moduleName="simple_combinational_circuit" rtlName="d" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="2" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS"><\/item>
+</annotationInfo>

@@ -1,0 +1,82 @@
+<stg><name>not_gate</name>
+
+
+<trans_list>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="2" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="2" bw="1" op_0_bw="1" op_1_bw="1">
+<![CDATA[
+:0  %a_read = call i1 @_ssdm_op_Read.ap_auto.i1(i1 %a) nounwind
+
+]]></Node>
+<StgValue><ssdm name="a_read"/></StgValue>
+</operation>
+
+<operation id="3" st_id="1" stage="1" lat="1">
+<core>LogicGate</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="3" bw="1" op_0_bw="1" op_1_bw="1">
+<![CDATA[
+:1  %xor_ln4 = xor i1 %a_read, true
+
+]]></Node>
+<StgValue><ssdm name="xor_ln4"/></StgValue>
+</operation>
+
+<operation id="4" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="4" bw="0" op_0_bw="1">
+<![CDATA[
+:2  ret i1 %xor_ln4
+
+]]></Node>
+<StgValue><ssdm name="ret_ln4"/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+<port id="5" name="a" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="a"/></StgValue>
+</port>
+</ports>
+
+
+<dataflows>
+<dataflow id="7" from="_ssdm_op_Read.ap_auto.i1" to="a_read" fromId="6" toId="2">
+</dataflow>
+<dataflow id="8" from="a" to="a_read" fromId="5" toId="2">
+</dataflow>
+<dataflow id="9" from="a_read" to="xor_ln4" fromId="2" toId="3">
+</dataflow>
+<dataflow id="11" from="StgValue_10" to="xor_ln4" fromId="10" toId="3">
+</dataflow>
+<dataflow id="12" from="xor_ln4" to="ret_ln4" fromId="3" toId="4">
+</dataflow>
+</dataflows>
+
+
+</stg>

@@ -1,0 +1,2 @@
+current_fileset
+open_wave_database DFF_REG.wdb

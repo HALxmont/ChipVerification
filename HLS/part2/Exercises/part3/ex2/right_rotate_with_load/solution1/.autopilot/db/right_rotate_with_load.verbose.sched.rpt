@@ -1,0 +1,132 @@
+
+
+================================================================
+== Vitis HLS Report for 'right_rotate_with_load'
+================================================================
+* Date:           Thu Apr 15 20:23:14 2021
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+* Project:        right_rotate_with_load
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu11p-flga2577-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  0.653 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    1|    1|     none|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 0
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.65>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%spectopmodule_ln0 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1"   --->   Operation 2 'spectopmodule' 'spectopmodule_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i17 %data_in"   --->   Operation 3 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i17 %data_in, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 4 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %load"   --->   Operation 5 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %load, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 6 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %rotate"   --->   Operation 7 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %rotate, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i17 %data_out"   --->   Operation 9 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i17 %data_out, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%rotate_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %rotate" [right_rotate_with_load/right_rotate_with_load.cpp:3]   --->   Operation 11 'read' 'rotate_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%load_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %load" [right_rotate_with_load/right_rotate_with_load.cpp:3]   --->   Operation 12 'read' 'load_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%data_in_read = read i17 @_ssdm_op_Read.ap_auto.i17, i17 %data_in" [right_rotate_with_load/right_rotate_with_load.cpp:3]   --->   Operation 13 'read' 'data_in_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%rotate_register_V_load = load i17 %rotate_register_V"   --->   Operation 14 'load' 'rotate_register_V_load' <Predicate = (!load_read)> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.32ns)   --->   "%select_ln8 = select i1 %load_read, i17 %data_in_read, i17 %rotate_register_V_load" [right_rotate_with_load/right_rotate_with_load.cpp:8]   --->   Operation 15 'select' 'select_ln8' <Predicate = true> <Delay = 0.32> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.32> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%trunc_ln653 = trunc i17 %select_ln8"   --->   Operation 16 'trunc' 'trunc_ln653' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%lshr_ln = partselect i16 @_ssdm_op_PartSelect.i16.i17.i32.i32, i17 %select_ln8, i32 1, i32 16"   --->   Operation 17 'partselect' 'lshr_ln' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%or_ln = bitconcatenate i17 @_ssdm_op_BitConcatenate.i17.i1.i16, i1 %trunc_ln653, i16 %lshr_ln"   --->   Operation 18 'bitconcatenate' 'or_ln' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.14ns)   --->   "%or_ln3 = or i1 %rotate_read, i1 %load_read" [right_rotate_with_load/right_rotate_with_load.cpp:3]   --->   Operation 19 'or' 'or_ln3' <Predicate = true> <Delay = 0.14> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.14> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 20 [1/1] (0.32ns)   --->   "%select_ln3 = select i1 %rotate_read, i17 %or_ln, i17 %data_in_read" [right_rotate_with_load/right_rotate_with_load.cpp:3]   --->   Operation 20 'select' 'select_ln3' <Predicate = true> <Delay = 0.32> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.32> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 21 [1/1] (0.32ns)   --->   "%select_ln3_1 = select i1 %rotate_read, i17 %or_ln, i17 %select_ln8" [right_rotate_with_load/right_rotate_with_load.cpp:3]   --->   Operation 21 'select' 'select_ln3_1' <Predicate = true> <Delay = 0.32> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.32> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%write_ln17 = write void @_ssdm_op_Write.ap_auto.i17P0A, i17 %data_out, i17 %select_ln3_1" [right_rotate_with_load/right_rotate_with_load.cpp:17]   --->   Operation 22 'write' 'write_ln17' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%br_ln3 = br i1 %or_ln3, void %._crit_edge1.new, void %mergeST" [right_rotate_with_load/right_rotate_with_load.cpp:3]   --->   Operation 23 'br' 'br_ln3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%store_ln9 = store i17 %select_ln3, i17 %rotate_register_V" [right_rotate_with_load/right_rotate_with_load.cpp:9]   --->   Operation 24 'store' 'store_ln9' <Predicate = (or_ln3)> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%br_ln0 = br void %._crit_edge1.new"   --->   Operation 25 'br' 'br_ln0' <Predicate = (or_ln3)> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%ret_ln18 = ret" [right_rotate_with_load/right_rotate_with_load.cpp:18]   --->   Operation 26 'ret' 'ret_ln18' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 0.653ns
+The critical path consists of the following:
+	wire read on port 'load' (right_rotate_with_load/right_rotate_with_load.cpp:3) [17]  (0 ns)
+	'select' operation ('select_ln8', right_rotate_with_load/right_rotate_with_load.cpp:8) [20]  (0.327 ns)
+	'select' operation ('select_ln3', right_rotate_with_load/right_rotate_with_load.cpp:3) [25]  (0.327 ns)
+	'store' operation ('store_ln9', right_rotate_with_load/right_rotate_with_load.cpp:9) of variable 'select_ln3', right_rotate_with_load/right_rotate_with_load.cpp:3 on static variable 'rotate_register_V' [30]  (0 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

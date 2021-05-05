@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/circuit_tb/simple_circuit/solution1/./sim/autowrap/testbench/simple_circuit.cpp_pre.cpp.tb.cpp

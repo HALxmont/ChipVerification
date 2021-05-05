@@ -1,0 +1,462 @@
+<profile>
+    <ReportVersion>
+        <Version>2020.2</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>zynquplus</ProductFamily>
+        <Part>xczu49dr-ffvf1760-2-e</Part>
+        <TopModelName>pwm</TopModelName>
+        <TargetClockPeriod>10.00</TargetClockPeriod>
+        <ClockUncertainty>2.70</ClockUncertainty>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>none</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>1.991</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>0</Best-caseLatency>
+            <Average-caseLatency>0</Average-caseLatency>
+            <Worst-caseLatency>0</Worst-caseLatency>
+            <Best-caseRealTimeLatency>0 ns</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>0 ns</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>0 ns</Worst-caseRealTimeLatency>
+            <Interval-min>1</Interval-min>
+            <Interval-max>1</Interval-max>
+        </SummaryOfOverallLatency>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <FF>131</FF>
+            <LUT>246</LUT>
+            <BRAM_18K>0</BRAM_18K>
+            <DSP>0</DSP>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>2160</BRAM_18K>
+            <DSP>4272</DSP>
+            <FF>850560</FF>
+            <LUT>425280</LUT>
+            <URAM>80</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>pwm</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst</name>
+            <Object>pwm</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>start_r</name>
+            <Object>start_r</Object>
+            <Type>scalar</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>bool</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>max_cycles</name>
+            <Object>max_cycles</Object>
+            <Type>scalar</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>64</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>cycles_high</name>
+            <Object>cycles_high</Object>
+            <Type>scalar</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>64</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>cycles_hold</name>
+            <Object>cycles_hold</Object>
+            <Type>scalar</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>64</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>pwm_out</name>
+            <Object>pwm_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>bool</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>end_r</name>
+            <Object>end_r</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>bool</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule>
+            <ModuleName>pwm</ModuleName>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>pwm</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>1.991</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>0</Best-caseLatency>
+                    <Average-caseLatency>0</Average-caseLatency>
+                    <Worst-caseLatency>0</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0 ns</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1</PipelineInitiationInterval>
+                    <PipelineType>none</PipelineType>
+                </SummaryOfOverallLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>131</FF>
+                    <AVAIL_FF>850560</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>246</LUT>
+                    <AVAIL_LUT>425280</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>2160</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>4272</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>80</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <InterfaceSummary>
+                <RtlPorts>
+                    <name>ap_clk</name>
+                    <Object>pwm</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_rst</name>
+                    <Object>pwm</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>start_r</name>
+                    <Object>start_r</Object>
+                    <Type>scalar</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>bool</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>max_cycles</name>
+                    <Object>max_cycles</Object>
+                    <Type>scalar</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>64</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>cycles_high</name>
+                    <Object>cycles_high</Object>
+                    <Type>scalar</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>64</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>cycles_hold</name>
+                    <Object>cycles_hold</Object>
+                    <Type>scalar</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>64</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>pwm_out</name>
+                    <Object>pwm_out</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>bool</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>end_r</name>
+                    <Object>end_r</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>bool</CType>
+                </RtlPorts>
+            </InterfaceSummary>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <Args>
+        <Arg ArgName="start" index="0" direction="in" srcType="bool" srcSize="1">
+            <hwRefs>
+                <hwRef type="port" interface="start_r" name="start_r" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="max_cycles" index="1" direction="in" srcType="long unsigned int" srcSize="64">
+            <hwRefs>
+                <hwRef type="port" interface="max_cycles" name="max_cycles" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="cycles_high" index="2" direction="in" srcType="long unsigned int" srcSize="64">
+            <hwRefs>
+                <hwRef type="port" interface="cycles_high" name="cycles_high" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="cycles_hold" index="3" direction="in" srcType="long unsigned int" srcSize="64">
+            <hwRefs>
+                <hwRef type="port" interface="cycles_hold" name="cycles_hold" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="pwm_out" index="4" direction="out" srcType="bool&amp;" srcSize="1">
+            <hwRefs>
+                <hwRef type="port" interface="pwm_out" name="pwm_out" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="end" index="5" direction="out" srcType="bool&amp;" srcSize="1">
+            <hwRefs>
+                <hwRef type="port" interface="end_r" name="end_r" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_HIGH</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="cycles_high" type="data" busTypeName="data" mode="slave" dataWidth="64">
+            <portMaps>
+                <portMap portMapName="cycles_high">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>cycles_high</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="cycles_high"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="cycles_hold" type="data" busTypeName="data" mode="slave" dataWidth="64">
+            <portMaps>
+                <portMap portMapName="cycles_hold">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>cycles_hold</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="cycles_hold"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="end_r" type="data" busTypeName="data" mode="master" dataWidth="1">
+            <portMaps>
+                <portMap portMapName="end_r">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>end_r</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="end"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="max_cycles" type="data" busTypeName="data" mode="slave" dataWidth="64">
+            <portMaps>
+                <portMap portMapName="max_cycles">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>max_cycles</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="max_cycles"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="pwm_out" type="data" busTypeName="data" mode="master" dataWidth="1">
+            <portMaps>
+                <portMap portMapName="pwm_out">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>pwm_out</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="pwm_out"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="start_r" type="data" busTypeName="data" mode="slave" dataWidth="1">
+            <portMaps>
+                <portMap portMapName="start_r">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>start_r</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="start"/>
+            </constraints>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="REGISTER">
+                <table>
+                    <keys size="3">Interface, Mode, Bitwidth</keys>
+                    <column name="cycles_high">ap_none, 64</column>
+                    <column name="cycles_hold">ap_none, 64</column>
+                    <column name="end_r">ap_none, 1</column>
+                    <column name="max_cycles">ap_none, 64</column>
+                    <column name="pwm_out">ap_none, 1</column>
+                    <column name="start_r">ap_none, 1</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table>
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk</column>
+                    <column name="ap_rst">reset, ap_rst</column>
+                    <column name="ap_ctrl">ap_ctrl_none</column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table isCollapsed="1">
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="start">in, bool</column>
+                    <column name="max_cycles">in, long unsigned int</column>
+                    <column name="cycles_high">in, long unsigned int</column>
+                    <column name="cycles_hold">in, long unsigned int</column>
+                    <column name="pwm_out">out, bool&amp;</column>
+                    <column name="end">out, bool&amp;</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table isCollapsed="1">
+                    <keys size="3">Argument, HW Name, HW Type</keys>
+                    <column name="start">start_r, port</column>
+                    <column name="max_cycles">max_cycles, port</column>
+                    <column name="cycles_high">cycles_high, port</column>
+                    <column name="cycles_hold">cycles_hold, port</column>
+                    <column name="pwm_out">pwm_out, port</column>
+                    <column name="end">end_r, port</column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ReportBurst>
+        <section name="M_AXI Burst Information" level="0"/>
+    </ReportBurst>
+</profile>
+

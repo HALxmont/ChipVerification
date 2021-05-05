@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Apr 18 23:33:31 2021
+# Process ID: 432414
+# Current directory: /home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/ParallelToSerial/ParallelToSerial/solution1/impl/ip
+# Command line: vivado -notrace -mode batch -source run_ippack.tcl
+# Log file: /home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/ParallelToSerial/ParallelToSerial/solution1/impl/ip/vivado.log
+# Journal file: /home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/ParallelToSerial/ParallelToSerial/solution1/impl/ip/vivado.jou
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace

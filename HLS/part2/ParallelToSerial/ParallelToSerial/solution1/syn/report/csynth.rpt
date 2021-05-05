@@ -1,0 +1,24 @@
+
+
+================================================================
+== Synthesis Summary Report of 'p2s'
+================================================================
++ General Information: 
+    * Date:           Sat Apr 17 23:37:45 2021
+    * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+    * Project:        ParallelToSerial
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: virtexuplus
+    * Target device:  xcvu11p-flga2577-1-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +--------+------+-------+---------+--------+----------+---------+------+----------+------+----+---------+-----------+-----+
+    | Modules| Issue|       | Latency | Latency| Iteration|         | Trip |          |      |    |         |           |     |
+    | & Loops| Type | Slack | (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|    FF   |    LUT    | URAM|
+    +--------+------+-------+---------+--------+----------+---------+------+----------+------+----+---------+-----------+-----+
+    |+ p2s   |     -|  -5.53|        0|   0.000|         -|        1|     -|        no|     -|   -|  9 (~0%)|  148 (~0%)|    -|
+    +--------+------+-------+---------+--------+----------+---------+------+----------+------+----+---------+-----------+-----+
+

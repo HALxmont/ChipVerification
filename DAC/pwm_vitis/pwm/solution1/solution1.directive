@@ -1,0 +1,15 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="pwm" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="pwm"/>
+            </pragma>
+        </directive>
+        <directive functionName="pwm" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="pwm"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

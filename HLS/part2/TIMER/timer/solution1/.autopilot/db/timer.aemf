@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1619298002356">
+  <ports id="1" name="n" type="PortType" originalName="n.V" coreId="0" bitwidth="16">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="start_r" type="PortType" originalName="start" coreId="132" bitwidth="1"/>
+  <ports id="3" name="end_r" type="PortType" originalName="end" coreId="49" bitwidth="1" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="35" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="36" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="37" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="38" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="39" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="42" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="43" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="44" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="45" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="48" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="50" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="51" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="52" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="53" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="56" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.11"/>
+  <edges id="57" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.0/@node_objs.11"/>
+  <edges id="59" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@blocks.0/@node_objs.12"/>
+  <edges id="60" sink_obj="//@blocks.0/@node_objs.12"/>
+  <edges id="61" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@blocks.0/@node_objs.13"/>
+  <edges id="62" sink_obj="//@blocks.0/@node_objs.13"/>
+  <edges id="65" source_obj="//@blocks.0/@node_objs.14" sink_obj="//@ports.2"/>
+  <edges id="66" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@blocks.0/@node_objs.14"/>
+  <edges id="155" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.13"/>
+  <edges id="156" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.12"/>
+  <blocks id="32" name="timer" type="BlockType">
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="n_read" lineNumber="8" fileName="timer/timer.cpp" fileDirectory=".." coreId="0" contextFuncName="timer" bitwidth="16" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="timer/timer.cpp" linenumber="8" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/TIMER" functionName="timer"/>
+      <dataInputObjs>n</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="state_load" lineNumber="24" fileName="timer/timer.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="timer" bitwidth="1" opcode="load" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="timer/timer.cpp" linenumber="24" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/TIMER" functionName="timer"/>
+      <dataOutputObjs>and</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="timer_variable_load" lineNumber="39" originalName="i_op" fileName="timer/timer.cpp" fileDirectory=".." coreId="0" contextFuncName="timer" bitwidth="64" opcode="load" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="timer/timer.cpp" linenumber="39" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/TIMER" functionName="timer"/>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="sext_ln1347" lineNumber="1347" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="sext_ln1347_fu_59_p1" coreId="0" contextFuncName="operator_sub_16_true_32_true" bitwidth="17" opcode="sext" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" linenumber="1347" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/TIMER" functionName="operator-&amp;lt;16, true, 32, true&amp;gt;"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="ret" lineNumber="1347" originalName="ret" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="ret_fu_63_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="operator_sub_16_true_32_true" bitwidth="17" opcode="add" m_display="0" m_delay="1.12" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" linenumber="1347" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/TIMER" functionName="operator-&amp;lt;16, true, 32, true&amp;gt;"/>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="sext_ln870" lineNumber="870" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="sext_ln870_fu_69_p1" coreId="0" contextFuncName="operator_eq_33_true" bitwidth="64" opcode="sext" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" linenumber="870" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/TIMER" functionName="operator==&amp;lt;33, true&amp;gt;"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="icmp_ln870" lineNumber="870" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="icmp_ln870_fu_73_p2" opType="icmp" coreId="1819243365" contextFuncName="operator_eq_33_true" bitwidth="1" opcode="icmp" m_display="0" m_delay="1.14" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" linenumber="870" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/TIMER" functionName="operator==&amp;lt;33, true&amp;gt;"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="next_timer_value" lineNumber="46" originalName="next_timer_value" fileName="timer/timer.cpp" fileDirectory=".." rtlName="next_timer_value_fu_79_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="timer" bitwidth="64" opcode="add" m_display="0" m_delay="1.36" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="timer/timer.cpp" linenumber="46" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/TIMER" functionName="timer"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="select_ln39" lineNumber="39" fileName="timer/timer.cpp" fileDirectory=".." rtlName="select_ln39_fu_85_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="timer" bitwidth="64" opcode="select" m_display="0" m_topoIndex="9" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="timer/timer.cpp" linenumber="39" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/TIMER" functionName="timer"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="end_local" lineNumber="24" originalName="end_local" fileName="timer/timer.cpp" fileDirectory=".." rtlName="end_local_fu_93_p2" opType="and" coreId="49" contextFuncName="timer" bitwidth="1" opcode="and" m_display="0" m_delay="0.14" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="timer/timer.cpp" linenumber="24" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/TIMER" functionName="timer"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataOutputObjs>xor</dataOutputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="next_state" lineNumber="24" originalName="next_state" fileName="timer/timer.cpp" fileDirectory=".." rtlName="next_state_fu_100_p2" opType="xor" coreId="1524659624" contextFuncName="timer" bitwidth="1" opcode="xor" m_display="0" m_delay="0.14" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="timer/timer.cpp" linenumber="24" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/TIMER" functionName="timer"/>
+      <dataInputObjs>and</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="next_timer_value_1" lineNumber="24" originalName="next_timer_value" fileName="timer/timer.cpp" fileDirectory=".." rtlName="next_timer_value_1_fu_106_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="timer" bitwidth="64" opcode="select" m_display="0" m_delay="0.43" m_topoIndex="12" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="timer/timer.cpp" linenumber="24" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/TIMER" functionName="timer"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="state_write_ln53" lineNumber="53" fileName="timer/timer.cpp" fileDirectory=".." coreId="1524661448" contextFuncName="timer" opcode="store" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="timer/timer.cpp" linenumber="53" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/TIMER" functionName="timer"/>
+      <dataInputObjs>xor</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="timer_variable_write_ln54" lineNumber="54" fileName="timer/timer.cpp" fileDirectory=".." coreId="1713401447" contextFuncName="timer" opcode="store" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="timer/timer.cpp" linenumber="54" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/TIMER" functionName="timer"/>
+      <dataInputObjs>select</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="end_r_write_ln55" lineNumber="55" fileName="timer/timer.cpp" fileDirectory=".." coreId="825307437" contextFuncName="timer" opcode="write" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="timer/timer.cpp" linenumber="55" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/TIMER" functionName="timer"/>
+      <dataInputObjs>and</dataInputObjs>
+      <dataOutputObjs>end_r</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="_ln56" lineNumber="56" fileName="timer/timer.cpp" fileDirectory=".." coreId="0" contextFuncName="timer" opcode="ret" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="timer/timer.cpp" linenumber="56" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/TIMER" functionName="timer"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="timer/timer.cpp">
+      <validLinenumbers>8</validLinenumbers>
+      <validLinenumbers>24</validLinenumbers>
+      <validLinenumbers>39</validLinenumbers>
+      <validLinenumbers>46</validLinenumbers>
+      <validLinenumbers>53</validLinenumbers>
+      <validLinenumbers>54</validLinenumbers>
+      <validLinenumbers>55</validLinenumbers>
+      <validLinenumbers>56</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h">
+      <validLinenumbers>1347</validLinenumbers>
+      <validLinenumbers>870</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <expressionNodes realName="icmp_ln870_fu_73">
+    <nodeIds>22</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln39_fu_85">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln1347_fu_59">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="next_state_fu_100">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="next_timer_value_fu_79">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="end_local_fu_93">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln870_fu_69">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="next_timer_value_1_fu_106">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="ret_fu_63">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="store_ln53_store_fu_114">
+    <nodeIds>28</nodeIds>
+  </ioNodes>
+  <ioNodes realName="n_read_read_fu_38">
+    <nodeIds>16</nodeIds>
+  </ioNodes>
+  <ioNodes realName="state_load_load_fu_51">
+    <nodeIds>17</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln54_store_fu_120">
+    <nodeIds>29</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln55_write_fu_44">
+    <nodeIds>30</nodeIds>
+  </ioNodes>
+  <ioNodes realName="timer_variable_load_load_fu_55">
+    <nodeIds>18</nodeIds>
+  </ioNodes>
+  <ioPorts name="end_r">
+    <contents name="write">
+      <nodeIds>30</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="n">
+    <contents name="read">
+      <nodeIds>16</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="start_r"/>
+  <fsm>
+    <states id="1">
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+    </states>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="timer" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>32</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

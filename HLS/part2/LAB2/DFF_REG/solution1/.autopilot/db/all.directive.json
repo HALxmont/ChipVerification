@@ -1,0 +1,65 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "DFF_REG",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "DFF_REG"
+              }]
+          }
+        },
+        {
+          "functionName": "DFF_REG",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "ap_none",
+                "value": ""
+              },
+              {
+                "name": "port",
+                "value": "d"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "DFF_REG",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "ap_none",
+                "value": ""
+              },
+              {
+                "name": "port",
+                "value": "q"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "DFF_REG",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "DFF_REG"
+              }]
+          }
+        }
+      ]
+    }]}

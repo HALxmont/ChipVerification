@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Apr 17 23:38:34 2021
+# Process ID: 351531
+# Current directory: /home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/ParallelToSerial/ParallelToSerial/solution1/sim/verilog
+# Command line: wbtcv -mode batch -source /home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/ParallelToSerial/ParallelToSerial/solution1/sim/verilog/xsim.dir/p2s/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/ParallelToSerial/ParallelToSerial/solution1/sim/verilog/webtalk.log
+# Journal file: /home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/ParallelToSerial/ParallelToSerial/solution1/sim/verilog/webtalk.jou
+#-----------------------------------------------------------
+source /home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/ParallelToSerial/ParallelToSerial/solution1/sim/verilog/xsim.dir/p2s/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat Apr 17 23:38:34 2021...

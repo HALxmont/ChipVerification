@@ -1,0 +1,14 @@
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2020.1/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'mxmont' on host 'HALx1' (Linux_x86_64 version 5.8.0-48-generic) on Mon Apr 05 17:47:58 -04 2021
+INFO: [HLS 200-10] On os Ubuntu 20.04.1 LTS
+INFO: [HLS 200-10] In directory '/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/circuit_tb'
+Sourcing Tcl script '/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/circuit_tb/simple_circuit/solution1/csim.tcl'
+INFO: [HLS 200-10] Opening project '/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/circuit_tb/simple_circuit'.
+INFO: [HLS 200-10] Opening solution '/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/circuit_tb/simple_circuit/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7a35t-cpg236-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+make: 'csim.exe' is up to date.
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************

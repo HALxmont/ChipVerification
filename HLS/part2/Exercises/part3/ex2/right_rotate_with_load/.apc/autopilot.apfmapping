@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="right_rotate_with_load.cpp" path="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/Exercises/part3/ex2/right_rotate_with_load/right_rotate_with_load.cpp"/>
+    <originFiles name="right_rotate_with_load.h" path="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/Exercises/part3/ex2/right_rotate_with_load/right_rotate_with_load.h"/>
+  </source>
+  <testbench>
+    <originFiles name="right_rotate_with_load_tb.h" path="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/Exercises/part3/ex2/right_rotate_with_load/right_rotate_with_load_tb.h"/>
+    <originFiles name="right_rotate_with_load_tb.cpp" path="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/Exercises/part3/ex2/right_rotate_with_load/right_rotate_with_load_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

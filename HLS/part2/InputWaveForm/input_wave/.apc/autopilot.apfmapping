@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="input_wave.cpp" path="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/InputWaveForm/input_wave/input_wave.cpp"/>
+    <originFiles name="input_wave.h" path="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/InputWaveForm/input_wave/input_wave.h"/>
+  </source>
+  <testbench>
+    <originFiles name="input_wave_tb.cpp" path="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/InputWaveForm/input_wave/input_wave_tb.cpp"/>
+    <originFiles name="input_wave_tb.h" path="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/InputWaveForm/input_wave/input_wave_tb.h"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

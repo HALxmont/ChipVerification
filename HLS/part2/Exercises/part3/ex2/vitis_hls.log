@@ -1,0 +1,46 @@
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'mxmont' on host 'HALx1' (Linux_x86_64 version 5.8.0-48-generic) on Thu Apr 15 20:42:22 -04 2021
+INFO: [HLS 200-10] On os Ubuntu 20.04.1 LTS
+INFO: [HLS 200-10] In directory '/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/Exercises/part3/ex2'
+Sourcing Tcl script '/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/Exercises/part3/ex2/right_rotate_with_load/solution1/csim.tcl'
+INFO: [HLS 200-1510] Running: open_project right_rotate_with_load 
+INFO: [HLS 200-10] Opening project '/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/Exercises/part3/ex2/right_rotate_with_load'.
+INFO: [HLS 200-1510] Running: set_top right_rotate_with_load 
+INFO: [HLS 200-1510] Running: add_files right_rotate_with_load/right_rotate_with_load.cpp 
+INFO: [HLS 200-10] Adding design file 'right_rotate_with_load/right_rotate_with_load.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files right_rotate_with_load/right_rotate_with_load.h 
+INFO: [HLS 200-10] Adding design file 'right_rotate_with_load/right_rotate_with_load.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb right_rotate_with_load/right_rotate_with_load_tb.cpp 
+INFO: [HLS 200-10] Adding test bench file 'right_rotate_with_load/right_rotate_with_load_tb.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb right_rotate_with_load/right_rotate_with_load_tb.h 
+INFO: [HLS 200-10] Adding test bench file 'right_rotate_with_load/right_rotate_with_load_tb.h' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution '/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/Exercises/part3/ex2/right_rotate_with_load/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xcvu11p-flga2577-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: set_directive_top -name right_rotate_with_load right_rotate_with_load 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../right_rotate_with_load_tb.cpp in debug mode
+   Compiling ../../../right_rotate_with_load.cpp in debug mode
+   Generating csim.exe
+ data_in = 00000000000110100 load = 1 rotate = 0 data_out = 00000000000110100
+ data_in = 00000000000110100 load = 0 rotate = 1 data_out = 00000000000011010
+ data_in = 00000000000110100 load = 0 rotate = 1 data_out = 00000000000001101
+ data_in = 00000000000110100 load = 0 rotate = 1 data_out = 10000000000000110
+ data_in = 00000000000110100 load = 0 rotate = 1 data_out = 01000000000000011
+ data_in = 00000000000110100 load = 0 rotate = 1 data_out = 10100000000000001
+ data_in = 00000000000110100 load = 0 rotate = 1 data_out = 11010000000000000
+ data_in = 00000000000110100 load = 0 rotate = 1 data_out = 01101000000000000
+ data_in = 00000000000110100 load = 0 rotate = 1 data_out = 00110100000000000
+ data_in = 00000000000110100 load = 0 rotate = 1 data_out = 00011010000000000
+ data_in = 00000000000110100 load = 0 rotate = 1 data_out = 00001101000000000
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 3.54 seconds. CPU system time: 0.55 seconds. Elapsed time: 4.37 seconds; current allocated memory: 206.895 MB.
