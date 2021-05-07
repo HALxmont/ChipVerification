@@ -17,13 +17,11 @@
 `define AUTOTB_LATENCY 0
 
 `define AESL_DEPTH_start_r 1
-`define AESL_DEPTH_hold 1
 `define AESL_DEPTH_max_cycles 1
 `define AESL_DEPTH_cycles_high 1
 `define AESL_DEPTH_cycles_hold 1
 `define AESL_DEPTH_pwm_out 1
 `define AESL_DEPTH_end_r 1
-`define AESL_DEPTH_holding_voltage 1
 `define AUTOTB_TVIN_start_r  "../tv/cdatafile/c.pwm.autotvin_start_r.dat"
 `define AUTOTB_TVIN_max_cycles  "../tv/cdatafile/c.pwm.autotvin_max_cycles.dat"
 `define AUTOTB_TVIN_cycles_high  "../tv/cdatafile/c.pwm.autotvin_cycles_high.dat"
@@ -34,27 +32,23 @@
 `define AUTOTB_TVIN_cycles_hold_out_wrapc  "../tv/rtldatafile/rtl.pwm.autotvin_cycles_hold.dat"
 `define AUTOTB_TVOUT_pwm_out  "../tv/cdatafile/c.pwm.autotvout_pwm_out.dat"
 `define AUTOTB_TVOUT_end_r  "../tv/cdatafile/c.pwm.autotvout_end_r.dat"
-`define AUTOTB_TVOUT_holding_voltage  "../tv/cdatafile/c.pwm.autotvout_holding_voltage.dat"
 `define AUTOTB_TVOUT_pwm_out_out_wrapc  "../tv/rtldatafile/rtl.pwm.autotvout_pwm_out.dat"
 `define AUTOTB_TVOUT_end_r_out_wrapc  "../tv/rtldatafile/rtl.pwm.autotvout_end_r.dat"
-`define AUTOTB_TVOUT_holding_voltage_out_wrapc  "../tv/rtldatafile/rtl.pwm.autotvout_holding_voltage.dat"
 module `AUTOTB_TOP;
 
 parameter AUTOTB_TRANSACTION_NUM = 903;
 parameter PROGRESS_TIMEOUT = 10000000;
 parameter LATENCY_ESTIMATION = 0;
 parameter LENGTH_start_r = 1;
-parameter LENGTH_hold = 1;
 parameter LENGTH_max_cycles = 1;
 parameter LENGTH_cycles_high = 1;
 parameter LENGTH_cycles_hold = 1;
 parameter LENGTH_pwm_out = 1;
 parameter LENGTH_end_r = 1;
-parameter LENGTH_holding_voltage = 1;
 
 task read_token;
     input integer fp;
-    output reg [199 : 0] token;
+    output reg [151 : 0] token;
     integer ret;
     begin
         token = "";
@@ -82,14 +76,11 @@ reg AESL_ready_delay = 0;
 wire ready;
 wire ready_wire;
 wire  start_r;
-wire  hold;
 wire [63 : 0] max_cycles;
 wire [63 : 0] cycles_high;
 wire [63 : 0] cycles_hold;
 wire  pwm_out;
 wire  end_r;
-wire  holding_voltage;
-wire  holding_voltage_ap_vld;
 integer done_cnt = 0;
 integer AESL_ready_cnt = 0;
 integer ready_cnt = 0;
@@ -108,14 +99,11 @@ wire ap_rst_n;
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
     .start_r(start_r),
-    .hold(hold),
     .max_cycles(max_cycles),
     .cycles_high(cycles_high),
     .cycles_hold(cycles_hold),
     .pwm_out(pwm_out),
-    .end_r(end_r),
-    .holding_voltage(holding_voltage),
-    .holding_voltage_ap_vld(holding_voltage_ap_vld));
+    .end_r(end_r));
 
 // Assignment for control signal
 assign ap_clk = AESL_clock;
@@ -134,7 +122,7 @@ initial begin : read_file_process_start_r
     integer err;
     integer ret;
     integer proc_rand;
-    reg [199  : 0] token;
+    reg [151  : 0] token;
     integer i;
     reg transaction_finish;
     integer transaction_idx;
@@ -180,10 +168,6 @@ initial begin : read_file_process_start_r
 end
 
 
-// The signal of port hold
-reg [0: 0] AESL_REG_hold = 0;
-assign hold = AESL_REG_hold;
-
 // The signal of port max_cycles
 reg [63: 0] AESL_REG_max_cycles = 0;
 assign max_cycles = AESL_REG_max_cycles;
@@ -192,7 +176,7 @@ initial begin : read_file_process_max_cycles
     integer err;
     integer ret;
     integer proc_rand;
-    reg [199  : 0] token;
+    reg [151  : 0] token;
     integer i;
     reg transaction_finish;
     integer transaction_idx;
@@ -246,7 +230,7 @@ initial begin : read_file_process_cycles_high
     integer err;
     integer ret;
     integer proc_rand;
-    reg [199  : 0] token;
+    reg [151  : 0] token;
     integer i;
     reg transaction_finish;
     integer transaction_idx;
@@ -300,7 +284,7 @@ initial begin : read_file_process_cycles_hold
     integer err;
     integer ret;
     integer proc_rand;
-    reg [199  : 0] token;
+    reg [151  : 0] token;
     integer i;
     reg transaction_finish;
     integer transaction_idx;
@@ -365,7 +349,7 @@ initial begin : write_file_process_pwm_out
     integer hls_stream_size;
     integer proc_rand;
     integer pwm_out_count;
-    reg [199:0] token;
+    reg [151:0] token;
     integer transaction_idx;
     reg [8 * 5:1] str;
     wait(AESL_reset === 0);
@@ -412,7 +396,7 @@ initial begin : write_file_process_end_r
     integer hls_stream_size;
     integer proc_rand;
     integer end_r_count;
-    reg [199:0] token;
+    reg [151:0] token;
     integer transaction_idx;
     reg [8 * 5:1] str;
     wait(AESL_reset === 0);
@@ -432,59 +416,6 @@ initial begin : write_file_process_end_r
         # 0.4;
         $fdisplay(fp,"[[transaction]] %d", transaction_idx);
           $fdisplay(fp,"0x%x", AESL_REG_end_r);
-    transaction_idx = transaction_idx + 1;
-      $fdisplay(fp,"[[/transaction]]");
-    end
-    $fdisplay(fp,"[[[/runtime]]]");
-    $fclose(fp);
-end
-
-
-reg AESL_REG_holding_voltage_ap_vld = 0;
-// The signal of port holding_voltage
-reg [0: 0] AESL_REG_holding_voltage = 0;
-always @(posedge AESL_clock)
-begin
-    if(AESL_reset)
-        AESL_REG_holding_voltage = 0; 
-    else if(holding_voltage_ap_vld) begin
-        AESL_REG_holding_voltage <= holding_voltage;
-        AESL_REG_holding_voltage_ap_vld <= 1;
-    end
-end 
-
-initial begin : write_file_process_holding_voltage
-    integer fp;
-    integer fp_size;
-    integer err;
-    integer ret;
-    integer i;
-    integer hls_stream_size;
-    integer proc_rand;
-    integer holding_voltage_count;
-    reg [199:0] token;
-    integer transaction_idx;
-    reg [8 * 5:1] str;
-    wait(AESL_reset === 0);
-    fp = $fopen(`AUTOTB_TVOUT_holding_voltage_out_wrapc,"w");
-    if(fp == 0) begin       // Failed to open file
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_holding_voltage_out_wrapc);
-        $display("ERROR: Simulation using HLS TB failed.");
-        $finish;
-    end
-    $fdisplay(fp,"[[[runtime]]]");
-    transaction_idx = 0;
-    while (transaction_idx != AUTOTB_TRANSACTION_NUM) begin
-        @(posedge AESL_clock);
-          while(AESL_done !== 1) begin
-              @(posedge AESL_clock);
-          end
-        # 0.4;
-        $fdisplay(fp,"[[transaction]] %d", transaction_idx);
-        if(AESL_REG_holding_voltage_ap_vld)  begin
-          $fdisplay(fp,"0x%x", AESL_REG_holding_voltage);
-        AESL_REG_holding_voltage_ap_vld = 0;
-        end
     transaction_idx = transaction_idx + 1;
       $fdisplay(fp,"[[/transaction]]");
     end
@@ -573,9 +504,6 @@ reg [31:0] size_pwm_out_backup;
 reg end_end_r;
 reg [31:0] size_end_r;
 reg [31:0] size_end_r_backup;
-reg end_holding_voltage;
-reg [31:0] size_holding_voltage;
-reg [31:0] size_holding_voltage_backup;
 
 initial begin : initial_process
     integer proc_rand;

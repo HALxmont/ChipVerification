@@ -86,7 +86,6 @@ proc check_tvin_file {} {
          "c.pwm.autotvin_cycles_hold.dat"
          "c.pwm.autotvout_pwm_out.dat"
          "c.pwm.autotvout_end_r.dat"
-         "c.pwm.autotvout_holding_voltage.dat"
     }
     foreach rtlfile $rtlfilelist {
         if {[file isfile $rtlfile]} {
@@ -113,7 +112,6 @@ proc check_tvout_file {} {
     set rtlfilelist {
          "rtl.pwm.autotvout_pwm_out.dat"
          "rtl.pwm.autotvout_end_r.dat"
-         "rtl.pwm.autotvout_holding_voltage.dat"
     }
     foreach rtlfile $rtlfilelist {
         if {[file isfile $rtlfile]} {

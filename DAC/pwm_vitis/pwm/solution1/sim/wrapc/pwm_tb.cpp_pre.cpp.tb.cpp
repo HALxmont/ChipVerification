@@ -59753,7 +59753,7 @@ inline bool operator!=(
 # 3 "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/pwm.h" 2
 # 3 "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/pwm_tb.h" 2
 
-void pwm(bool start, bool hold, unsigned long max_cycles, unsigned long cycles_high, unsigned long cycles_hold,bool &pwm_out, bool &end, bool &holding_voltage);
+void pwm(bool start, unsigned long max_cycles, unsigned long cycles_high, unsigned long cycles_hold,bool &pwm_out, bool &end);
 # 2 "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/pwm_tb.cpp" 2
 
 
@@ -59761,7 +59761,7 @@ void pwm(bool start, bool hold, unsigned long max_cycles, unsigned long cycles_h
 #ifdef __cplusplus
 extern "C"
 #endif
-void apatb_pwm_sw(bool, bool, unsigned long, unsigned long, unsigned long, bool &, bool &, bool &);
+void apatb_pwm_sw(bool, unsigned long, unsigned long, unsigned long, bool &, bool &);
 # 4 "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/pwm_tb.cpp"
 int main(){
  int status = 0;
@@ -59770,14 +59770,12 @@ int main(){
   bool start;
   bool end;
   bool pwm_out;
-  bool hold;
-  bool holding_voltage;
   unsigned long MAX_CYCLES = 200;
   unsigned long HIGH_CYCLES = 30;
   unsigned long HOLD_CYCLES = 100;
-# 27 "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/pwm_tb.cpp"
+# 25 "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/pwm_tb.cpp"
   std::cout << "  " << std::endl;
-  std::cout << " // ----------- start = 1 | for i <= MAX_CYCLES = 200 | HG = 15 | HOLD ON ---------- // " << std::endl;
+  std::cout << " // ----------- start = 1 | for i <= MAX_CYCLES = 200 | HG = 15 ---------- // " << std::endl;
   std::cout << "  " << std::endl;
 
 
@@ -59793,12 +59791,12 @@ int main(){
 #ifndef HLS_FASTSIM
 #define pwm apatb_pwm_sw
 #endif
-# 40 "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/pwm_tb.cpp"
-pwm(start, hold, MAX_CYCLES, HIGH_CYCLES, HOLD_CYCLES, pwm_out, end, holding_voltage);
+# 38 "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/pwm_tb.cpp"
+pwm(start, MAX_CYCLES, HIGH_CYCLES, HOLD_CYCLES, pwm_out, end);
 #undef pwm
-# 40 "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/pwm_tb.cpp"
+# 38 "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/pwm_tb.cpp"
 
-   std::cout << " start = " << start << " end = " << end << " hold = " << hold << " pwm = " << pwm_out << std::endl;
+   std::cout << " start = " << start << " end = " << end << " pwm = " << pwm_out << std::endl;
   }
 
 
@@ -59818,13 +59816,12 @@ pwm(start, hold, MAX_CYCLES, HIGH_CYCLES, HOLD_CYCLES, pwm_out, end, holding_vol
 #ifndef HLS_FASTSIM
 #define pwm apatb_pwm_sw
 #endif
-# 57 "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/pwm_tb.cpp"
-pwm(start, hold, MAX_CYCLES, HIGH_CYCLES, HOLD_CYCLES, pwm_out, end, holding_voltage);
+# 55 "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/pwm_tb.cpp"
+pwm(start, MAX_CYCLES, HIGH_CYCLES, HOLD_CYCLES, pwm_out, end);
 #undef pwm
-# 57 "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/pwm_tb.cpp"
+# 55 "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/pwm_tb.cpp"
 
-   std::cout << " start = " << start << " end = " << end << " hold = " << hold << " pwm = " << pwm_out << std::endl;
-  }
+   std::cout << " start = " << start << " end = " << end << " pwm = " << pwm_out << std::endl; }
 
 
 
@@ -59843,13 +59840,12 @@ pwm(start, hold, MAX_CYCLES, HIGH_CYCLES, HOLD_CYCLES, pwm_out, end, holding_vol
 #ifndef HLS_FASTSIM
 #define pwm apatb_pwm_sw
 #endif
-# 74 "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/pwm_tb.cpp"
-pwm(start, hold, MAX_CYCLES, HIGH_CYCLES, HOLD_CYCLES, pwm_out, end, holding_voltage);
+# 71 "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/pwm_tb.cpp"
+pwm(start, MAX_CYCLES, HIGH_CYCLES, HOLD_CYCLES, pwm_out, end);
 #undef pwm
-# 74 "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/pwm_tb.cpp"
+# 71 "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/pwm_tb.cpp"
 
-   std::cout << " start = " << start << " end = " << end << " hold = " << hold << " pwm = " << pwm_out << std::endl;
-  }
+   std::cout << " start = " << start << " end = " << end << " pwm = " << pwm_out << std::endl; }
 
 
 
@@ -59857,5 +59853,5 @@ pwm(start, hold, MAX_CYCLES, HIGH_CYCLES, HOLD_CYCLES, pwm_out, end, holding_vol
   return status;
 }
 #endif
-# 82 "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/pwm_tb.cpp"
+# 78 "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/pwm_tb.cpp"
 

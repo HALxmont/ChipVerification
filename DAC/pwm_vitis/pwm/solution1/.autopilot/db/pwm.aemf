@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1620230258926">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1620231885682">
   <ports id="1" name="start_r" type="PortType" originalName="start" coreId="0" bitwidth="1">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="2" name="max_cycles" type="PortType" originalName="max_cycles" coreId="0" bitwidth="64">
+  <ports id="2" name="max_cycles" type="PortType" originalName="max_cycles" coreId="433" bitwidth="64">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="3" name="cycles_high" type="PortType" originalName="cycles_high" coreId="0" bitwidth="64">
+  <ports id="3" name="cycles_high" type="PortType" originalName="cycles_high" coreId="132" bitwidth="64">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="4" name="cycles_hold" type="PortType" originalName="cycles_hold" coreId="0" bitwidth="64">
+  <ports id="4" name="cycles_hold" type="PortType" originalName="cycles_hold" coreId="609" bitwidth="64">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="5" name="pwm_out" type="PortType" originalName="pwm_out" coreId="0" bitwidth="1" direction="DirOut">
+  <ports id="5" name="pwm_out" type="PortType" originalName="pwm_out" coreId="132" bitwidth="1" direction="DirOut">
     <dataInputObjs>write</dataInputObjs>
     <dataInputObjs>write</dataInputObjs>
     <dataInputObjs>write</dataInputObjs>
@@ -21,7 +21,7 @@
     <dataInputObjs>write</dataInputObjs>
     <dataInputObjs>write</dataInputObjs>
   </ports>
-  <ports id="6" name="end_r" type="PortType" originalName="end" coreId="6" bitwidth="1" direction="DirOut">
+  <ports id="6" name="end_r" type="PortType" originalName="end" coreId="49" bitwidth="1" direction="DirOut">
     <dataInputObjs>write</dataInputObjs>
   </ports>
   <edges id="91" source_obj="//@ports.3" sink_obj="//@blocks.0/@node_objs.0"/>
@@ -148,22 +148,22 @@
     <controlOutputObjs>block_59</controlOutputObjs>
     <controlOutputObjs>block_48</controlOutputObjs>
     <controlOutputObjs>block_36</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="cycles_hold_read" lineNumber="6" originalName="cycles_hold" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="113" contextFuncName="pwm" bitwidth="64" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="cycles_hold_read" lineNumber="6" originalName="cycles_hold" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="0" contextFuncName="pwm" bitwidth="64" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="6" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataInputObjs>cycles_hold</dataInputObjs>
       <dataOutputObjs>icmp</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="cycles_high_read" lineNumber="6" originalName="cycles_high" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="155" contextFuncName="pwm" bitwidth="64" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="cycles_high_read" lineNumber="6" originalName="cycles_high" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="49" contextFuncName="pwm" bitwidth="64" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="6" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataInputObjs>cycles_high</dataInputObjs>
       <dataOutputObjs>icmp</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="max_cycles_read" lineNumber="6" originalName="max_cycles" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="2985663104" contextFuncName="pwm" bitwidth="64" opcode="read" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="max_cycles_read" lineNumber="6" originalName="max_cycles" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="1777732064" contextFuncName="pwm" bitwidth="64" opcode="read" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="6" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataInputObjs>max_cycles</dataInputObjs>
       <dataOutputObjs>icmp</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="start_read" lineNumber="6" originalName="start" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="0" contextFuncName="pwm" bitwidth="1" opcode="read" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="start_read" lineNumber="6" originalName="start" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="132" contextFuncName="pwm" bitwidth="1" opcode="read" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="6" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataInputObjs>start_r</dataInputObjs>
       <dataOutputObjs>br</dataOutputObjs>
@@ -202,13 +202,13 @@
     <controlOutputObjs>switch</controlOutputObjs>
     <controlOutputObjs>block_44</controlOutputObjs>
     <controlOutputObjs>block_39</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="icmp_ln75" lineNumber="75" fileName="pwm/pwm.cpp" fileDirectory=".." rtlName="icmp_ln75_fu_197_p2" opType="icmp" coreId="2985666336" contextFuncName="pwm" bitwidth="1" opcode="icmp" m_display="0" m_delay="1.13" m_topoIndex="8" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="icmp_ln75" lineNumber="75" fileName="pwm/pwm.cpp" fileDirectory=".." rtlName="icmp_ln75_fu_197_p2" opType="icmp" coreId="49" contextFuncName="pwm" bitwidth="1" opcode="icmp" m_display="0" m_delay="1.13" m_topoIndex="8" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="75" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataInputObjs>load</dataInputObjs>
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>br</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="br_ln75" lineNumber="75" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="0" contextFuncName="pwm" opcode="br" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="br_ln75" lineNumber="75" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="1777782432" contextFuncName="pwm" opcode="br" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="75" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataInputObjs>icmp</dataInputObjs>
       <controlInputObjs>block_39</controlInputObjs>
@@ -224,12 +224,12 @@
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>block_88</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="pwm_out_write_ln83" lineNumber="83" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="2985669033" contextFuncName="pwm" opcode="write" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="pwm_out_write_ln83" lineNumber="83" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="1777781696" contextFuncName="pwm" opcode="write" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="83" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataOutputObjs>pwm_out</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="br_ln0" coreId="2985669968" opcode="br" m_display="0" m_delay="0.52" m_topoIndex="11" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="br_ln0" coreId="132" opcode="br" m_display="0" m_delay="0.52" m_topoIndex="11" m_clusterGroupNumber="-1">
       <controlInputObjs>block_88</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="pwm/pwm.cpp">
@@ -242,7 +242,7 @@
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>block_88</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="40" name="pwm_out_write_ln77" lineNumber="77" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="0" contextFuncName="pwm" opcode="write" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="40" name="pwm_out_write_ln77" lineNumber="77" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="1777786216" contextFuncName="pwm" opcode="write" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="77" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataOutputObjs>pwm_out</dataOutputObjs>
       <constName>empty</constName>
@@ -253,11 +253,11 @@
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="42" name="count_next_write_ln79" lineNumber="79" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="2985672272" contextFuncName="pwm" opcode="store" m_display="0" m_delay="0.57" m_topoIndex="14" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="42" name="count_next_write_ln79" lineNumber="79" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="1777733840" contextFuncName="pwm" opcode="store" m_display="0" m_delay="0.57" m_topoIndex="14" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="79" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataInputObjs>add</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="43" name="br_ln80" lineNumber="80" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="132" contextFuncName="pwm" opcode="br" m_display="0" m_delay="0.52" m_topoIndex="15" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="43" name="br_ln80" lineNumber="80" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="0" contextFuncName="pwm" opcode="br" m_display="0" m_delay="0.52" m_topoIndex="15" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="80" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <controlInputObjs>block_88</controlInputObjs>
     </node_objs>
@@ -272,17 +272,17 @@
     <controlOutputObjs>switch</controlOutputObjs>
     <controlOutputObjs>block_55</controlOutputObjs>
     <controlOutputObjs>block_51</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="45" name="icmp_ln60" lineNumber="60" fileName="pwm/pwm.cpp" fileDirectory=".." rtlName="icmp_ln60_fu_203_p2" opType="icmp" coreId="2872016263" contextFuncName="pwm" bitwidth="1" opcode="icmp" m_display="0" m_delay="1.13" m_topoIndex="16" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="45" name="icmp_ln60" lineNumber="60" fileName="pwm/pwm.cpp" fileDirectory=".." rtlName="icmp_ln60_fu_203_p2" opType="icmp" coreId="0" contextFuncName="pwm" bitwidth="1" opcode="icmp" m_display="0" m_delay="1.13" m_topoIndex="16" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="60" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataInputObjs>load</dataInputObjs>
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>br</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="pwm_out_write_ln0" coreId="2318759499" opcode="write" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="pwm_out_write_ln0" coreId="574454132" opcode="write" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
       <dataOutputObjs>pwm_out</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="br_ln60" lineNumber="60" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="132" contextFuncName="pwm" opcode="br" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="br_ln60" lineNumber="60" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="0" contextFuncName="pwm" opcode="br" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="60" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataInputObjs>icmp</dataInputObjs>
       <controlInputObjs>block_51</controlInputObjs>
@@ -298,11 +298,11 @@
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>block_88</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="count_next_write_ln70" lineNumber="70" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="0" contextFuncName="pwm" opcode="store" m_display="0" m_delay="0.57" m_topoIndex="19" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="count_next_write_ln70" lineNumber="70" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="874527333" contextFuncName="pwm" opcode="store" m_display="0" m_delay="0.57" m_topoIndex="19" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="70" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="50" name="br_ln0" coreId="0" opcode="br" m_display="0" m_delay="0.52" m_topoIndex="20" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="50" name="br_ln0" coreId="1818845793" opcode="br" m_display="0" m_delay="0.52" m_topoIndex="20" m_clusterGroupNumber="-1">
       <controlInputObjs>block_88</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="pwm/pwm.cpp">
@@ -321,11 +321,11 @@
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="53" name="count_next_write_ln64" lineNumber="64" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="132" contextFuncName="pwm" opcode="store" m_display="0" m_delay="0.57" m_topoIndex="22" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="53" name="count_next_write_ln64" lineNumber="64" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="825045040" contextFuncName="pwm" opcode="store" m_display="0" m_delay="0.57" m_topoIndex="22" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="64" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataInputObjs>add</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="54" name="br_ln65" lineNumber="65" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="49" contextFuncName="pwm" opcode="br" m_display="0" m_delay="0.52" m_topoIndex="23" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="54" name="br_ln65" lineNumber="65" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="0" contextFuncName="pwm" opcode="br" m_display="0" m_delay="0.52" m_topoIndex="23" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="65" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <controlInputObjs>block_88</controlInputObjs>
     </node_objs>
@@ -339,7 +339,7 @@
     <controlOutputObjs>switch</controlOutputObjs>
     <controlOutputObjs>block_67</controlOutputObjs>
     <controlOutputObjs>block_63</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="56" name="icmp_ln45" lineNumber="45" fileName="pwm/pwm.cpp" fileDirectory=".." rtlName="icmp_ln45_fu_209_p2" opType="icmp" coreId="177" contextFuncName="pwm" bitwidth="1" opcode="icmp" m_display="0" m_delay="1.13" m_topoIndex="24" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="56" name="icmp_ln45" lineNumber="45" fileName="pwm/pwm.cpp" fileDirectory=".." rtlName="icmp_ln45_fu_209_p2" opType="icmp" coreId="0" contextFuncName="pwm" bitwidth="1" opcode="icmp" m_display="0" m_delay="1.13" m_topoIndex="24" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="45" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataInputObjs>load</dataInputObjs>
       <dataInputObjs>read</dataInputObjs>
@@ -369,16 +369,16 @@
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>block_88</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="60" name="pwm_out_write_ln53" lineNumber="53" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="481" contextFuncName="pwm" opcode="write" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="60" name="pwm_out_write_ln53" lineNumber="53" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="1777763312" contextFuncName="pwm" opcode="write" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="53" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataOutputObjs>pwm_out</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="61" name="count_next_write_ln55" lineNumber="55" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="481" contextFuncName="pwm" opcode="store" m_display="0" m_delay="0.57" m_topoIndex="28" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="61" name="count_next_write_ln55" lineNumber="55" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="1777764072" contextFuncName="pwm" opcode="store" m_display="0" m_delay="0.57" m_topoIndex="28" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="55" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataInputObjs>add</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="62" name="br_ln0" coreId="49" opcode="br" m_display="0" m_delay="0.52" m_topoIndex="29" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="62" name="br_ln0" coreId="1777765136" opcode="br" m_display="0" m_delay="0.52" m_topoIndex="29" m_clusterGroupNumber="-1">
       <controlInputObjs>block_88</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="pwm/pwm.cpp">
@@ -392,16 +392,16 @@
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>block_88</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="64" name="pwm_out_write_ln47" lineNumber="47" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="0" contextFuncName="pwm" opcode="write" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="64" name="pwm_out_write_ln47" lineNumber="47" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="1777766352" contextFuncName="pwm" opcode="write" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="47" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataOutputObjs>pwm_out</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="65" name="count_next_write_ln49" lineNumber="49" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="49" contextFuncName="pwm" opcode="store" m_display="0" m_delay="0.57" m_topoIndex="31" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="65" name="count_next_write_ln49" lineNumber="49" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="0" contextFuncName="pwm" opcode="store" m_display="0" m_delay="0.57" m_topoIndex="31" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="49" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataInputObjs>add</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="66" name="br_ln50" lineNumber="50" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="2985638368" contextFuncName="pwm" opcode="br" m_display="0" m_delay="0.52" m_topoIndex="32" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="66" name="br_ln50" lineNumber="50" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="13201" contextFuncName="pwm" opcode="br" m_display="0" m_delay="0.52" m_topoIndex="32" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="50" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <controlInputObjs>block_88</controlInputObjs>
     </node_objs>
@@ -436,11 +436,11 @@
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>block_88</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="71" name="count_next_write_ln33" lineNumber="33" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="2985643520" contextFuncName="pwm" opcode="store" m_display="0" m_delay="0.57" m_topoIndex="35" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="71" name="count_next_write_ln33" lineNumber="33" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="1777771232" contextFuncName="pwm" opcode="store" m_display="0" m_delay="0.57" m_topoIndex="35" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="33" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="72" name="br_ln34" lineNumber="34" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="609" contextFuncName="pwm" opcode="br" m_display="0" m_delay="0.52" m_topoIndex="36" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="72" name="br_ln34" lineNumber="34" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="0" contextFuncName="pwm" opcode="br" m_display="0" m_delay="0.52" m_topoIndex="36" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="34" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <controlInputObjs>block_88</controlInputObjs>
     </node_objs>
@@ -455,11 +455,11 @@
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>block_88</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="74" name="count_next_write_ln39" lineNumber="39" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="2985650304" contextFuncName="pwm" opcode="store" m_display="0" m_delay="0.57" m_topoIndex="37" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="74" name="count_next_write_ln39" lineNumber="39" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="49" contextFuncName="pwm" opcode="store" m_display="0" m_delay="0.57" m_topoIndex="37" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="39" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="75" name="br_ln0" coreId="268435584" opcode="br" m_display="0" m_delay="0.52" m_topoIndex="38" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="75" name="br_ln0" coreId="1777775016" opcode="br" m_display="0" m_delay="0.52" m_topoIndex="38" m_clusterGroupNumber="-1">
       <controlInputObjs>block_88</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="pwm/pwm.cpp">
@@ -472,16 +472,16 @@
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>block_88</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="77" name="pwm_out_write_ln90" lineNumber="90" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="268435584" contextFuncName="pwm" opcode="write" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="77" name="pwm_out_write_ln90" lineNumber="90" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="0" contextFuncName="pwm" opcode="write" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="90" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataOutputObjs>pwm_out</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="78" name="count_next_write_ln92" lineNumber="92" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="2985661689" contextFuncName="pwm" opcode="store" m_display="0" m_delay="0.57" m_topoIndex="40" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="78" name="count_next_write_ln92" lineNumber="92" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="0" contextFuncName="pwm" opcode="store" m_display="0" m_delay="0.57" m_topoIndex="40" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="92" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="79" name="br_ln93" lineNumber="93" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="49" contextFuncName="pwm" opcode="br" m_display="0" m_delay="0.52" m_topoIndex="41" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="79" name="br_ln93" lineNumber="93" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="1777778080" contextFuncName="pwm" opcode="br" m_display="0" m_delay="0.52" m_topoIndex="41" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="93" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <controlInputObjs>block_88</controlInputObjs>
     </node_objs>
@@ -510,7 +510,7 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>br</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="81" name="next_state" originalName="next_state" coreId="132" bitwidth="2" opcode="phi" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="81" name="next_state" originalName="next_state" coreId="1777729598" bitwidth="2" opcode="phi" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
       <dataOutputObjs>store</dataOutputObjs>
       <controlInputObjs>block_80</controlInputObjs>
       <controlInputObjs>block_73</controlInputObjs>
@@ -523,7 +523,7 @@
       <controlInputObjs>block_39</controlInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="82" name="end_local" originalName="end_local" coreId="0" bitwidth="1" opcode="phi" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="82" name="end_local" originalName="end_local" coreId="925905197" bitwidth="1" opcode="phi" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
       <dataOutputObjs>write</dataOutputObjs>
       <controlInputObjs>block_80</controlInputObjs>
       <controlInputObjs>block_73</controlInputObjs>
@@ -536,11 +536,11 @@
       <controlInputObjs>block_39</controlInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="83" name="state_write_ln97" lineNumber="97" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="2985685872" contextFuncName="pwm" opcode="store" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="83" name="state_write_ln97" lineNumber="97" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="1777720064" contextFuncName="pwm" opcode="store" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="97" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataInputObjs>phi</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="84" name="count_next_load" lineNumber="98" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="737" contextFuncName="pwm" bitwidth="64" opcode="load" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="84" name="count_next_load" lineNumber="98" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="0" contextFuncName="pwm" bitwidth="64" opcode="load" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="98" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataOutputObjs>store</dataOutputObjs>
     </node_objs>
@@ -548,12 +548,12 @@
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="98" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataInputObjs>load</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="86" name="end_r_write_ln99" lineNumber="99" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="0" contextFuncName="pwm" opcode="write" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="86" name="end_r_write_ln99" lineNumber="99" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="1777808064" contextFuncName="pwm" opcode="write" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="99" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataInputObjs>phi</dataInputObjs>
       <dataOutputObjs>end_r</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="87" name="_ln101" lineNumber="101" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="2985709328" contextFuncName="pwm" opcode="ret" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="87" name="_ln101" lineNumber="101" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="8" contextFuncName="pwm" opcode="ret" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="101" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
     </node_objs>
     <fileValidLineNumbers fileName="pwm/pwm.cpp">

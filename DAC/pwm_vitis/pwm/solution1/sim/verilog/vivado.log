@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Tue May  4 15:55:34 2021
-# Process ID: 55916
+# Start of session at: Wed May  5 12:32:26 2021
+# Process ID: 123756
 # Current directory: /home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/solution1/sim/verilog
 # Command line: vivado -source open_wave.tcl
 # Log file: /home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/solution1/sim/verilog/vivado.log
@@ -15,10 +15,10 @@ source open_wave.tcl
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
-current_fileset: Time (s): cpu = 00:00:24 ; elapsed = 00:00:10 . Memory (MB): peak = 7342.918 ; gain = 35.273 ; free physical = 182 ; free virtual = 4126
+current_fileset: Time (s): cpu = 00:00:17 ; elapsed = 00:00:07 . Memory (MB): peak = 7334.461 ; gain = 34.023 ; free physical = 151 ; free virtual = 2014
 # open_wave_database pwm.wdb
 open_wave_config /home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/solution1/sim/verilog/pwm.wcfg
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 exit
-INFO: [Common 17-206] Exiting Vivado at Tue May  4 20:55:15 2021...
+INFO: [Common 17-206] Exiting Vivado at Wed May  5 12:34:57 2021...

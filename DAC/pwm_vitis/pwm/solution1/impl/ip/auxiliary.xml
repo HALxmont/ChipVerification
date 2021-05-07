@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="pwm" xd:componentRef="pwm" xd:initiationInterval="1" xd:clockPeriod="10.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:arg xd:name="start" xd:originalName="start" xd:direction="in" xd:interfaceRef="start_r" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="max_cycles" xd:originalName="max_cycles" xd:direction="in" xd:interfaceRef="max_cycles" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="cycles_high" xd:originalName="cycles_high" xd:direction="in" xd:interfaceRef="cycles_high" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="cycles_hold" xd:originalName="cycles_hold" xd:direction="in" xd:interfaceRef="cycles_hold" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="*(pwm_out)" xd:originalName="pwm_out" xd:direction="out" xd:interfaceRef="pwm_out" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1" xd:firstOut="0"/>
+  <xd:arg xd:name="*(end)" xd:originalName="end" xd:direction="out" xd:interfaceRef="end_r" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1" xd:firstOut="0"/>
+  <xd:latencyEstimates xd:best-case="0" xd:worst-case="0" xd:average-case="0"/>
+  <xd:resourceEstimates xd:LUT="246" xd:FF="131" xd:BRAM="0" xd:DSP="0"/>
+</xd:acceleratorMap>

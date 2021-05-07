@@ -35,7 +35,7 @@ int main(){
 			else {			//circuit working
 				start = 0;
 			}
-			pwm(start, hold, MAX_CYCLES, HIGH_CYCLES, HOLD_CYCLES, pwm_out, end, holding_voltage);
+			pwm(start, MAX_CYCLES, HIGH_CYCLES, HOLD_CYCLES, pwm_out, end);
 			std::cout << " start = " << start << " end = " << end << " pwm = " << pwm_out <<  std::endl;
 		}
 		// ---- test 1 end -----  //
@@ -52,7 +52,7 @@ int main(){
 				start = 0;
 			}
 
-			pwm(start, hold, MAX_CYCLES, HIGH_CYCLES, HOLD_CYCLES, pwm_out, end, holding_voltage);
+			pwm(start, MAX_CYCLES, HIGH_CYCLES, HOLD_CYCLES, pwm_out, end);
 			std::cout << " start = " << start << " end = " << end << " pwm = " << pwm_out <<  std::endl;		}
 		// ---- test 2 end -----  //
 
@@ -68,7 +68,7 @@ int main(){
 				start = 0;
 			}
 
-			pwm(start, hold, MAX_CYCLES, HIGH_CYCLES, HOLD_CYCLES, pwm_out, end, holding_voltage);
+			pwm(start, MAX_CYCLES, HIGH_CYCLES, HOLD_CYCLES, pwm_out, end);
 			std::cout << " start = " << start << " end = " << end << " pwm = " << pwm_out <<  std::endl;		}
 		// ---- test 3 end -----  //
 

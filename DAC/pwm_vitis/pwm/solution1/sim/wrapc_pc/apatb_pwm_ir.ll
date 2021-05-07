@@ -4,23 +4,21 @@ target datalayout = "e-m:e-i64:64-i128:128-i256:256-i512:512-i1024:1024-i2048:20
 target triple = "fpga64-xilinx-none"
 
 ; Function Attrs: noinline
-define void @apatb_pwm_ir(i1 %start, i1 %hold, i64 %max_cycles, i64 %cycles_high, i64 %cycles_hold, i1* %pwm_out, i1* %end, i1* %holding_voltage) local_unnamed_addr #0 {
+define void @apatb_pwm_ir(i1 %start, i64 %max_cycles, i64 %cycles_high, i64 %cycles_hold, i1* %pwm_out, i1* %end) local_unnamed_addr #0 {
 entry:
   %pwm_out_copy = alloca i1, align 512
   %end_copy = alloca i1, align 512
-  %holding_voltage_copy = alloca i1, align 512
-  call fastcc void @copy_in(i1* %pwm_out, i1* nonnull align 512 %pwm_out_copy, i1* %end, i1* nonnull align 512 %end_copy, i1* %holding_voltage, i1* nonnull align 512 %holding_voltage_copy)
-  call void @apatb_pwm_hw(i1 %start, i1 %hold, i64 %max_cycles, i64 %cycles_high, i64 %cycles_hold, i1* %pwm_out_copy, i1* %end_copy, i1* %holding_voltage_copy)
-  call fastcc void @copy_out(i1* %pwm_out, i1* nonnull align 512 %pwm_out_copy, i1* %end, i1* nonnull align 512 %end_copy, i1* %holding_voltage, i1* nonnull align 512 %holding_voltage_copy)
+  call fastcc void @copy_in(i1* %pwm_out, i1* nonnull align 512 %pwm_out_copy, i1* %end, i1* nonnull align 512 %end_copy)
+  call void @apatb_pwm_hw(i1 %start, i64 %max_cycles, i64 %cycles_high, i64 %cycles_hold, i1* %pwm_out_copy, i1* %end_copy)
+  call fastcc void @copy_out(i1* %pwm_out, i1* nonnull align 512 %pwm_out_copy, i1* %end, i1* nonnull align 512 %end_copy)
   ret void
 }
 
 ; Function Attrs: argmemonly noinline
-define internal fastcc void @copy_in(i1* readonly, i1* noalias align 512, i1* readonly, i1* noalias align 512, i1* readonly, i1* noalias align 512) unnamed_addr #1 {
+define internal fastcc void @copy_in(i1* readonly, i1* noalias align 512, i1* readonly, i1* noalias align 512) unnamed_addr #1 {
 entry:
   call fastcc void @onebyonecpy_hls.p0i1(i1* align 512 %1, i1* %0)
   call fastcc void @onebyonecpy_hls.p0i1(i1* align 512 %3, i1* %2)
-  call fastcc void @onebyonecpy_hls.p0i1(i1* align 512 %5, i1* %4)
   ret void
 }
 
@@ -46,25 +44,24 @@ ret:                                              ; preds = %copy, %entry
 declare void @llvm.memcpy.p0i8.p0i8.i64(i8* nocapture writeonly, i8* nocapture readonly, i64, i1) #3
 
 ; Function Attrs: argmemonly noinline
-define internal fastcc void @copy_out(i1*, i1* noalias readonly align 512, i1*, i1* noalias readonly align 512, i1*, i1* noalias readonly align 512) unnamed_addr #4 {
+define internal fastcc void @copy_out(i1*, i1* noalias readonly align 512, i1*, i1* noalias readonly align 512) unnamed_addr #4 {
 entry:
   call fastcc void @onebyonecpy_hls.p0i1(i1* %0, i1* align 512 %1)
   call fastcc void @onebyonecpy_hls.p0i1(i1* %2, i1* align 512 %3)
-  call fastcc void @onebyonecpy_hls.p0i1(i1* %4, i1* align 512 %5)
   ret void
 }
 
-declare void @apatb_pwm_hw(i1, i1, i64, i64, i64, i1*, i1*, i1*)
+declare void @apatb_pwm_hw(i1, i64, i64, i64, i1*, i1*)
 
-define void @pwm_hw_stub_wrapper(i1, i1, i64, i64, i64, i1*, i1*, i1*) #5 {
+define void @pwm_hw_stub_wrapper(i1, i64, i64, i64, i1*, i1*) #5 {
 entry:
-  call void @copy_out(i1* null, i1* %5, i1* null, i1* %6, i1* null, i1* %7)
-  call void @pwm_hw_stub(i1 %0, i1 %1, i64 %2, i64 %3, i64 %4, i1* %5, i1* %6, i1* %7)
-  call void @copy_in(i1* null, i1* %5, i1* null, i1* %6, i1* null, i1* %7)
+  call void @copy_out(i1* null, i1* %4, i1* null, i1* %5)
+  call void @pwm_hw_stub(i1 %0, i64 %1, i64 %2, i64 %3, i1* %4, i1* %5)
+  call void @copy_in(i1* null, i1* %4, i1* null, i1* %5)
   ret void
 }
 
-declare void @pwm_hw_stub(i1, i1, i64, i64, i64, i1*, i1*, i1*)
+declare void @pwm_hw_stub(i1, i64, i64, i64, i1*, i1*)
 
 attributes #0 = { noinline "fpga.wrapper.func"="wrapper" }
 attributes #1 = { argmemonly noinline "fpga.wrapper.func"="copyin" }

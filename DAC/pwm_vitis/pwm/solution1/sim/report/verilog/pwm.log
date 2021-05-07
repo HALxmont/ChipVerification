@@ -14,911 +14,911 @@ INFO: [COSIM-323] Starting verilog simulation.
 INFO: [COSIM-15] Starting XSIM ...
 INFO: [COSIM-316] Starting C post checking ...
   
- // ----------- start = 1 | for i <= MAX_CYCLES = 200 | HG = 15 | HOLD ON ---------- // 
+ // ----------- start = 1 | for i <= MAX_CYCLES = 200 | HG = 15 ---------- // 
   
- start = 1 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 1 hold = 0 pwm = 0
- start = 1 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 1 hold = 0 pwm = 0
- start = 1 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 1 hold = 0 pwm = 0
+ start = 1 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 1 pwm = 0
+ start = 1 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 1 pwm = 0
+ start = 1 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 1 pwm = 0
 Vivado Simulator 2020.2
 Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
 Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_pwm_top glbl -prj pwm.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_18 -L floating_point_v7_1_11 --lib ieee_proposed=./ieee_proposed -s pwm -debug wave 
@@ -969,7 +969,7 @@ Built simulation snapshot pwm
     ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 
 source /home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/solution1/sim/verilog/xsim.dir/pwm/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Tue May  4 15:54:57 2021...
+INFO: [Common 17-206] Exiting Webtalk at Wed May  5 12:31:53 2021...
 
 ****** xsim v2020.2 (64-bit)
   **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
@@ -987,9 +987,6 @@ source pwm.tcl
 WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
 ## set designtopgroup [add_wave_group "Design Top Signals"]
 ## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
-## set holding_voltage_group [add_wave_group holding_voltage(wire) -into $coutputgroup]
-## add_wave /apatb_pwm_top/AESL_inst_pwm/holding_voltage_ap_vld -into $holding_voltage_group -color #ffff00 -radix hex
-## add_wave /apatb_pwm_top/AESL_inst_pwm/holding_voltage -into $holding_voltage_group -radix hex
 ## set end_group [add_wave_group end(wire) -into $coutputgroup]
 ## add_wave /apatb_pwm_top/AESL_inst_pwm/end_r -into $end_group -radix hex
 ## set pwm_out_group [add_wave_group pwm_out(wire) -into $coutputgroup]
@@ -1001,8 +998,6 @@ WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of o
 ## add_wave /apatb_pwm_top/AESL_inst_pwm/cycles_high -into $cycles_high_group -radix hex
 ## set max_cycles_group [add_wave_group max_cycles(wire) -into $cinputgroup]
 ## add_wave /apatb_pwm_top/AESL_inst_pwm/max_cycles -into $max_cycles_group -radix hex
-## set hold_group [add_wave_group hold(wire) -into $cinputgroup]
-## add_wave /apatb_pwm_top/AESL_inst_pwm/hold -into $hold_group -radix hex
 ## set start_group [add_wave_group start(wire) -into $cinputgroup]
 ## add_wave /apatb_pwm_top/AESL_inst_pwm/start_r -into $start_group -radix hex
 ## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
@@ -1017,17 +1012,12 @@ WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of o
 ## add_wave /apatb_pwm_top/ready_cnt -into $tb_simstatus_group -radix hex
 ## add_wave /apatb_pwm_top/done_cnt -into $tb_simstatus_group -radix hex
 ## add_wave /apatb_pwm_top/LENGTH_start_r -into $tb_portdepth_group -radix hex
-## add_wave /apatb_pwm_top/LENGTH_hold -into $tb_portdepth_group -radix hex
 ## add_wave /apatb_pwm_top/LENGTH_max_cycles -into $tb_portdepth_group -radix hex
 ## add_wave /apatb_pwm_top/LENGTH_cycles_high -into $tb_portdepth_group -radix hex
 ## add_wave /apatb_pwm_top/LENGTH_cycles_hold -into $tb_portdepth_group -radix hex
 ## add_wave /apatb_pwm_top/LENGTH_pwm_out -into $tb_portdepth_group -radix hex
 ## add_wave /apatb_pwm_top/LENGTH_end_r -into $tb_portdepth_group -radix hex
-## add_wave /apatb_pwm_top/LENGTH_holding_voltage -into $tb_portdepth_group -radix hex
 ## set tbcoutputgroup [add_wave_group "C Outputs" -into $testbenchgroup]
-## set tb_holding_voltage_group [add_wave_group holding_voltage(wire) -into $tbcoutputgroup]
-## add_wave /apatb_pwm_top/holding_voltage_ap_vld -into $tb_holding_voltage_group -color #ffff00 -radix hex
-## add_wave /apatb_pwm_top/holding_voltage -into $tb_holding_voltage_group -radix hex
 ## set tb_end_group [add_wave_group end(wire) -into $tbcoutputgroup]
 ## add_wave /apatb_pwm_top/end_r -into $tb_end_group -radix hex
 ## set tb_pwm_out_group [add_wave_group pwm_out(wire) -into $tbcoutputgroup]
@@ -1039,8 +1029,6 @@ WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of o
 ## add_wave /apatb_pwm_top/cycles_high -into $tb_cycles_high_group -radix hex
 ## set tb_max_cycles_group [add_wave_group max_cycles(wire) -into $tbcinputgroup]
 ## add_wave /apatb_pwm_top/max_cycles -into $tb_max_cycles_group -radix hex
-## set tb_hold_group [add_wave_group hold(wire) -into $tbcinputgroup]
-## add_wave /apatb_pwm_top/hold -into $tb_hold_group -radix hex
 ## set tb_start_group [add_wave_group start(wire) -into $tbcinputgroup]
 ## add_wave /apatb_pwm_top/start_r -into $tb_start_group -radix hex
 ## save_wave_config pwm.wcfg
@@ -1956,913 +1944,913 @@ WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of o
 // RTL Simulation : 902 / 903 [n/a] @ "9155000"
 // RTL Simulation : 903 / 903 [n/a] @ "9165000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 9195 ns : File "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/solution1/sim/verilog/pwm.autotb.v" Line 549
+$finish called at time : 9195 ns : File "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/solution1/sim/verilog/pwm.autotb.v" Line 480
 ## quit
-INFO: [Common 17-206] Exiting xsim at Tue May  4 15:55:17 2021...
+INFO: [Common 17-206] Exiting xsim at Wed May  5 12:32:09 2021...
   
- // ----------- start = 1 | for i <= MAX_CYCLES = 200 | HG = 15 | HOLD ON ---------- // 
+ // ----------- start = 1 | for i <= MAX_CYCLES = 200 | HG = 15 ---------- // 
   
- start = 1 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 1 hold = 0 pwm = 0
- start = 1 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 1 hold = 0 pwm = 0
- start = 1 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 0
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 0 hold = 0 pwm = 1
- start = 0 end = 1 hold = 0 pwm = 0
+ start = 1 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 1 pwm = 0
+ start = 1 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 1 pwm = 0
+ start = 1 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 0
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 0 pwm = 1
+ start = 0 end = 1 pwm = 0
 INFO: [COSIM-1000] *** C/RTL co-simulation finished: PASS ***

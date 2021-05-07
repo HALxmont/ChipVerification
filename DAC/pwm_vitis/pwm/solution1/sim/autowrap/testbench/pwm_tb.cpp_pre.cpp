@@ -59749,7 +59749,7 @@ inline bool operator!=(
 # 3 "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/pwm.h" 2
 # 3 "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/pwm_tb.h" 2
 
-void pwm(bool start, bool hold, unsigned long max_cycles, unsigned long cycles_high, unsigned long cycles_hold,bool &pwm_out, bool &end, bool &holding_voltage);
+void pwm(bool start, unsigned long max_cycles, unsigned long cycles_high, unsigned long cycles_hold,bool &pwm_out, bool &end);
 # 2 "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/pwm_tb.cpp" 2
 
 
@@ -59760,14 +59760,12 @@ int main(){
   bool start;
   bool end;
   bool pwm_out;
-  bool hold;
-  bool holding_voltage;
   unsigned long MAX_CYCLES = 200;
   unsigned long HIGH_CYCLES = 30;
   unsigned long HOLD_CYCLES = 100;
-# 27 "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/pwm_tb.cpp"
+# 25 "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/pwm_tb.cpp"
   std::cout << "  " << std::endl;
-  std::cout << " // ----------- start = 1 | for i <= MAX_CYCLES = 200 | HG = 15 | HOLD ON ---------- // " << std::endl;
+  std::cout << " // ----------- start = 1 | for i <= MAX_CYCLES = 200 | HG = 15 ---------- // " << std::endl;
   std::cout << "  " << std::endl;
 
 
@@ -59779,8 +59777,8 @@ int main(){
    else {
     start = 0;
    }
-   pwm(start, hold, MAX_CYCLES, HIGH_CYCLES, HOLD_CYCLES, pwm_out, end, holding_voltage);
-   std::cout << " start = " << start << " end = " << end << " hold = " << hold << " pwm = " << pwm_out << std::endl;
+   pwm(start, MAX_CYCLES, HIGH_CYCLES, HOLD_CYCLES, pwm_out, end);
+   std::cout << " start = " << start << " end = " << end << " pwm = " << pwm_out << std::endl;
   }
 
 
@@ -59796,9 +59794,8 @@ int main(){
     start = 0;
    }
 
-   pwm(start, hold, MAX_CYCLES, HIGH_CYCLES, HOLD_CYCLES, pwm_out, end, holding_voltage);
-   std::cout << " start = " << start << " end = " << end << " hold = " << hold << " pwm = " << pwm_out << std::endl;
-  }
+   pwm(start, MAX_CYCLES, HIGH_CYCLES, HOLD_CYCLES, pwm_out, end);
+   std::cout << " start = " << start << " end = " << end << " pwm = " << pwm_out << std::endl; }
 
 
 
@@ -59813,9 +59810,8 @@ int main(){
     start = 0;
    }
 
-   pwm(start, hold, MAX_CYCLES, HIGH_CYCLES, HOLD_CYCLES, pwm_out, end, holding_voltage);
-   std::cout << " start = " << start << " end = " << end << " hold = " << hold << " pwm = " << pwm_out << std::endl;
-  }
+   pwm(start, MAX_CYCLES, HIGH_CYCLES, HOLD_CYCLES, pwm_out, end);
+   std::cout << " start = " << start << " end = " << end << " pwm = " << pwm_out << std::endl; }
 
 
 

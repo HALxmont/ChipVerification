@@ -1,19 +1,19 @@
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/lnx64.o/vitis_hls'
-INFO: [HLS 200-10] For user 'mxmont' on host 'HALx1' (Linux_x86_64 version 5.8.0-50-generic) on Wed May 05 11:57:26 -04 2021
+INFO: [HLS 200-10] For user 'mxmont' on host 'HALx1' (Linux_x86_64 version 5.8.0-50-generic) on Wed May 05 21:12:06 -04 2021
 INFO: [HLS 200-10] On os Ubuntu 20.04.1 LTS
 INFO: [HLS 200-10] In directory '/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis'
-Sourcing Tcl script '/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/solution1/csynth.tcl'
+Sourcing Tcl script '/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/solution1/export.tcl'
 INFO: [HLS 200-1510] Running: open_project pwm 
 INFO: [HLS 200-10] Opening project '/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm'.
 INFO: [HLS 200-1510] Running: set_top pwm 
-INFO: [HLS 200-1510] Running: add_files pwm/pwm.h 
-INFO: [HLS 200-10] Adding design file 'pwm/pwm.h' to the project
 INFO: [HLS 200-1510] Running: add_files pwm/pwm.cpp 
 INFO: [HLS 200-10] Adding design file 'pwm/pwm.cpp' to the project
-INFO: [HLS 200-1510] Running: add_files -tb pwm/pwm_tb.h -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
-INFO: [HLS 200-10] Adding test bench file 'pwm/pwm_tb.h' to the project
+INFO: [HLS 200-1510] Running: add_files pwm/pwm.h 
+INFO: [HLS 200-10] Adding design file 'pwm/pwm.h' to the project
 INFO: [HLS 200-1510] Running: add_files -tb pwm/pwm_tb.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
 INFO: [HLS 200-10] Adding test bench file 'pwm/pwm_tb.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb pwm/pwm_tb.h -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'pwm/pwm_tb.h' to the project
 INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
 INFO: [HLS 200-10] Opening solution '/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/solution1'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
@@ -26,55 +26,18 @@ INFO: [HLS 200-1510] Running: set_part xczu49dr-ffvf1760-2-e
 INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
 INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
 INFO: [HLS 200-1510] Running: set_directive_top -name pwm pwm 
-INFO: [HLS 200-1510] Running: csynth_design 
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 206.906 MB.
-INFO: [HLS 200-10] Analyzing design file 'pwm/pwm.cpp' ... 
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3.31 seconds. CPU system time: 0.36 seconds. Elapsed time: 4 seconds; current allocated memory: 208.374 MB.
-INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.63 seconds. CPU system time: 0.32 seconds. Elapsed time: 4.12 seconds; current allocated memory: 210.315 MB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 210.317 MB.
-INFO: [HLS 200-10] Starting code transformations ...
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 211.381 MB.
-INFO: [HLS 200-10] Checking synthesizability ...
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 210.750 MB.
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 230.943 MB.
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 223.156 MB.
-INFO: [HLS 200-10] Starting hardware synthesis ...
-INFO: [HLS 200-10] Synthesizing 'pwm' ...
-WARNING: [SYN 201-107] Renaming port name 'pwm/start' to 'pwm/start_r' to avoid the conflict with HDL keywords or other object names.
-WARNING: [SYN 201-107] Renaming port name 'pwm/end' to 'pwm/end_r' to avoid the conflict with HDL keywords or other object names.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'pwm' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 223.517 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 223.829 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'pwm' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-500] Setting interface mode on port 'pwm/start_r' to 'ap_none'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'pwm/max_cycles' to 'ap_none'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'pwm/cycles_high' to 'ap_none'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'pwm/cycles_hold' to 'ap_none'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'pwm/pwm_out' to 'ap_none'.
-WARNING: [RTGEN 206-101] Port 'pwm_out' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
-INFO: [RTGEN 206-500] Setting interface mode on port 'pwm/end_r' to 'ap_none'.
-WARNING: [RTGEN 206-101] Port 'end_r' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
-INFO: [RTGEN 206-500] Setting interface mode on function 'pwm' to 'ap_ctrl_none'.
-WARNING: [RTGEN 206-101] Register 'state' is power-on initialization.
-WARNING: [RTGEN 206-101] Register 'count' is power-on initialization.
-WARNING: [RTGEN 206-101] Register 'count_next' is power-on initialization.
-INFO: [RTGEN 206-100] Finished creating RTL model for 'pwm'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 224.160 MB.
-INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1.2 seconds. CPU system time: 0.03 seconds. Elapsed time: 1.24 seconds; current allocated memory: 231.430 MB.
-INFO: [VHDL 208-304] Generating VHDL RTL for pwm.
-INFO: [VLOG 209-307] Generating Verilog RTL for pwm.
-INFO: [HLS 200-789] **** Estimated Fmax: 502.26 MHz
-INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 8.48 seconds. CPU system time: 0.74 seconds. Elapsed time: 9.8 seconds; current allocated memory: 231.561 MB.
-INFO: [HLS 200-112] Total CPU user time: 12.49 seconds. Total CPU system time: 1.6 seconds. Total elapsed time: 13.7 seconds; peak allocated memory: 231.430 MB.
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Wed May  5 21:12:30 2021...
+INFO: [HLS 200-802] Generated output file pwm/solution1/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 18.61 seconds. CPU system time: 2.5 seconds. Elapsed time: 23.88 seconds; current allocated memory: 214.867 MB.
