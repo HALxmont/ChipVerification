@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1620438514328">
+  <ports id="1" name="sw" type="PortType" originalName="sw" coreId="939524224" bitwidth="1"/>
+  <ports id="2" name="number_out" type="PortType" originalName="number_out" coreId="0" bitwidth="5"/>
+  <blocks id="10" name="counter" type="BlockType">
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="_ln62" lineNumber="62" fileName="Counter/counter.cpp" fileDirectory=".." coreId="109" contextFuncName="counter" opcode="ret" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Counter/counter.cpp" linenumber="62" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/Counter" functionName="counter"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="Counter/counter.cpp">
+      <validLinenumbers>62</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ioPorts name="number_out"/>
+  <ioPorts name="sw"/>
+  <fsm>
+    <states id="1">
+      <operations id="3" stage="1" latency="1"/>
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+    </states>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="counter" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>10</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

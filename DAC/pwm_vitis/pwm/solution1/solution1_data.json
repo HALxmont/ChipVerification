@@ -28,15 +28,15 @@
           "direction": "in"
         }]
     },
-    "max_cycles": {
+    "per_cycles": {
       "index": "1",
       "direction": "in",
-      "srcType": "long unsigned int",
-      "srcSize": "64",
+      "srcType": "unsigned int",
+      "srcSize": "32",
       "hwRefs": [{
           "type": "port",
-          "interface": "max_cycles",
-          "name": "max_cycles",
+          "interface": "per_cycles",
+          "name": "per_cycles",
           "usage": "data",
           "direction": "in"
         }]
@@ -44,8 +44,8 @@
     "cycles_high": {
       "index": "2",
       "direction": "in",
-      "srcType": "long unsigned int",
-      "srcSize": "64",
+      "srcType": "unsigned int",
+      "srcSize": "32",
       "hwRefs": [{
           "type": "port",
           "interface": "cycles_high",
@@ -57,8 +57,8 @@
     "cycles_hold": {
       "index": "3",
       "direction": "in",
-      "srcType": "long unsigned int",
-      "srcSize": "64",
+      "srcType": "unsigned int",
+      "srcSize": "32",
       "hwRefs": [{
           "type": "port",
           "interface": "cycles_hold",
@@ -164,7 +164,7 @@
       "type": "data",
       "busTypeName": "data",
       "mode": "slave",
-      "dataWidth": "64",
+      "dataWidth": "32",
       "portMap": {"cycles_high": "DATA"},
       "ports": ["cycles_high"],
       "constraints": [{
@@ -178,7 +178,7 @@
       "type": "data",
       "busTypeName": "data",
       "mode": "slave",
-      "dataWidth": "64",
+      "dataWidth": "32",
       "portMap": {"cycles_hold": "DATA"},
       "ports": ["cycles_hold"],
       "constraints": [{
@@ -202,18 +202,18 @@
           "argName": "end"
         }]
     },
-    "max_cycles": {
+    "per_cycles": {
       "type": "data",
       "busTypeName": "data",
       "mode": "slave",
-      "dataWidth": "64",
-      "portMap": {"max_cycles": "DATA"},
-      "ports": ["max_cycles"],
+      "dataWidth": "32",
+      "portMap": {"per_cycles": "DATA"},
+      "ports": ["per_cycles"],
       "constraints": [{
           "constraint_type": "pragma interface",
           "mode": "ap_none",
           "register_option": "0",
-          "argName": "max_cycles"
+          "argName": "per_cycles"
         }]
     },
     "pwm_out": {
@@ -258,17 +258,17 @@
       "dir": "in",
       "width": "1"
     },
-    "max_cycles": {
+    "per_cycles": {
       "dir": "in",
-      "width": "64"
+      "width": "32"
     },
     "cycles_high": {
       "dir": "in",
-      "width": "64"
+      "width": "32"
     },
     "cycles_hold": {
       "dir": "in",
-      "width": "64"
+      "width": "32"
     },
     "pwm_out": {
       "dir": "out",
@@ -324,7 +324,7 @@
   "GenerateBdFiles": "0",
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2021-05-05 12:24:46 -04",
+    "Time": "2021-05-11 13:54:24 -04",
     "ToolName": "vivado_hls",
     "ToolVersion": "2020.2"
   }

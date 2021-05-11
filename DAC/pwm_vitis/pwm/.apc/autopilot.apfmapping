@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="pwm.cpp" path="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/pwm.cpp"/>
     <originFiles name="pwm.h" path="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/pwm.h"/>
+    <originFiles name="pwm.cpp" path="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/pwm.cpp"/>
   </source>
   <testbench>
-    <originFiles name="pwm_tb.cpp" path="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/pwm_tb.cpp"/>
     <originFiles name="pwm_tb.h" path="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/pwm_tb.h"/>
+    <originFiles name="pwm_tb.cpp" path="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/pwm_tb.cpp"/>
   </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

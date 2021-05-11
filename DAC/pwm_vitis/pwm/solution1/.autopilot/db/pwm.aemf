@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1620231885682">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1620755663646">
   <ports id="1" name="start_r" type="PortType" originalName="start" coreId="0" bitwidth="1">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="2" name="max_cycles" type="PortType" originalName="max_cycles" coreId="433" bitwidth="64">
+  <ports id="2" name="per_cycles" type="PortType" originalName="per_cycles" coreId="129" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="3" name="cycles_high" type="PortType" originalName="cycles_high" coreId="132" bitwidth="64">
+  <ports id="3" name="cycles_high" type="PortType" originalName="cycles_high" coreId="129" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="4" name="cycles_hold" type="PortType" originalName="cycles_hold" coreId="609" bitwidth="64">
+  <ports id="4" name="cycles_hold" type="PortType" originalName="cycles_hold" coreId="49" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="5" name="pwm_out" type="PortType" originalName="pwm_out" coreId="132" bitwidth="1" direction="DirOut">
+  <ports id="5" name="pwm_out" type="PortType" originalName="pwm_out" coreId="49" bitwidth="1" direction="DirOut">
     <dataInputObjs>write</dataInputObjs>
     <dataInputObjs>write</dataInputObjs>
     <dataInputObjs>write</dataInputObjs>
@@ -21,158 +21,161 @@
     <dataInputObjs>write</dataInputObjs>
     <dataInputObjs>write</dataInputObjs>
   </ports>
-  <ports id="6" name="end_r" type="PortType" originalName="end" coreId="49" bitwidth="1" direction="DirOut">
+  <ports id="6" name="end_r" type="PortType" originalName="end" coreId="433" bitwidth="1" direction="DirOut">
     <dataInputObjs>write</dataInputObjs>
   </ports>
-  <edges id="91" source_obj="//@ports.3" sink_obj="//@blocks.0/@node_objs.0"/>
-  <edges id="94" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.1"/>
-  <edges id="96" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.2"/>
-  <edges id="99" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.3"/>
-  <edges id="100" sink_obj="//@blocks.0/@node_objs.4"/>
-  <edges id="101" sink_obj="//@blocks.0/@node_objs.5"/>
-  <edges id="102" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.6"/>
-  <edges id="103" edge_type="CtrlEdge" source_obj="//@blocks.13" sink_obj="//@blocks.0/@node_objs.6"/>
-  <edges id="105" edge_type="CtrlEdge" source_obj="//@blocks.10" sink_obj="//@blocks.0/@node_objs.6"/>
-  <edges id="108" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.0/@node_objs.6"/>
-  <edges id="111" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.0/@node_objs.6"/>
-  <edges id="114" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.6"/>
-  <edges id="117" source_obj="//@blocks.10/@node_objs.0" sink_obj="//@ports.4"/>
-  <edges id="120" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.10/@node_objs.1"/>
-  <edges id="121" edge_type="CtrlEdge" source_obj="//@blocks.11" sink_obj="//@blocks.10/@node_objs.1"/>
-  <edges id="122" edge_type="CtrlEdge" source_obj="//@blocks.12" sink_obj="//@blocks.10/@node_objs.1"/>
-  <edges id="124" sink_obj="//@blocks.11/@node_objs.0"/>
-  <edges id="125" edge_type="CtrlEdge" source_obj="//@blocks.14" sink_obj="//@blocks.11/@node_objs.1"/>
-  <edges id="128" sink_obj="//@blocks.12/@node_objs.0"/>
-  <edges id="129" edge_type="CtrlEdge" source_obj="//@blocks.14" sink_obj="//@blocks.12/@node_objs.1"/>
-  <edges id="130" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.7/@node_objs.0"/>
-  <edges id="131" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.7/@node_objs.0"/>
-  <edges id="132" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.7/@node_objs.1"/>
-  <edges id="134" source_obj="//@blocks.7/@node_objs.0" sink_obj="//@blocks.7/@node_objs.2"/>
-  <edges id="135" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.7/@node_objs.2"/>
-  <edges id="136" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.7/@node_objs.2"/>
-  <edges id="138" source_obj="//@blocks.9/@node_objs.0" sink_obj="//@ports.4"/>
-  <edges id="141" source_obj="//@blocks.7/@node_objs.1" sink_obj="//@blocks.9/@node_objs.1"/>
-  <edges id="142" sink_obj="//@blocks.9/@node_objs.1"/>
-  <edges id="143" edge_type="CtrlEdge" source_obj="//@blocks.14" sink_obj="//@blocks.9/@node_objs.2"/>
-  <edges id="145" source_obj="//@blocks.8/@node_objs.0" sink_obj="//@ports.4"/>
-  <edges id="147" source_obj="//@blocks.7/@node_objs.1" sink_obj="//@blocks.8/@node_objs.1"/>
-  <edges id="148" sink_obj="//@blocks.8/@node_objs.1"/>
-  <edges id="149" edge_type="CtrlEdge" source_obj="//@blocks.14" sink_obj="//@blocks.8/@node_objs.2"/>
-  <edges id="150" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.4/@node_objs.0"/>
-  <edges id="151" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.4/@node_objs.0"/>
-  <edges id="153" source_obj="//@blocks.4/@node_objs.1" sink_obj="//@ports.4"/>
-  <edges id="155" source_obj="//@blocks.4/@node_objs.0" sink_obj="//@blocks.4/@node_objs.2"/>
-  <edges id="156" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.4/@node_objs.2"/>
-  <edges id="157" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.4/@node_objs.2"/>
-  <edges id="158" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.6/@node_objs.0"/>
-  <edges id="160" source_obj="//@blocks.6/@node_objs.0" sink_obj="//@blocks.6/@node_objs.1"/>
-  <edges id="161" sink_obj="//@blocks.6/@node_objs.1"/>
-  <edges id="162" edge_type="CtrlEdge" source_obj="//@blocks.14" sink_obj="//@blocks.6/@node_objs.2"/>
-  <edges id="164" sink_obj="//@blocks.5/@node_objs.0"/>
-  <edges id="165" edge_type="CtrlEdge" source_obj="//@blocks.14" sink_obj="//@blocks.5/@node_objs.1"/>
-  <edges id="166" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.1/@node_objs.0"/>
-  <edges id="167" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.1/@node_objs.0"/>
-  <edges id="168" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.1"/>
-  <edges id="169" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.1"/>
-  <edges id="170" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.1/@node_objs.1"/>
-  <edges id="172" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@ports.4"/>
-  <edges id="174" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.3/@node_objs.1"/>
-  <edges id="176" source_obj="//@blocks.3/@node_objs.1" sink_obj="//@blocks.3/@node_objs.2"/>
-  <edges id="177" sink_obj="//@blocks.3/@node_objs.2"/>
-  <edges id="178" edge_type="CtrlEdge" source_obj="//@blocks.14" sink_obj="//@blocks.3/@node_objs.3"/>
-  <edges id="180" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@ports.4"/>
-  <edges id="182" edge_type="CtrlEdge" source_obj="//@blocks.14" sink_obj="//@blocks.2/@node_objs.1"/>
-  <edges id="184" source_obj="//@blocks.13/@node_objs.0" sink_obj="//@ports.4"/>
-  <edges id="187" sink_obj="//@blocks.13/@node_objs.1"/>
-  <edges id="188" edge_type="CtrlEdge" source_obj="//@blocks.14" sink_obj="//@blocks.13/@node_objs.2"/>
-  <edges id="190" edge_type="CtrlEdge" source_obj="//@blocks.13" sink_obj="//@blocks.14/@node_objs.0"/>
-  <edges id="192" edge_type="CtrlEdge" source_obj="//@blocks.11" sink_obj="//@blocks.14/@node_objs.0"/>
-  <edges id="194" edge_type="CtrlEdge" source_obj="//@blocks.12" sink_obj="//@blocks.14/@node_objs.0"/>
-  <edges id="196" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.14/@node_objs.0"/>
-  <edges id="198" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.14/@node_objs.0"/>
-  <edges id="200" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.14/@node_objs.0"/>
-  <edges id="202" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.14/@node_objs.0"/>
-  <edges id="204" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.14/@node_objs.0"/>
-  <edges id="206" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.14/@node_objs.0"/>
-  <edges id="208" edge_type="CtrlEdge" source_obj="//@blocks.13" sink_obj="//@blocks.14/@node_objs.1"/>
-  <edges id="210" edge_type="CtrlEdge" source_obj="//@blocks.11" sink_obj="//@blocks.14/@node_objs.1"/>
-  <edges id="212" edge_type="CtrlEdge" source_obj="//@blocks.12" sink_obj="//@blocks.14/@node_objs.1"/>
-  <edges id="214" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.14/@node_objs.1"/>
-  <edges id="216" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.14/@node_objs.1"/>
-  <edges id="218" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.14/@node_objs.1"/>
-  <edges id="220" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.14/@node_objs.1"/>
-  <edges id="222" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.14/@node_objs.1"/>
-  <edges id="224" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.14/@node_objs.1"/>
-  <edges id="225" source_obj="//@blocks.14/@node_objs.0" sink_obj="//@blocks.14/@node_objs.2"/>
-  <edges id="226" sink_obj="//@blocks.14/@node_objs.2"/>
-  <edges id="227" sink_obj="//@blocks.14/@node_objs.3"/>
-  <edges id="228" source_obj="//@blocks.14/@node_objs.3" sink_obj="//@blocks.14/@node_objs.4"/>
-  <edges id="229" sink_obj="//@blocks.14/@node_objs.4"/>
-  <edges id="231" source_obj="//@blocks.14/@node_objs.5" sink_obj="//@ports.5"/>
-  <edges id="232" source_obj="//@blocks.14/@node_objs.1" sink_obj="//@blocks.14/@node_objs.5"/>
-  <edges id="380" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.13"/>
-  <edges id="381" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.10"/>
-  <edges id="382" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.7"/>
-  <edges id="383" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.4"/>
-  <edges id="384" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
-  <edges id="385" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.3"/>
-  <edges id="386" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
-  <edges id="387" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.14"/>
-  <edges id="388" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.14"/>
-  <edges id="389" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.6"/>
-  <edges id="390" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.5"/>
-  <edges id="391" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.14"/>
-  <edges id="392" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.14"/>
-  <edges id="393" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.9"/>
-  <edges id="394" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.8"/>
-  <edges id="395" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.14"/>
-  <edges id="396" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.14"/>
-  <edges id="397" edge_type="CtrlEdge" source_obj="//@blocks.10" sink_obj="//@blocks.12"/>
-  <edges id="398" edge_type="CtrlEdge" source_obj="//@blocks.10" sink_obj="//@blocks.11"/>
-  <edges id="399" edge_type="CtrlEdge" source_obj="//@blocks.11" sink_obj="//@blocks.14"/>
-  <edges id="400" edge_type="CtrlEdge" source_obj="//@blocks.12" sink_obj="//@blocks.14"/>
-  <edges id="401" edge_type="CtrlEdge" source_obj="//@blocks.13" sink_obj="//@blocks.14"/>
-  <edges id="402" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.14/@node_objs.2"/>
-  <edges id="403" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.14/@node_objs.4"/>
-  <edges id="404" edge_type="VirtEdge" source_obj="//@blocks.3/@node_objs.2" sink_obj="//@blocks.14/@node_objs.3"/>
-  <edges id="405" edge_type="VirtEdge" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@blocks.14/@node_objs.3"/>
-  <edges id="406" edge_type="VirtEdge" source_obj="//@blocks.6/@node_objs.1" sink_obj="//@blocks.14/@node_objs.3"/>
-  <edges id="407" edge_type="VirtEdge" source_obj="//@blocks.8/@node_objs.1" sink_obj="//@blocks.14/@node_objs.3"/>
-  <edges id="408" edge_type="VirtEdge" source_obj="//@blocks.9/@node_objs.1" sink_obj="//@blocks.14/@node_objs.3"/>
-  <edges id="409" edge_type="VirtEdge" source_obj="//@blocks.11/@node_objs.0" sink_obj="//@blocks.14/@node_objs.3"/>
-  <edges id="410" edge_type="VirtEdge" source_obj="//@blocks.12/@node_objs.0" sink_obj="//@blocks.14/@node_objs.3"/>
-  <edges id="411" edge_type="VirtEdge" source_obj="//@blocks.13/@node_objs.1" sink_obj="//@blocks.14/@node_objs.3"/>
+  <edges id="94" source_obj="//@ports.3" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="97" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="99" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="102" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="103" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="104" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="105" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="106" edge_type="CtrlEdge" source_obj="//@blocks.13" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="108" edge_type="CtrlEdge" source_obj="//@blocks.10" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="111" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="114" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="117" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="120" source_obj="//@blocks.10/@node_objs.0" sink_obj="//@ports.4"/>
+  <edges id="123" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.10/@node_objs.1"/>
+  <edges id="124" edge_type="CtrlEdge" source_obj="//@blocks.11" sink_obj="//@blocks.10/@node_objs.1"/>
+  <edges id="125" edge_type="CtrlEdge" source_obj="//@blocks.12" sink_obj="//@blocks.10/@node_objs.1"/>
+  <edges id="127" sink_obj="//@blocks.11/@node_objs.0"/>
+  <edges id="128" edge_type="CtrlEdge" source_obj="//@blocks.14" sink_obj="//@blocks.11/@node_objs.1"/>
+  <edges id="131" sink_obj="//@blocks.12/@node_objs.0"/>
+  <edges id="132" edge_type="CtrlEdge" source_obj="//@blocks.14" sink_obj="//@blocks.12/@node_objs.1"/>
+  <edges id="133" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.7/@node_objs.0"/>
+  <edges id="134" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.7/@node_objs.1"/>
+  <edges id="135" source_obj="//@blocks.7/@node_objs.0" sink_obj="//@blocks.7/@node_objs.1"/>
+  <edges id="136" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.7/@node_objs.2"/>
+  <edges id="138" source_obj="//@blocks.7/@node_objs.1" sink_obj="//@blocks.7/@node_objs.3"/>
+  <edges id="139" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.7/@node_objs.3"/>
+  <edges id="140" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.7/@node_objs.3"/>
+  <edges id="142" source_obj="//@blocks.9/@node_objs.0" sink_obj="//@ports.4"/>
+  <edges id="145" source_obj="//@blocks.7/@node_objs.2" sink_obj="//@blocks.9/@node_objs.1"/>
+  <edges id="146" sink_obj="//@blocks.9/@node_objs.1"/>
+  <edges id="147" edge_type="CtrlEdge" source_obj="//@blocks.14" sink_obj="//@blocks.9/@node_objs.2"/>
+  <edges id="149" source_obj="//@blocks.8/@node_objs.0" sink_obj="//@ports.4"/>
+  <edges id="151" source_obj="//@blocks.7/@node_objs.2" sink_obj="//@blocks.8/@node_objs.1"/>
+  <edges id="152" sink_obj="//@blocks.8/@node_objs.1"/>
+  <edges id="153" edge_type="CtrlEdge" source_obj="//@blocks.14" sink_obj="//@blocks.8/@node_objs.2"/>
+  <edges id="154" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="155" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.4/@node_objs.1"/>
+  <edges id="156" source_obj="//@blocks.4/@node_objs.0" sink_obj="//@blocks.4/@node_objs.1"/>
+  <edges id="158" source_obj="//@blocks.4/@node_objs.2" sink_obj="//@ports.4"/>
+  <edges id="160" source_obj="//@blocks.4/@node_objs.1" sink_obj="//@blocks.4/@node_objs.3"/>
+  <edges id="161" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.4/@node_objs.3"/>
+  <edges id="162" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.4/@node_objs.3"/>
+  <edges id="163" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="165" source_obj="//@blocks.6/@node_objs.0" sink_obj="//@blocks.6/@node_objs.1"/>
+  <edges id="166" sink_obj="//@blocks.6/@node_objs.1"/>
+  <edges id="167" edge_type="CtrlEdge" source_obj="//@blocks.14" sink_obj="//@blocks.6/@node_objs.2"/>
+  <edges id="169" sink_obj="//@blocks.5/@node_objs.0"/>
+  <edges id="170" edge_type="CtrlEdge" source_obj="//@blocks.14" sink_obj="//@blocks.5/@node_objs.1"/>
+  <edges id="171" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="172" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="173" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="174" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="175" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="176" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="178" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@ports.4"/>
+  <edges id="180" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="182" source_obj="//@blocks.3/@node_objs.1" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="183" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="184" edge_type="CtrlEdge" source_obj="//@blocks.14" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="186" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@ports.4"/>
+  <edges id="188" edge_type="CtrlEdge" source_obj="//@blocks.14" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="190" source_obj="//@blocks.13/@node_objs.0" sink_obj="//@ports.4"/>
+  <edges id="193" sink_obj="//@blocks.13/@node_objs.1"/>
+  <edges id="194" edge_type="CtrlEdge" source_obj="//@blocks.14" sink_obj="//@blocks.13/@node_objs.2"/>
+  <edges id="196" edge_type="CtrlEdge" source_obj="//@blocks.13" sink_obj="//@blocks.14/@node_objs.0"/>
+  <edges id="198" edge_type="CtrlEdge" source_obj="//@blocks.11" sink_obj="//@blocks.14/@node_objs.0"/>
+  <edges id="200" edge_type="CtrlEdge" source_obj="//@blocks.12" sink_obj="//@blocks.14/@node_objs.0"/>
+  <edges id="202" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.14/@node_objs.0"/>
+  <edges id="204" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.14/@node_objs.0"/>
+  <edges id="206" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.14/@node_objs.0"/>
+  <edges id="208" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.14/@node_objs.0"/>
+  <edges id="210" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.14/@node_objs.0"/>
+  <edges id="212" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.14/@node_objs.0"/>
+  <edges id="214" edge_type="CtrlEdge" source_obj="//@blocks.13" sink_obj="//@blocks.14/@node_objs.1"/>
+  <edges id="216" edge_type="CtrlEdge" source_obj="//@blocks.11" sink_obj="//@blocks.14/@node_objs.1"/>
+  <edges id="218" edge_type="CtrlEdge" source_obj="//@blocks.12" sink_obj="//@blocks.14/@node_objs.1"/>
+  <edges id="220" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.14/@node_objs.1"/>
+  <edges id="222" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.14/@node_objs.1"/>
+  <edges id="224" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.14/@node_objs.1"/>
+  <edges id="226" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.14/@node_objs.1"/>
+  <edges id="228" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.14/@node_objs.1"/>
+  <edges id="230" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.14/@node_objs.1"/>
+  <edges id="231" source_obj="//@blocks.14/@node_objs.0" sink_obj="//@blocks.14/@node_objs.2"/>
+  <edges id="232" sink_obj="//@blocks.14/@node_objs.2"/>
+  <edges id="233" sink_obj="//@blocks.14/@node_objs.3"/>
+  <edges id="234" source_obj="//@blocks.14/@node_objs.3" sink_obj="//@blocks.14/@node_objs.4"/>
+  <edges id="235" sink_obj="//@blocks.14/@node_objs.4"/>
+  <edges id="237" source_obj="//@blocks.14/@node_objs.5" sink_obj="//@ports.5"/>
+  <edges id="238" source_obj="//@blocks.14/@node_objs.1" sink_obj="//@blocks.14/@node_objs.5"/>
+  <edges id="386" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.13"/>
+  <edges id="387" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.10"/>
+  <edges id="388" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.7"/>
+  <edges id="389" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.4"/>
+  <edges id="390" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="391" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.3"/>
+  <edges id="392" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="393" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.14"/>
+  <edges id="394" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.14"/>
+  <edges id="395" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.6"/>
+  <edges id="396" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.5"/>
+  <edges id="397" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.14"/>
+  <edges id="398" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.14"/>
+  <edges id="399" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.9"/>
+  <edges id="400" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.8"/>
+  <edges id="401" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.14"/>
+  <edges id="402" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.14"/>
+  <edges id="403" edge_type="CtrlEdge" source_obj="//@blocks.10" sink_obj="//@blocks.12"/>
+  <edges id="404" edge_type="CtrlEdge" source_obj="//@blocks.10" sink_obj="//@blocks.11"/>
+  <edges id="405" edge_type="CtrlEdge" source_obj="//@blocks.11" sink_obj="//@blocks.14"/>
+  <edges id="406" edge_type="CtrlEdge" source_obj="//@blocks.12" sink_obj="//@blocks.14"/>
+  <edges id="407" edge_type="CtrlEdge" source_obj="//@blocks.13" sink_obj="//@blocks.14"/>
+  <edges id="408" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.14/@node_objs.2"/>
+  <edges id="409" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.14/@node_objs.4"/>
+  <edges id="410" edge_type="VirtEdge" source_obj="//@blocks.3/@node_objs.2" sink_obj="//@blocks.14/@node_objs.3"/>
+  <edges id="411" edge_type="VirtEdge" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@blocks.14/@node_objs.3"/>
+  <edges id="412" edge_type="VirtEdge" source_obj="//@blocks.6/@node_objs.1" sink_obj="//@blocks.14/@node_objs.3"/>
+  <edges id="413" edge_type="VirtEdge" source_obj="//@blocks.8/@node_objs.1" sink_obj="//@blocks.14/@node_objs.3"/>
+  <edges id="414" edge_type="VirtEdge" source_obj="//@blocks.9/@node_objs.1" sink_obj="//@blocks.14/@node_objs.3"/>
+  <edges id="415" edge_type="VirtEdge" source_obj="//@blocks.11/@node_objs.0" sink_obj="//@blocks.14/@node_objs.3"/>
+  <edges id="416" edge_type="VirtEdge" source_obj="//@blocks.12/@node_objs.0" sink_obj="//@blocks.14/@node_objs.3"/>
+  <edges id="417" edge_type="VirtEdge" source_obj="//@blocks.13/@node_objs.1" sink_obj="//@blocks.14/@node_objs.3"/>
   <blocks id="33" name="block_33" type="BlockType">
-    <controlOutputObjs>block_80</controlOutputObjs>
-    <controlOutputObjs>block_70</controlOutputObjs>
-    <controlOutputObjs>block_59</controlOutputObjs>
-    <controlOutputObjs>block_48</controlOutputObjs>
-    <controlOutputObjs>block_36</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="cycles_hold_read" lineNumber="6" originalName="cycles_hold" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="0" contextFuncName="pwm" bitwidth="64" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+    <controlOutputObjs>block_83</controlOutputObjs>
+    <controlOutputObjs>block_73</controlOutputObjs>
+    <controlOutputObjs>block_62</controlOutputObjs>
+    <controlOutputObjs>block_50</controlOutputObjs>
+    <controlOutputObjs>block_37</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="cycles_hold_read" lineNumber="6" originalName="cycles_hold" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="0" contextFuncName="pwm" bitwidth="32" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="6" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataInputObjs>cycles_hold</dataInputObjs>
-      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="cycles_high_read" lineNumber="6" originalName="cycles_high" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="49" contextFuncName="pwm" bitwidth="64" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="cycles_high_read" lineNumber="6" originalName="cycles_high" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="1041" contextFuncName="pwm" bitwidth="32" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="6" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataInputObjs>cycles_high</dataInputObjs>
-      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="max_cycles_read" lineNumber="6" originalName="max_cycles" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="1777732064" contextFuncName="pwm" bitwidth="64" opcode="read" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="per_cycles_read" lineNumber="6" originalName="per_cycles" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="0" contextFuncName="pwm" bitwidth="32" opcode="read" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="6" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
-      <dataInputObjs>max_cycles</dataInputObjs>
-      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataInputObjs>per_cycles</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="start_read" lineNumber="6" originalName="start" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="132" contextFuncName="pwm" bitwidth="1" opcode="read" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="start_read" lineNumber="6" originalName="start" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="1217" contextFuncName="pwm" bitwidth="1" opcode="read" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="6" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataInputObjs>start_r</dataInputObjs>
       <dataOutputObjs>br</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="state_load" lineNumber="25" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="0" contextFuncName="pwm" bitwidth="2" opcode="load" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="state_load" lineNumber="25" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="7" contextFuncName="pwm" bitwidth="2" opcode="load" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="25" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataOutputObjs>switch</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="count_load" lineNumber="45" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="0" contextFuncName="pwm" bitwidth="64" opcode="load" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="count_load" lineNumber="45" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="49" contextFuncName="pwm" bitwidth="64" opcode="load" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="45" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataOutputObjs>icmp</dataOutputObjs>
       <dataOutputObjs>add</dataOutputObjs>
@@ -181,14 +184,14 @@
       <dataOutputObjs>icmp</dataOutputObjs>
       <dataOutputObjs>add</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="_ln25" lineNumber="25" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="0" contextFuncName="pwm" opcode="switch" m_display="0" m_delay="0.72" m_topoIndex="7" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="_ln25" lineNumber="25" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="132" contextFuncName="pwm" opcode="switch" m_display="0" m_delay="0.72" m_topoIndex="7" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="25" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataInputObjs>load</dataInputObjs>
-      <controlInputObjs>block_80</controlInputObjs>
-      <controlInputObjs>block_70</controlInputObjs>
-      <controlInputObjs>block_59</controlInputObjs>
-      <controlInputObjs>block_48</controlInputObjs>
-      <controlInputObjs>block_36</controlInputObjs>
+      <controlInputObjs>block_83</controlInputObjs>
+      <controlInputObjs>block_73</controlInputObjs>
+      <controlInputObjs>block_62</controlInputObjs>
+      <controlInputObjs>block_50</controlInputObjs>
+      <controlInputObjs>block_37</controlInputObjs>
       <constName>empty</constName>
     </node_objs>
     <fileValidLineNumbers fileName="pwm/pwm.cpp">
@@ -197,69 +200,74 @@
       <validLinenumbers>45</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
-  <blocks id="36" name="block_36" type="BlockType">
+  <blocks id="37" name="block_37" type="BlockType">
     <controlInputObjs>block_33</controlInputObjs>
     <controlOutputObjs>switch</controlOutputObjs>
-    <controlOutputObjs>block_44</controlOutputObjs>
-    <controlOutputObjs>block_39</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="icmp_ln75" lineNumber="75" fileName="pwm/pwm.cpp" fileDirectory=".." rtlName="icmp_ln75_fu_197_p2" opType="icmp" coreId="49" contextFuncName="pwm" bitwidth="1" opcode="icmp" m_display="0" m_delay="1.13" m_topoIndex="8" m_clusterGroupNumber="-1">
+    <controlOutputObjs>block_45</controlOutputObjs>
+    <controlOutputObjs>block_40</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="zext_ln75" lineNumber="75" fileName="pwm/pwm.cpp" fileDirectory=".." rtlName="zext_ln75_fu_197_p1" coreId="1934959165" contextFuncName="pwm" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="75" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="icmp_ln75" lineNumber="75" fileName="pwm/pwm.cpp" fileDirectory=".." rtlName="icmp_ln75_fu_201_p2" opType="icmp" coreId="49" contextFuncName="pwm" bitwidth="1" opcode="icmp" m_display="0" m_delay="1.13" m_topoIndex="9" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="75" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataInputObjs>load</dataInputObjs>
-      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
       <dataOutputObjs>br</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="br_ln75" lineNumber="75" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="1777782432" contextFuncName="pwm" opcode="br" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="br_ln75" lineNumber="75" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="0" contextFuncName="pwm" opcode="br" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="75" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataInputObjs>icmp</dataInputObjs>
-      <controlInputObjs>block_39</controlInputObjs>
-      <controlInputObjs>block_44</controlInputObjs>
+      <controlInputObjs>block_40</controlInputObjs>
+      <controlInputObjs>block_45</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="pwm/pwm.cpp">
       <validLinenumbers>75</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
-  <blocks id="39" name="block_39" type="BlockType">
-    <controlInputObjs>block_36</controlInputObjs>
+  <blocks id="40" name="block_40" type="BlockType">
+    <controlInputObjs>block_37</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
-    <controlOutputObjs>block_88</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="pwm_out_write_ln83" lineNumber="83" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="1777781696" contextFuncName="pwm" opcode="write" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+    <controlOutputObjs>block_91</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="pwm_out_write_ln83" lineNumber="83" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="0" contextFuncName="pwm" opcode="write" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="83" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataOutputObjs>pwm_out</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="br_ln0" coreId="132" opcode="br" m_display="0" m_delay="0.52" m_topoIndex="11" m_clusterGroupNumber="-1">
-      <controlInputObjs>block_88</controlInputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="39" name="br_ln0" coreId="2913" opcode="br" m_display="0" m_delay="0.52" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <controlInputObjs>block_91</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="pwm/pwm.cpp">
       <validLinenumbers>83</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
-  <blocks id="44" name="block_44" type="BlockType">
-    <controlInputObjs>block_36</controlInputObjs>
+  <blocks id="45" name="block_45" type="BlockType">
+    <controlInputObjs>block_37</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
-    <controlOutputObjs>block_88</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="40" name="pwm_out_write_ln77" lineNumber="77" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="1777786216" contextFuncName="pwm" opcode="write" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+    <controlOutputObjs>block_91</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="pwm_out_write_ln77" lineNumber="77" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="3723910040" contextFuncName="pwm" opcode="write" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="77" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataOutputObjs>pwm_out</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="add_ln79" lineNumber="79" fileName="pwm/pwm.cpp" fileDirectory=".." rtlName="grp_fu_165_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="pwm" bitwidth="64" opcode="add" m_display="0" m_delay="1.08" m_topoIndex="13" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="42" name="add_ln79" lineNumber="79" fileName="pwm/pwm.cpp" fileDirectory=".." rtlName="grp_fu_165_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="pwm" bitwidth="64" opcode="add" m_display="0" m_delay="1.08" m_topoIndex="14" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="79" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataInputObjs>load</dataInputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="42" name="count_next_write_ln79" lineNumber="79" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="1777733840" contextFuncName="pwm" opcode="store" m_display="0" m_delay="0.57" m_topoIndex="14" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="43" name="count_next_write_ln79" lineNumber="79" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="132" contextFuncName="pwm" opcode="store" m_display="0" m_delay="0.57" m_topoIndex="15" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="79" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataInputObjs>add</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="43" name="br_ln80" lineNumber="80" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="0" contextFuncName="pwm" opcode="br" m_display="0" m_delay="0.52" m_topoIndex="15" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="44" name="br_ln80" lineNumber="80" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="1006633088" contextFuncName="pwm" opcode="br" m_display="0" m_delay="0.52" m_topoIndex="16" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="80" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
-      <controlInputObjs>block_88</controlInputObjs>
+      <controlInputObjs>block_91</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="pwm/pwm.cpp">
       <validLinenumbers>77</validLinenumbers>
@@ -267,143 +275,153 @@
       <validLinenumbers>80</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
-  <blocks id="48" name="block_48" type="BlockType">
+  <blocks id="50" name="block_50" type="BlockType">
     <controlInputObjs>block_33</controlInputObjs>
     <controlOutputObjs>switch</controlOutputObjs>
-    <controlOutputObjs>block_55</controlOutputObjs>
-    <controlOutputObjs>block_51</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="45" name="icmp_ln60" lineNumber="60" fileName="pwm/pwm.cpp" fileDirectory=".." rtlName="icmp_ln60_fu_203_p2" opType="icmp" coreId="0" contextFuncName="pwm" bitwidth="1" opcode="icmp" m_display="0" m_delay="1.13" m_topoIndex="16" m_clusterGroupNumber="-1">
+    <controlOutputObjs>block_57</controlOutputObjs>
+    <controlOutputObjs>block_53</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="zext_ln60" lineNumber="60" fileName="pwm/pwm.cpp" fileDirectory=".." rtlName="zext_ln60_fu_207_p1" coreId="1006633088" contextFuncName="pwm" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="60" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="icmp_ln60" lineNumber="60" fileName="pwm/pwm.cpp" fileDirectory=".." rtlName="icmp_ln60_fu_211_p2" opType="icmp" coreId="757935405" contextFuncName="pwm" bitwidth="1" opcode="icmp" m_display="0" m_delay="1.13" m_topoIndex="18" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="60" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataInputObjs>load</dataInputObjs>
-      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
       <dataOutputObjs>br</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="pwm_out_write_ln0" coreId="574454132" opcode="write" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="48" name="pwm_out_write_ln0" coreId="49" opcode="write" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
       <dataOutputObjs>pwm_out</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="br_ln60" lineNumber="60" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="0" contextFuncName="pwm" opcode="br" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="br_ln60" lineNumber="60" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="0" contextFuncName="pwm" opcode="br" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="60" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataInputObjs>icmp</dataInputObjs>
-      <controlInputObjs>block_51</controlInputObjs>
-      <controlInputObjs>block_55</controlInputObjs>
+      <controlInputObjs>block_53</controlInputObjs>
+      <controlInputObjs>block_57</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="pwm/pwm.cpp">
       <validLinenumbers>60</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
-  <blocks id="51" name="block_51" type="BlockType">
-    <controlInputObjs>block_48</controlInputObjs>
+  <blocks id="53" name="block_53" type="BlockType">
+    <controlInputObjs>block_50</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
-    <controlOutputObjs>block_88</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="count_next_write_ln70" lineNumber="70" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="874527333" contextFuncName="pwm" opcode="store" m_display="0" m_delay="0.57" m_topoIndex="19" m_clusterGroupNumber="-1">
+    <controlOutputObjs>block_91</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="51" name="count_next_write_ln70" lineNumber="70" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="0" contextFuncName="pwm" opcode="store" m_display="0" m_delay="0.57" m_topoIndex="21" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="70" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="50" name="br_ln0" coreId="1818845793" opcode="br" m_display="0" m_delay="0.52" m_topoIndex="20" m_clusterGroupNumber="-1">
-      <controlInputObjs>block_88</controlInputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="52" name="br_ln0" coreId="3723962568" opcode="br" m_display="0" m_delay="0.52" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <controlInputObjs>block_91</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="pwm/pwm.cpp">
       <validLinenumbers>70</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
-  <blocks id="55" name="block_55" type="BlockType">
-    <controlInputObjs>block_48</controlInputObjs>
+  <blocks id="57" name="block_57" type="BlockType">
+    <controlInputObjs>block_50</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
-    <controlOutputObjs>block_88</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="52" name="add_ln64" lineNumber="64" fileName="pwm/pwm.cpp" fileDirectory=".." rtlName="grp_fu_165_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="pwm" bitwidth="64" opcode="add" m_display="0" m_delay="1.08" m_topoIndex="21" m_clusterGroupNumber="-1">
+    <controlOutputObjs>block_91</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="54" name="add_ln64" lineNumber="64" fileName="pwm/pwm.cpp" fileDirectory=".." rtlName="grp_fu_165_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="pwm" bitwidth="64" opcode="add" m_display="0" m_delay="1.08" m_topoIndex="23" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="64" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataInputObjs>load</dataInputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="53" name="count_next_write_ln64" lineNumber="64" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="825045040" contextFuncName="pwm" opcode="store" m_display="0" m_delay="0.57" m_topoIndex="22" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="55" name="count_next_write_ln64" lineNumber="64" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="49" contextFuncName="pwm" opcode="store" m_display="0" m_delay="0.57" m_topoIndex="24" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="64" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataInputObjs>add</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="54" name="br_ln65" lineNumber="65" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="0" contextFuncName="pwm" opcode="br" m_display="0" m_delay="0.52" m_topoIndex="23" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="56" name="br_ln65" lineNumber="65" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="3723964784" contextFuncName="pwm" opcode="br" m_display="0" m_delay="0.52" m_topoIndex="25" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="65" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
-      <controlInputObjs>block_88</controlInputObjs>
+      <controlInputObjs>block_91</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="pwm/pwm.cpp">
       <validLinenumbers>64</validLinenumbers>
       <validLinenumbers>65</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
-  <blocks id="59" name="block_59" type="BlockType">
+  <blocks id="62" name="block_62" type="BlockType">
     <controlInputObjs>block_33</controlInputObjs>
     <controlOutputObjs>switch</controlOutputObjs>
-    <controlOutputObjs>block_67</controlOutputObjs>
-    <controlOutputObjs>block_63</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="56" name="icmp_ln45" lineNumber="45" fileName="pwm/pwm.cpp" fileDirectory=".." rtlName="icmp_ln45_fu_209_p2" opType="icmp" coreId="0" contextFuncName="pwm" bitwidth="1" opcode="icmp" m_display="0" m_delay="1.13" m_topoIndex="24" m_clusterGroupNumber="-1">
+    <controlOutputObjs>block_70</controlOutputObjs>
+    <controlOutputObjs>block_66</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="58" name="zext_ln45" lineNumber="45" fileName="pwm/pwm.cpp" fileDirectory=".." rtlName="zext_ln45_fu_217_p1" coreId="3723964048" contextFuncName="pwm" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="45" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="59" name="icmp_ln45" lineNumber="45" fileName="pwm/pwm.cpp" fileDirectory=".." rtlName="icmp_ln45_fu_221_p2" opType="icmp" coreId="0" contextFuncName="pwm" bitwidth="1" opcode="icmp" m_display="0" m_delay="1.13" m_topoIndex="27" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="45" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataInputObjs>load</dataInputObjs>
-      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
       <dataOutputObjs>br</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="57" name="add_ln55" lineNumber="55" fileName="pwm/pwm.cpp" fileDirectory=".." rtlName="grp_fu_165_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="pwm" bitwidth="64" opcode="add" m_display="0" m_delay="1.08" m_topoIndex="25" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="60" name="add_ln55" lineNumber="55" fileName="pwm/pwm.cpp" fileDirectory=".." rtlName="grp_fu_165_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="pwm" bitwidth="64" opcode="add" m_display="0" m_delay="1.08" m_topoIndex="28" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="55" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataInputObjs>load</dataInputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="58" name="br_ln45" lineNumber="45" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="0" contextFuncName="pwm" opcode="br" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="61" name="br_ln45" lineNumber="45" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="0" contextFuncName="pwm" opcode="br" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="45" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataInputObjs>icmp</dataInputObjs>
-      <controlInputObjs>block_63</controlInputObjs>
-      <controlInputObjs>block_67</controlInputObjs>
+      <controlInputObjs>block_66</controlInputObjs>
+      <controlInputObjs>block_70</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="pwm/pwm.cpp">
       <validLinenumbers>45</validLinenumbers>
       <validLinenumbers>55</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
-  <blocks id="63" name="block_63" type="BlockType">
-    <controlInputObjs>block_59</controlInputObjs>
+  <blocks id="66" name="block_66" type="BlockType">
+    <controlInputObjs>block_62</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
-    <controlOutputObjs>block_88</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="60" name="pwm_out_write_ln53" lineNumber="53" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="1777763312" contextFuncName="pwm" opcode="write" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+    <controlOutputObjs>block_91</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="63" name="pwm_out_write_ln53" lineNumber="53" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="0" contextFuncName="pwm" opcode="write" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="53" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataOutputObjs>pwm_out</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="61" name="count_next_write_ln55" lineNumber="55" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="1777764072" contextFuncName="pwm" opcode="store" m_display="0" m_delay="0.57" m_topoIndex="28" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="64" name="count_next_write_ln55" lineNumber="55" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="0" contextFuncName="pwm" opcode="store" m_display="0" m_delay="0.57" m_topoIndex="31" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="55" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataInputObjs>add</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="62" name="br_ln0" coreId="1777765136" opcode="br" m_display="0" m_delay="0.52" m_topoIndex="29" m_clusterGroupNumber="-1">
-      <controlInputObjs>block_88</controlInputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="65" name="br_ln0" coreId="36" opcode="br" m_display="0" m_delay="0.52" m_topoIndex="32" m_clusterGroupNumber="-1">
+      <controlInputObjs>block_91</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="pwm/pwm.cpp">
       <validLinenumbers>53</validLinenumbers>
       <validLinenumbers>55</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
-  <blocks id="67" name="block_67" type="BlockType">
-    <controlInputObjs>block_59</controlInputObjs>
+  <blocks id="70" name="block_70" type="BlockType">
+    <controlInputObjs>block_62</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
-    <controlOutputObjs>block_88</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="64" name="pwm_out_write_ln47" lineNumber="47" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="1777766352" contextFuncName="pwm" opcode="write" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+    <controlOutputObjs>block_91</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="67" name="pwm_out_write_ln47" lineNumber="47" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="0" contextFuncName="pwm" opcode="write" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="47" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataOutputObjs>pwm_out</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="65" name="count_next_write_ln49" lineNumber="49" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="0" contextFuncName="pwm" opcode="store" m_display="0" m_delay="0.57" m_topoIndex="31" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="68" name="count_next_write_ln49" lineNumber="49" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="0" contextFuncName="pwm" opcode="store" m_display="0" m_delay="0.57" m_topoIndex="34" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="49" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataInputObjs>add</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="66" name="br_ln50" lineNumber="50" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="13201" contextFuncName="pwm" opcode="br" m_display="0" m_delay="0.52" m_topoIndex="32" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="69" name="br_ln50" lineNumber="50" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="3723792960" contextFuncName="pwm" opcode="br" m_display="0" m_delay="0.52" m_topoIndex="35" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="50" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
-      <controlInputObjs>block_88</controlInputObjs>
+      <controlInputObjs>block_91</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="pwm/pwm.cpp">
       <validLinenumbers>47</validLinenumbers>
@@ -411,79 +429,79 @@
       <validLinenumbers>50</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
-  <blocks id="70" name="block_70" type="BlockType">
+  <blocks id="73" name="block_73" type="BlockType">
     <controlInputObjs>block_33</controlInputObjs>
     <controlOutputObjs>switch</controlOutputObjs>
+    <controlOutputObjs>block_79</controlOutputObjs>
     <controlOutputObjs>block_76</controlOutputObjs>
-    <controlOutputObjs>block_73</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="68" name="pwm_out_write_ln0" coreId="0" opcode="write" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="71" name="pwm_out_write_ln0" coreId="0" opcode="write" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
       <dataOutputObjs>pwm_out</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="69" name="br_ln29" lineNumber="29" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="0" contextFuncName="pwm" opcode="br" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="72" name="br_ln29" lineNumber="29" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="0" contextFuncName="pwm" opcode="br" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="29" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataInputObjs>read</dataInputObjs>
-      <controlInputObjs>block_73</controlInputObjs>
       <controlInputObjs>block_76</controlInputObjs>
+      <controlInputObjs>block_79</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="pwm/pwm.cpp">
       <validLinenumbers>29</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
-  <blocks id="73" name="block_73" type="BlockType">
-    <controlInputObjs>block_70</controlInputObjs>
+  <blocks id="76" name="block_76" type="BlockType">
+    <controlInputObjs>block_73</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
-    <controlOutputObjs>block_88</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="71" name="count_next_write_ln33" lineNumber="33" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="1777771232" contextFuncName="pwm" opcode="store" m_display="0" m_delay="0.57" m_topoIndex="35" m_clusterGroupNumber="-1">
+    <controlOutputObjs>block_91</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="74" name="count_next_write_ln33" lineNumber="33" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="1667592992" contextFuncName="pwm" opcode="store" m_display="0" m_delay="0.57" m_topoIndex="38" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="33" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="72" name="br_ln34" lineNumber="34" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="0" contextFuncName="pwm" opcode="br" m_display="0" m_delay="0.52" m_topoIndex="36" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="75" name="br_ln34" lineNumber="34" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="542462019" contextFuncName="pwm" opcode="br" m_display="0" m_delay="0.52" m_topoIndex="39" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="34" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
-      <controlInputObjs>block_88</controlInputObjs>
+      <controlInputObjs>block_91</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="pwm/pwm.cpp">
       <validLinenumbers>33</validLinenumbers>
       <validLinenumbers>34</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
-  <blocks id="76" name="block_76" type="BlockType">
-    <controlInputObjs>block_70</controlInputObjs>
+  <blocks id="79" name="block_79" type="BlockType">
+    <controlInputObjs>block_73</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
-    <controlOutputObjs>block_88</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="74" name="count_next_write_ln39" lineNumber="39" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="49" contextFuncName="pwm" opcode="store" m_display="0" m_delay="0.57" m_topoIndex="37" m_clusterGroupNumber="-1">
+    <controlOutputObjs>block_91</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="77" name="count_next_write_ln39" lineNumber="39" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="1869422695" contextFuncName="pwm" opcode="store" m_display="0" m_delay="0.57" m_topoIndex="40" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="39" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="75" name="br_ln0" coreId="1777775016" opcode="br" m_display="0" m_delay="0.52" m_topoIndex="38" m_clusterGroupNumber="-1">
-      <controlInputObjs>block_88</controlInputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="78" name="br_ln0" coreId="274" opcode="br" m_display="0" m_delay="0.52" m_topoIndex="41" m_clusterGroupNumber="-1">
+      <controlInputObjs>block_91</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="pwm/pwm.cpp">
       <validLinenumbers>39</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
-  <blocks id="80" name="block_80" type="BlockType">
+  <blocks id="83" name="block_83" type="BlockType">
     <controlInputObjs>block_33</controlInputObjs>
     <controlOutputObjs>switch</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
-    <controlOutputObjs>block_88</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="77" name="pwm_out_write_ln90" lineNumber="90" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="0" contextFuncName="pwm" opcode="write" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
+    <controlOutputObjs>block_91</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="80" name="pwm_out_write_ln90" lineNumber="90" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="210" contextFuncName="pwm" opcode="write" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="90" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataOutputObjs>pwm_out</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="78" name="count_next_write_ln92" lineNumber="92" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="0" contextFuncName="pwm" opcode="store" m_display="0" m_delay="0.57" m_topoIndex="40" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="81" name="count_next_write_ln92" lineNumber="92" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="0" contextFuncName="pwm" opcode="store" m_display="0" m_delay="0.57" m_topoIndex="43" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="92" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="79" name="br_ln93" lineNumber="93" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="1777778080" contextFuncName="pwm" opcode="br" m_display="0" m_delay="0.52" m_topoIndex="41" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="82" name="br_ln93" lineNumber="93" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="66" contextFuncName="pwm" opcode="br" m_display="0" m_delay="0.52" m_topoIndex="44" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="93" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
-      <controlInputObjs>block_88</controlInputObjs>
+      <controlInputObjs>block_91</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="pwm/pwm.cpp">
       <validLinenumbers>90</validLinenumbers>
@@ -491,16 +509,16 @@
       <validLinenumbers>93</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
-  <blocks id="88" name="block_88" type="BlockType">
-    <controlInputObjs>block_39</controlInputObjs>
-    <controlInputObjs>block_44</controlInputObjs>
-    <controlInputObjs>block_51</controlInputObjs>
-    <controlInputObjs>block_55</controlInputObjs>
-    <controlInputObjs>block_63</controlInputObjs>
-    <controlInputObjs>block_67</controlInputObjs>
-    <controlInputObjs>block_73</controlInputObjs>
+  <blocks id="91" name="block_91" type="BlockType">
+    <controlInputObjs>block_40</controlInputObjs>
+    <controlInputObjs>block_45</controlInputObjs>
+    <controlInputObjs>block_53</controlInputObjs>
+    <controlInputObjs>block_57</controlInputObjs>
+    <controlInputObjs>block_66</controlInputObjs>
+    <controlInputObjs>block_70</controlInputObjs>
     <controlInputObjs>block_76</controlInputObjs>
-    <controlInputObjs>block_80</controlInputObjs>
+    <controlInputObjs>block_79</controlInputObjs>
+    <controlInputObjs>block_83</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>br</controlOutputObjs>
@@ -510,50 +528,50 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>br</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="81" name="next_state" originalName="next_state" coreId="1777729598" bitwidth="2" opcode="phi" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="84" name="next_state" originalName="next_state" coreId="3723942000" bitwidth="2" opcode="phi" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
       <dataOutputObjs>store</dataOutputObjs>
-      <controlInputObjs>block_80</controlInputObjs>
-      <controlInputObjs>block_73</controlInputObjs>
+      <controlInputObjs>block_83</controlInputObjs>
       <controlInputObjs>block_76</controlInputObjs>
-      <controlInputObjs>block_67</controlInputObjs>
-      <controlInputObjs>block_63</controlInputObjs>
-      <controlInputObjs>block_55</controlInputObjs>
-      <controlInputObjs>block_51</controlInputObjs>
-      <controlInputObjs>block_44</controlInputObjs>
-      <controlInputObjs>block_39</controlInputObjs>
+      <controlInputObjs>block_79</controlInputObjs>
+      <controlInputObjs>block_70</controlInputObjs>
+      <controlInputObjs>block_66</controlInputObjs>
+      <controlInputObjs>block_57</controlInputObjs>
+      <controlInputObjs>block_53</controlInputObjs>
+      <controlInputObjs>block_45</controlInputObjs>
+      <controlInputObjs>block_40</controlInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="82" name="end_local" originalName="end_local" coreId="925905197" bitwidth="1" opcode="phi" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="85" name="end_local" originalName="end_local" coreId="3723942448" bitwidth="1" opcode="phi" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
       <dataOutputObjs>write</dataOutputObjs>
-      <controlInputObjs>block_80</controlInputObjs>
-      <controlInputObjs>block_73</controlInputObjs>
+      <controlInputObjs>block_83</controlInputObjs>
       <controlInputObjs>block_76</controlInputObjs>
-      <controlInputObjs>block_67</controlInputObjs>
-      <controlInputObjs>block_63</controlInputObjs>
-      <controlInputObjs>block_55</controlInputObjs>
-      <controlInputObjs>block_51</controlInputObjs>
-      <controlInputObjs>block_44</controlInputObjs>
-      <controlInputObjs>block_39</controlInputObjs>
+      <controlInputObjs>block_79</controlInputObjs>
+      <controlInputObjs>block_70</controlInputObjs>
+      <controlInputObjs>block_66</controlInputObjs>
+      <controlInputObjs>block_57</controlInputObjs>
+      <controlInputObjs>block_53</controlInputObjs>
+      <controlInputObjs>block_45</controlInputObjs>
+      <controlInputObjs>block_40</controlInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="83" name="state_write_ln97" lineNumber="97" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="1777720064" contextFuncName="pwm" opcode="store" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="86" name="state_write_ln97" lineNumber="97" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="0" contextFuncName="pwm" opcode="store" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="97" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataInputObjs>phi</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="84" name="count_next_load" lineNumber="98" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="0" contextFuncName="pwm" bitwidth="64" opcode="load" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="87" name="count_next_load" lineNumber="98" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="3723944432" contextFuncName="pwm" bitwidth="64" opcode="load" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="98" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataOutputObjs>store</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="85" name="count_write_ln98" lineNumber="98" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="0" contextFuncName="pwm" opcode="store" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="88" name="count_write_ln98" lineNumber="98" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="0" contextFuncName="pwm" opcode="store" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="98" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataInputObjs>load</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="86" name="end_r_write_ln99" lineNumber="99" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="1777808064" contextFuncName="pwm" opcode="write" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="89" name="end_r_write_ln99" lineNumber="99" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="0" contextFuncName="pwm" opcode="write" m_display="0" m_topoIndex="50" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="99" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
       <dataInputObjs>phi</dataInputObjs>
       <dataOutputObjs>end_r</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="87" name="_ln101" lineNumber="101" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="8" contextFuncName="pwm" opcode="ret" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="90" name="_ln101" lineNumber="101" fileName="pwm/pwm.cpp" fileDirectory=".." coreId="3723947472" contextFuncName="pwm" opcode="ret" m_display="0" m_topoIndex="51" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pwm/pwm.cpp" linenumber="101" fileDirectory="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis" functionName="pwm"/>
     </node_objs>
     <fileValidLineNumbers fileName="pwm/pwm.cpp">
@@ -565,83 +583,92 @@
   </blocks>
   <ScheduleInfo time="0"/>
   <regnodes realName="end_local_reg_132">
-    <nodeIds>82</nodeIds>
+    <nodeIds>85</nodeIds>
   </regnodes>
   <regnodes realName="next_state_reg_100">
-    <nodeIds>81</nodeIds>
+    <nodeIds>84</nodeIds>
   </regnodes>
-  <expressionNodes realName="icmp_ln45_fu_209">
-    <nodeIds>56</nodeIds>
+  <expressionNodes realName="icmp_ln75_fu_201">
+    <nodeIds>35</nodeIds>
   </expressionNodes>
   <expressionNodes realName="next_state_phi_fu_103">
-    <nodeIds>81</nodeIds>
+    <nodeIds>84</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln60_fu_207">
+    <nodeIds>46</nodeIds>
   </expressionNodes>
   <expressionNodes realName="end_local_phi_fu_135">
-    <nodeIds>82</nodeIds>
+    <nodeIds>85</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="grp_fu_165">
-    <nodeIds>41</nodeIds>
-    <nodeIds>52</nodeIds>
-    <nodeIds>57</nodeIds>
+  <expressionNodes realName="icmp_ln60_fu_211">
+    <nodeIds>47</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="icmp_ln60_fu_203">
-    <nodeIds>45</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="icmp_ln75_fu_197">
+  <expressionNodes realName="zext_ln75_fu_197">
     <nodeIds>34</nodeIds>
   </expressionNodes>
-  <ioNodes realName="max_cycles_read_read_fu_72">
-    <nodeIds>28</nodeIds>
+  <expressionNodes realName="zext_ln45_fu_217">
+    <nodeIds>58</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="grp_fu_165">
+    <nodeIds>42</nodeIds>
+    <nodeIds>54</nodeIds>
+    <nodeIds>60</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln45_fu_221">
+    <nodeIds>59</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="store_ln98_store_fu_237">
+    <nodeIds>88</nodeIds>
   </ioNodes>
-  <ioNodes realName="store_ln98_store_fu_225">
-    <nodeIds>85</nodeIds>
+  <ioNodes realName="per_cycles_read_read_fu_72">
+    <nodeIds>28</nodeIds>
   </ioNodes>
   <ioNodes realName="cycles_hold_read_read_fu_60">
     <nodeIds>26</nodeIds>
   </ioNodes>
   <ioNodes realName="grp_store_fu_176">
-    <nodeIds>49</nodeIds>
-    <nodeIds>74</nodeIds>
+    <nodeIds>51</nodeIds>
+    <nodeIds>77</nodeIds>
   </ioNodes>
   <ioNodes realName="cycles_high_read_read_fu_66">
     <nodeIds>27</nodeIds>
   </ioNodes>
   <ioNodes realName="grp_store_fu_170">
-    <nodeIds>42</nodeIds>
-    <nodeIds>53</nodeIds>
-    <nodeIds>61</nodeIds>
-    <nodeIds>65</nodeIds>
+    <nodeIds>43</nodeIds>
+    <nodeIds>55</nodeIds>
+    <nodeIds>64</nodeIds>
+    <nodeIds>68</nodeIds>
   </ioNodes>
   <ioNodes realName="state_load_load_fu_188">
     <nodeIds>30</nodeIds>
   </ioNodes>
   <ioNodes realName="grp_store_fu_182">
-    <nodeIds>71</nodeIds>
-    <nodeIds>78</nodeIds>
+    <nodeIds>74</nodeIds>
+    <nodeIds>81</nodeIds>
   </ioNodes>
-  <ioNodes realName="store_ln97_store_fu_215">
-    <nodeIds>83</nodeIds>
+  <ioNodes realName="store_ln97_store_fu_227">
+    <nodeIds>86</nodeIds>
   </ioNodes>
   <ioNodes realName="write_ln99_write_fu_93">
-    <nodeIds>86</nodeIds>
+    <nodeIds>89</nodeIds>
   </ioNodes>
   <ioNodes realName="count_load_load_fu_192">
     <nodeIds>31</nodeIds>
   </ioNodes>
-  <ioNodes realName="count_next_load_load_fu_221">
-    <nodeIds>84</nodeIds>
+  <ioNodes realName="count_next_load_load_fu_233">
+    <nodeIds>87</nodeIds>
   </ioNodes>
   <ioNodes realName="start_read_read_fu_78">
     <nodeIds>29</nodeIds>
   </ioNodes>
   <ioNodes realName="grp_write_fu_84">
-    <nodeIds>37</nodeIds>
-    <nodeIds>40</nodeIds>
-    <nodeIds>46</nodeIds>
-    <nodeIds>60</nodeIds>
-    <nodeIds>64</nodeIds>
-    <nodeIds>68</nodeIds>
-    <nodeIds>77</nodeIds>
+    <nodeIds>38</nodeIds>
+    <nodeIds>41</nodeIds>
+    <nodeIds>48</nodeIds>
+    <nodeIds>63</nodeIds>
+    <nodeIds>67</nodeIds>
+    <nodeIds>71</nodeIds>
+    <nodeIds>80</nodeIds>
   </ioNodes>
   <ioPorts name="cycles_high">
     <contents name="read">
@@ -655,23 +682,23 @@
   </ioPorts>
   <ioPorts name="end_r">
     <contents name="write">
-      <nodeIds>86</nodeIds>
+      <nodeIds>89</nodeIds>
     </contents>
   </ioPorts>
-  <ioPorts name="max_cycles">
+  <ioPorts name="per_cycles">
     <contents name="read">
       <nodeIds>28</nodeIds>
     </contents>
   </ioPorts>
   <ioPorts name="pwm_out">
     <contents name="write">
-      <nodeIds>68</nodeIds>
-      <nodeIds>64</nodeIds>
-      <nodeIds>60</nodeIds>
-      <nodeIds>46</nodeIds>
-      <nodeIds>40</nodeIds>
-      <nodeIds>37</nodeIds>
-      <nodeIds>77</nodeIds>
+      <nodeIds>71</nodeIds>
+      <nodeIds>67</nodeIds>
+      <nodeIds>63</nodeIds>
+      <nodeIds>48</nodeIds>
+      <nodeIds>41</nodeIds>
+      <nodeIds>38</nodeIds>
+      <nodeIds>80</nodeIds>
     </contents>
   </ioPorts>
   <ioPorts name="start_r">
@@ -704,29 +731,30 @@
       <operations id="32" stage="1" latency="1"/>
       <operations id="34" stage="1" latency="1"/>
       <operations id="35" stage="1" latency="1"/>
-      <operations id="37" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
       <operations id="38" stage="1" latency="1"/>
-      <operations id="40" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
       <operations id="41" stage="1" latency="1"/>
       <operations id="42" stage="1" latency="1"/>
       <operations id="43" stage="1" latency="1"/>
-      <operations id="45" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
       <operations id="46" stage="1" latency="1"/>
       <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
       <operations id="49" stage="1" latency="1"/>
-      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
       <operations id="52" stage="1" latency="1"/>
-      <operations id="53" stage="1" latency="1"/>
       <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
       <operations id="56" stage="1" latency="1"/>
-      <operations id="57" stage="1" latency="1"/>
       <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
       <operations id="60" stage="1" latency="1"/>
       <operations id="61" stage="1" latency="1"/>
-      <operations id="62" stage="1" latency="1"/>
+      <operations id="63" stage="1" latency="1"/>
       <operations id="64" stage="1" latency="1"/>
       <operations id="65" stage="1" latency="1"/>
-      <operations id="66" stage="1" latency="1"/>
+      <operations id="67" stage="1" latency="1"/>
       <operations id="68" stage="1" latency="1"/>
       <operations id="69" stage="1" latency="1"/>
       <operations id="71" stage="1" latency="1"/>
@@ -735,33 +763,35 @@
       <operations id="75" stage="1" latency="1"/>
       <operations id="77" stage="1" latency="1"/>
       <operations id="78" stage="1" latency="1"/>
-      <operations id="79" stage="1" latency="1"/>
+      <operations id="80" stage="1" latency="1"/>
       <operations id="81" stage="1" latency="1"/>
       <operations id="82" stage="1" latency="1"/>
-      <operations id="83" stage="1" latency="1"/>
       <operations id="84" stage="1" latency="1"/>
       <operations id="85" stage="1" latency="1"/>
       <operations id="86" stage="1" latency="1"/>
       <operations id="87" stage="1" latency="1"/>
+      <operations id="88" stage="1" latency="1"/>
+      <operations id="89" stage="1" latency="1"/>
+      <operations id="90" stage="1" latency="1"/>
     </states>
   </fsm>
   <CFGRegionsRoot>
     <cfgRegions mId="1" mTag="pwm" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
       <basicBlocks>33</basicBlocks>
-      <basicBlocks>36</basicBlocks>
-      <basicBlocks>39</basicBlocks>
-      <basicBlocks>44</basicBlocks>
-      <basicBlocks>48</basicBlocks>
-      <basicBlocks>51</basicBlocks>
-      <basicBlocks>55</basicBlocks>
-      <basicBlocks>59</basicBlocks>
-      <basicBlocks>63</basicBlocks>
-      <basicBlocks>67</basicBlocks>
+      <basicBlocks>37</basicBlocks>
+      <basicBlocks>40</basicBlocks>
+      <basicBlocks>45</basicBlocks>
+      <basicBlocks>50</basicBlocks>
+      <basicBlocks>53</basicBlocks>
+      <basicBlocks>57</basicBlocks>
+      <basicBlocks>62</basicBlocks>
+      <basicBlocks>66</basicBlocks>
       <basicBlocks>70</basicBlocks>
       <basicBlocks>73</basicBlocks>
       <basicBlocks>76</basicBlocks>
-      <basicBlocks>80</basicBlocks>
-      <basicBlocks>88</basicBlocks>
+      <basicBlocks>79</basicBlocks>
+      <basicBlocks>83</basicBlocks>
+      <basicBlocks>91</basicBlocks>
       <mDfPipe/>
     </cfgRegions>
   </CFGRegionsRoot>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="counter.cpp" path="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/Counter/Counter/counter.cpp"/>
+    <originFiles name="counter.h" path="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/Counter/Counter/counter.h"/>
+  </source>
+  <testbench>
+    <originFiles name="counter_tb.cpp" path="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/Counter/Counter/counter_tb.cpp"/>
+    <originFiles name="counter_tb.h" path="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/HLS/part2/Counter/Counter/counter_tb.h"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

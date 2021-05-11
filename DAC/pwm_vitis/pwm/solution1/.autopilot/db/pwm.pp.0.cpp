@@ -5582,14 +5582,14 @@ inline bool operator!=(
 # 2 "pwm/pwm.cpp" 2
 
 
-typedef enum{idle, TH, TL, HOLD, new_set} state_type;
+typedef enum{idle, TH, TL, HOLD} state_type;
 
-__attribute__((sdx_kernel("pwm", 0))) void pwm(bool start, unsigned long max_cycles, unsigned long cycles_high, unsigned long cycles_hold,bool &pwm_out, bool &end){
+__attribute__((sdx_kernel("pwm", 0))) void pwm(bool start, unsigned int per_cycles, unsigned int cycles_high, unsigned int cycles_hold, bool &pwm_out, bool &end){
 #pragma HLS TOP name=pwm
 # 6 "pwm/pwm.cpp"
 
 #pragma HLS INTERFACE ap_none port=start
-#pragma HLS INTERFACE ap_none port=max_cycles
+#pragma HLS INTERFACE ap_none port=per_cycles
 #pragma HLS INTERFACE ap_none port=cycles_high
 #pragma HLS INTERFACE ap_none port=pwm_out
 #pragma HLS INTERFACE ap_none port=end
@@ -5641,7 +5641,7 @@ __attribute__((sdx_kernel("pwm", 0))) void pwm(bool start, unsigned long max_cyc
    break;
 
   case TL:
-   if (count < max_cycles) {
+   if (count < per_cycles) {
     next_state = TL;
     pwm_out = 0;
     end_local = 0;

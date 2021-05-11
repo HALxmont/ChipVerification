@@ -5,8 +5,8 @@
 
 extern "C" void AESL_WRAP_pwm (
 char start,
-long long max_cycles,
-long long cycles_high,
-long long cycles_hold,
+int per_cycles,
+int cycles_high,
+int cycles_hold,
 volatile void* pwm_out,
 volatile void* end);

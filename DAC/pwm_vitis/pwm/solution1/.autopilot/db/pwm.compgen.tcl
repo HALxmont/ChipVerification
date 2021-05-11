@@ -27,14 +27,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 2 \
-    name max_cycles \
+    name per_cycles \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_max_cycles \
+    corename dc_per_cycles \
     op interface \
-    ports { max_cycles { I 64 vector } } \
+    ports { per_cycles { I 32 vector } } \
 } "
 }
 
@@ -49,7 +49,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_cycles_high \
     op interface \
-    ports { cycles_high { I 64 vector } } \
+    ports { cycles_high { I 32 vector } } \
 } "
 }
 
@@ -64,7 +64,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_cycles_hold \
     op interface \
-    ports { cycles_hold { I 64 vector } } \
+    ports { cycles_hold { I 32 vector } } \
 } "
 }
 

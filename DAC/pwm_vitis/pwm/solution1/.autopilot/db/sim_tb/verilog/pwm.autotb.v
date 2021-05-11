@@ -17,17 +17,17 @@
 `define AUTOTB_LATENCY 0
 
 `define AESL_DEPTH_start_r 1
-`define AESL_DEPTH_max_cycles 1
+`define AESL_DEPTH_per_cycles 1
 `define AESL_DEPTH_cycles_high 1
 `define AESL_DEPTH_cycles_hold 1
 `define AESL_DEPTH_pwm_out 1
 `define AESL_DEPTH_end_r 1
 `define AUTOTB_TVIN_start_r  "./c.pwm.autotvin_start_r.dat"
-`define AUTOTB_TVIN_max_cycles  "./c.pwm.autotvin_max_cycles.dat"
+`define AUTOTB_TVIN_per_cycles  "./c.pwm.autotvin_per_cycles.dat"
 `define AUTOTB_TVIN_cycles_high  "./c.pwm.autotvin_cycles_high.dat"
 `define AUTOTB_TVIN_cycles_hold  "./c.pwm.autotvin_cycles_hold.dat"
 `define AUTOTB_TVIN_start_r_out_wrapc  "./rtl.pwm.autotvin_start_r.dat"
-`define AUTOTB_TVIN_max_cycles_out_wrapc  "./rtl.pwm.autotvin_max_cycles.dat"
+`define AUTOTB_TVIN_per_cycles_out_wrapc  "./rtl.pwm.autotvin_per_cycles.dat"
 `define AUTOTB_TVIN_cycles_high_out_wrapc  "./rtl.pwm.autotvin_cycles_high.dat"
 `define AUTOTB_TVIN_cycles_hold_out_wrapc  "./rtl.pwm.autotvin_cycles_hold.dat"
 `define AUTOTB_TVOUT_pwm_out  "./c.pwm.autotvout_pwm_out.dat"
@@ -36,11 +36,11 @@
 `define AUTOTB_TVOUT_end_r_out_wrapc  "./impl_rtl.pwm.autotvout_end_r.dat"
 module `AUTOTB_TOP;
 
-parameter AUTOTB_TRANSACTION_NUM = 903;
+parameter AUTOTB_TRANSACTION_NUM = 60303;
 parameter PROGRESS_TIMEOUT = 10000000;
 parameter LATENCY_ESTIMATION = 0;
 parameter LENGTH_start_r = 1;
-parameter LENGTH_max_cycles = 1;
+parameter LENGTH_per_cycles = 1;
 parameter LENGTH_cycles_high = 1;
 parameter LENGTH_cycles_hold = 1;
 parameter LENGTH_pwm_out = 1;
@@ -48,7 +48,7 @@ parameter LENGTH_end_r = 1;
 
 task read_token;
     input integer fp;
-    output reg [151 : 0] token;
+    output reg [127 : 0] token;
     integer ret;
     begin
         token = "";
@@ -60,10 +60,10 @@ endtask
 task post_check;
     input integer fp1;
     input integer fp2;
-    reg [151 : 0] token1;
-    reg [151 : 0] token2;
-    reg [151 : 0] golden;
-    reg [151 : 0] result;
+    reg [127 : 0] token1;
+    reg [127 : 0] token2;
+    reg [127 : 0] golden;
+    reg [127 : 0] result;
     integer ret;
     begin
         read_token(fp1, token1);
@@ -129,9 +129,9 @@ reg AESL_ready_delay = 0;
 wire ready;
 wire ready_wire;
 wire  start_r;
-wire [63 : 0] max_cycles;
-wire [63 : 0] cycles_high;
-wire [63 : 0] cycles_hold;
+wire [31 : 0] per_cycles;
+wire [31 : 0] cycles_high;
+wire [31 : 0] cycles_hold;
 wire  pwm_out;
 wire  end_r;
 integer done_cnt = 0;
@@ -152,7 +152,7 @@ wire ap_rst_n;
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
     .start_r(start_r),
-    .max_cycles(max_cycles),
+    .per_cycles(per_cycles),
     .cycles_high(cycles_high),
     .cycles_hold(cycles_hold),
     .pwm_out(pwm_out),
@@ -175,7 +175,7 @@ initial begin : read_file_process_start_r
     integer err;
     integer ret;
     integer proc_rand;
-    reg [151  : 0] token;
+    reg [127  : 0] token;
     integer i;
     reg transaction_finish;
     integer transaction_idx;
@@ -221,23 +221,23 @@ initial begin : read_file_process_start_r
 end
 
 
-// The signal of port max_cycles
-reg [63: 0] AESL_REG_max_cycles = 0;
-assign max_cycles = AESL_REG_max_cycles;
-initial begin : read_file_process_max_cycles
+// The signal of port per_cycles
+reg [31: 0] AESL_REG_per_cycles = 0;
+assign per_cycles = AESL_REG_per_cycles;
+initial begin : read_file_process_per_cycles
     integer fp;
     integer err;
     integer ret;
     integer proc_rand;
-    reg [151  : 0] token;
+    reg [127  : 0] token;
     integer i;
     reg transaction_finish;
     integer transaction_idx;
     transaction_idx = 0;
     wait(AESL_reset === 0);
-    fp = $fopen(`AUTOTB_TVIN_max_cycles,"r");
+    fp = $fopen(`AUTOTB_TVIN_per_cycles,"r");
     if(fp == 0) begin       // Failed to open file
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVIN_max_cycles);
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVIN_per_cycles);
         $display("ERROR: Simulation using HLS TB failed.");
         $finish;
     end
@@ -260,7 +260,7 @@ initial begin : read_file_process_max_cycles
                 # 0.2;
             end
         if(token != "[[/transaction]]") begin
-            ret = $sscanf(token, "0x%x", AESL_REG_max_cycles);
+            ret = $sscanf(token, "0x%x", AESL_REG_per_cycles);
               if (ret != 1) begin
                   $display("Failed to parse token!");
                 $display("ERROR: Simulation using HLS TB failed.");
@@ -276,14 +276,14 @@ end
 
 
 // The signal of port cycles_high
-reg [63: 0] AESL_REG_cycles_high = 0;
+reg [31: 0] AESL_REG_cycles_high = 0;
 assign cycles_high = AESL_REG_cycles_high;
 initial begin : read_file_process_cycles_high
     integer fp;
     integer err;
     integer ret;
     integer proc_rand;
-    reg [151  : 0] token;
+    reg [127  : 0] token;
     integer i;
     reg transaction_finish;
     integer transaction_idx;
@@ -330,14 +330,14 @@ end
 
 
 // The signal of port cycles_hold
-reg [63: 0] AESL_REG_cycles_hold = 0;
+reg [31: 0] AESL_REG_cycles_hold = 0;
 assign cycles_hold = AESL_REG_cycles_hold;
 initial begin : read_file_process_cycles_hold
     integer fp;
     integer err;
     integer ret;
     integer proc_rand;
-    reg [151  : 0] token;
+    reg [127  : 0] token;
     integer i;
     reg transaction_finish;
     integer transaction_idx;
@@ -402,7 +402,7 @@ initial begin : write_file_process_pwm_out
     integer hls_stream_size;
     integer proc_rand;
     integer pwm_out_count;
-    reg [151:0] token;
+    reg [127:0] token;
     integer transaction_idx;
     reg [8 * 5:1] str;
     wait(AESL_reset === 0);
@@ -449,7 +449,7 @@ initial begin : write_file_process_end_r
     integer hls_stream_size;
     integer proc_rand;
     integer end_r_count;
-    reg [151:0] token;
+    reg [127:0] token;
     integer transaction_idx;
     reg [8 * 5:1] str;
     wait(AESL_reset === 0);
@@ -569,9 +569,9 @@ end
 reg end_start_r;
 reg [31:0] size_start_r;
 reg [31:0] size_start_r_backup;
-reg end_max_cycles;
-reg [31:0] size_max_cycles;
-reg [31:0] size_max_cycles_backup;
+reg end_per_cycles;
+reg [31:0] size_per_cycles;
+reg [31:0] size_per_cycles_backup;
 reg end_cycles_high;
 reg [31:0] size_cycles_high;
 reg [31:0] size_cycles_high_backup;

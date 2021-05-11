@@ -59752,11 +59752,11 @@ inline bool operator!=(
 # 2 "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/pwm.cpp" 2
 
 
-typedef enum{idle, TH, TL, HOLD, new_set} state_type;
+typedef enum{idle, TH, TL, HOLD} state_type;
 
-void pwm(bool start, unsigned long max_cycles, unsigned long cycles_high, unsigned long cycles_hold,bool &pwm_out, bool &end){
+void pwm(bool start, unsigned int per_cycles, unsigned int cycles_high, unsigned int cycles_hold, bool &pwm_out, bool &end){
 #pragma HLS INTERFACE ap_none port=start
-#pragma HLS INTERFACE ap_none port=max_cycles
+#pragma HLS INTERFACE ap_none port=per_cycles
 #pragma HLS INTERFACE ap_none port=cycles_high
 #pragma HLS INTERFACE ap_none port=pwm_out
 #pragma HLS INTERFACE ap_none port=end
@@ -59808,7 +59808,7 @@ void pwm(bool start, unsigned long max_cycles, unsigned long cycles_high, unsign
    break;
 
   case TL:
-   if (count < max_cycles) {
+   if (count < per_cycles) {
     next_state = TL;
     pwm_out = 0;
     end_local = 0;
@@ -59854,19 +59854,19 @@ void pwm(bool start, unsigned long max_cycles, unsigned long cycles_high, unsign
 #ifdef __cplusplus
 extern "C"
 #endif
-void apatb_pwm_ir(bool, unsigned long, unsigned long, unsigned long, bool &, bool &);
+void apatb_pwm_ir(bool, unsigned int, unsigned int, unsigned int, bool &, bool &);
 #ifdef __cplusplus
 extern "C"
 #endif
-void pwm_hw_stub(bool start, unsigned long max_cycles, unsigned long cycles_high, unsigned long cycles_hold, bool &pwm_out, bool &end){
-pwm(start, max_cycles, cycles_high, cycles_hold, pwm_out, end);
+void pwm_hw_stub(bool start, unsigned int per_cycles, unsigned int cycles_high, unsigned int cycles_hold, bool &pwm_out, bool &end){
+pwm(start, per_cycles, cycles_high, cycles_hold, pwm_out, end);
 return ;
 }
 #ifdef __cplusplus
 extern "C"
 #endif
-void apatb_pwm_sw(bool start, unsigned long max_cycles, unsigned long cycles_high, unsigned long cycles_hold, bool &pwm_out, bool &end){
-apatb_pwm_ir(start, max_cycles, cycles_high, cycles_hold, pwm_out, end);
+void apatb_pwm_sw(bool start, unsigned int per_cycles, unsigned int cycles_high, unsigned int cycles_hold, bool &pwm_out, bool &end){
+apatb_pwm_ir(start, per_cycles, cycles_high, cycles_hold, pwm_out, end);
 return ;
 }
 #endif

@@ -32,8 +32,8 @@ class AESL_RUNTIME_BC {
     fstream file_token;
     string mName;
 };
-extern "C" void pwm(char, long long, long long, long long, volatile void *, volatile void *);
-extern "C" void apatb_pwm_hw(char __xlx_apatb_param_start, long long __xlx_apatb_param_max_cycles, long long __xlx_apatb_param_cycles_high, long long __xlx_apatb_param_cycles_hold, volatile void * __xlx_apatb_param_pwm_out, volatile void * __xlx_apatb_param_end) {
+extern "C" void pwm(char, int, int, int, volatile void *, volatile void *);
+extern "C" void apatb_pwm_hw(char __xlx_apatb_param_start, int __xlx_apatb_param_per_cycles, int __xlx_apatb_param_cycles_high, int __xlx_apatb_param_cycles_hold, volatile void * __xlx_apatb_param_pwm_out, volatile void * __xlx_apatb_param_end) {
   // DUT call
-  pwm(__xlx_apatb_param_start, __xlx_apatb_param_max_cycles, __xlx_apatb_param_cycles_high, __xlx_apatb_param_cycles_hold, __xlx_apatb_param_pwm_out, __xlx_apatb_param_end);
+  pwm(__xlx_apatb_param_start, __xlx_apatb_param_per_cycles, __xlx_apatb_param_cycles_high, __xlx_apatb_param_cycles_hold, __xlx_apatb_param_pwm_out, __xlx_apatb_param_end);
 }

@@ -10,11 +10,11 @@
 <InvalidType>0</InvalidType>
 </RtlPorts>
 <RtlPorts>
-<name>max_cycles</name>
+<name>per_cycles</name>
 <CType>
-<TypeName>long long</TypeName>
-<TypeWidth>64</TypeWidth>
-<PhysicalWidth>64</PhysicalWidth>
+<TypeName>int</TypeName>
+<TypeWidth>32</TypeWidth>
+<PhysicalWidth>32</PhysicalWidth>
 </CType>
 <CFractionWidth>0</CFractionWidth>
 <InvalidType>0</InvalidType>
@@ -22,9 +22,9 @@
 <RtlPorts>
 <name>cycles_high</name>
 <CType>
-<TypeName>long long</TypeName>
-<TypeWidth>64</TypeWidth>
-<PhysicalWidth>64</PhysicalWidth>
+<TypeName>int</TypeName>
+<TypeWidth>32</TypeWidth>
+<PhysicalWidth>32</PhysicalWidth>
 </CType>
 <CFractionWidth>0</CFractionWidth>
 <InvalidType>0</InvalidType>
@@ -32,9 +32,9 @@
 <RtlPorts>
 <name>cycles_hold</name>
 <CType>
-<TypeName>long long</TypeName>
-<TypeWidth>64</TypeWidth>
-<PhysicalWidth>64</PhysicalWidth>
+<TypeName>int</TypeName>
+<TypeWidth>32</TypeWidth>
+<PhysicalWidth>32</PhysicalWidth>
 </CType>
 <CFractionWidth>0</CFractionWidth>
 <InvalidType>0</InvalidType>

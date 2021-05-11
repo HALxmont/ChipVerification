@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'pwm'" level="0">
-<item name = "Date">Wed May  5 12:24:45 2021
+<item name = "Date">Tue May 11 13:54:23 2021
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)</item>
 <item name = "Project">pwm</item>
@@ -78,9 +78,9 @@
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
 <column name="grp_fu_165_p2">+, 0, 0, 71, 64, 1</column>
-<column name="icmp_ln45_fu_209_p2">icmp, 0, 0, 29, 64, 64</column>
-<column name="icmp_ln60_fu_203_p2">icmp, 0, 0, 29, 64, 64</column>
-<column name="icmp_ln75_fu_197_p2">icmp, 0, 0, 29, 64, 64</column>
+<column name="icmp_ln45_fu_221_p2">icmp, 0, 0, 29, 64, 64</column>
+<column name="icmp_ln60_fu_211_p2">icmp, 0, 0, 29, 64, 64</column>
+<column name="icmp_ln75_fu_201_p2">icmp, 0, 0, 29, 64, 64</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -110,9 +110,9 @@
 <column name="ap_clk">in, 1, ap_ctrl_none, pwm, return value</column>
 <column name="ap_rst">in, 1, ap_ctrl_none, pwm, return value</column>
 <column name="start_r">in, 1, ap_none, start_r, scalar</column>
-<column name="max_cycles">in, 64, ap_none, max_cycles, scalar</column>
-<column name="cycles_high">in, 64, ap_none, cycles_high, scalar</column>
-<column name="cycles_hold">in, 64, ap_none, cycles_hold, scalar</column>
+<column name="per_cycles">in, 32, ap_none, per_cycles, scalar</column>
+<column name="cycles_high">in, 32, ap_none, cycles_high, scalar</column>
+<column name="cycles_hold">in, 32, ap_none, cycles_hold, scalar</column>
 <column name="pwm_out">out, 1, ap_none, pwm_out, pointer</column>
 <column name="end_r">out, 1, ap_none, end_r, pointer</column>
 </table>

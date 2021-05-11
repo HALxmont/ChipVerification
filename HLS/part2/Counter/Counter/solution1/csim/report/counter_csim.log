@@ -1,0 +1,27 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../counter.cpp in debug mode
+   Generating csim.exe
+Test Start
+ sw = 1 | number_out = 1
+ sw = 0 | number_out = 1
+ sw = 1 | number_out = 2
+ sw = 0 | number_out = 2
+ sw = 1 | number_out = 3
+ sw = 0 | number_out = 3
+ sw = 1 | number_out = 4
+ sw = 0 | number_out = 4
+ sw = 1 | number_out = 5
+ sw = 0 | number_out = 5
+ sw = 1 | number_out = 6
+ sw = 0 | number_out = 6
+ sw = 1 | number_out = 7
+ sw = 0 | number_out = 7
+ sw = 1 | number_out = 8
+ sw = 0 | number_out = 8
+ sw = 1 | number_out = 9
+ sw = 0 | number_out = 9
+ sw = 1 | number_out = 0
+ sw = 0 | number_out = 0
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

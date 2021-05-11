@@ -2,8 +2,8 @@
 # xsim v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Wed May  5 12:31:54 2021
-# Process ID: 123648
+# Start of session at: Tue May 11 13:55:00 2021
+# Process ID: 360142
 # Current directory: /home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/solution1/sim/verilog
 # Command line: xsim -mode tcl -source {xsim.dir/pwm/xsim_script.tcl}
 # Log file: /home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/solution1/sim/verilog/xsim.log

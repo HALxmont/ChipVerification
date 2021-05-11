@@ -57,6 +57,8 @@
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/auto_cc/include"/>
                                     									
+                                    <listOptionValue builtIn="false" value="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis"/>
+                                    									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vitis_HLS/2020.2/include/ap_sysc"/>
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vitis_HLS/2020.2/include/etc"/>
@@ -90,6 +92,8 @@
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/systemc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/auto_cc/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis"/>
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vitis_HLS/2020.2/include/ap_sysc"/>
                                     									
@@ -257,6 +261,8 @@
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/auto_cc/include"/>
                                     									
+                                    <listOptionValue builtIn="false" value="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis"/>
+                                    									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vitis_HLS/2020.2/include/ap_sysc"/>
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vitis_HLS/2020.2/include/etc"/>
@@ -280,6 +286,8 @@
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/systemc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/auto_cc/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis"/>
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vitis_HLS/2020.2/include/ap_sysc"/>
                                     									

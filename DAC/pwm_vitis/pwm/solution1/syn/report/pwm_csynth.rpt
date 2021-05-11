@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'pwm'
 ================================================================
-* Date:           Wed May  5 12:24:45 2021
+* Date:           Tue May 11 13:54:23 2021
 
 * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
 * Project:        pwm
@@ -81,9 +81,9 @@
     |    Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +---------------------+----------+----+---+----+------------+------------+
     |grp_fu_165_p2        |         +|   0|  0|  71|          64|           1|
-    |icmp_ln45_fu_209_p2  |      icmp|   0|  0|  29|          64|          64|
-    |icmp_ln60_fu_203_p2  |      icmp|   0|  0|  29|          64|          64|
-    |icmp_ln75_fu_197_p2  |      icmp|   0|  0|  29|          64|          64|
+    |icmp_ln45_fu_221_p2  |      icmp|   0|  0|  29|          64|          64|
+    |icmp_ln60_fu_211_p2  |      icmp|   0|  0|  29|          64|          64|
+    |icmp_ln75_fu_201_p2  |      icmp|   0|  0|  29|          64|          64|
     +---------------------+----------+----+---+----+------------+------------+
     |Total                |          |   0|  0| 158|         256|         193|
     +---------------------+----------+----+---+----+------------+------------+
@@ -125,9 +125,9 @@
 |ap_clk       |   in|    1|  ap_ctrl_none|           pwm|  return value|
 |ap_rst       |   in|    1|  ap_ctrl_none|           pwm|  return value|
 |start_r      |   in|    1|       ap_none|       start_r|        scalar|
-|max_cycles   |   in|   64|       ap_none|    max_cycles|        scalar|
-|cycles_high  |   in|   64|       ap_none|   cycles_high|        scalar|
-|cycles_hold  |   in|   64|       ap_none|   cycles_hold|        scalar|
+|per_cycles   |   in|   32|       ap_none|    per_cycles|        scalar|
+|cycles_high  |   in|   32|       ap_none|   cycles_high|        scalar|
+|cycles_hold  |   in|   32|       ap_none|   cycles_hold|        scalar|
 |pwm_out      |  out|    1|       ap_none|       pwm_out|       pointer|
 |end_r        |  out|    1|       ap_none|         end_r|       pointer|
 +-------------+-----+-----+--------------+--------------+--------------+

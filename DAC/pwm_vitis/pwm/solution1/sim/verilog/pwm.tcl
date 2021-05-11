@@ -11,8 +11,8 @@ set cycles_hold_group [add_wave_group cycles_hold(wire) -into $cinputgroup]
 add_wave /apatb_pwm_top/AESL_inst_pwm/cycles_hold -into $cycles_hold_group -radix hex
 set cycles_high_group [add_wave_group cycles_high(wire) -into $cinputgroup]
 add_wave /apatb_pwm_top/AESL_inst_pwm/cycles_high -into $cycles_high_group -radix hex
-set max_cycles_group [add_wave_group max_cycles(wire) -into $cinputgroup]
-add_wave /apatb_pwm_top/AESL_inst_pwm/max_cycles -into $max_cycles_group -radix hex
+set per_cycles_group [add_wave_group per_cycles(wire) -into $cinputgroup]
+add_wave /apatb_pwm_top/AESL_inst_pwm/per_cycles -into $per_cycles_group -radix hex
 set start_group [add_wave_group start(wire) -into $cinputgroup]
 add_wave /apatb_pwm_top/AESL_inst_pwm/start_r -into $start_group -radix hex
 set resetgroup [add_wave_group "Reset" -into $designtopgroup]
@@ -27,7 +27,7 @@ add_wave /apatb_pwm_top/AUTOTB_TRANSACTION_NUM -into $tb_simstatus_group -radix 
 add_wave /apatb_pwm_top/ready_cnt -into $tb_simstatus_group -radix hex
 add_wave /apatb_pwm_top/done_cnt -into $tb_simstatus_group -radix hex
 add_wave /apatb_pwm_top/LENGTH_start_r -into $tb_portdepth_group -radix hex
-add_wave /apatb_pwm_top/LENGTH_max_cycles -into $tb_portdepth_group -radix hex
+add_wave /apatb_pwm_top/LENGTH_per_cycles -into $tb_portdepth_group -radix hex
 add_wave /apatb_pwm_top/LENGTH_cycles_high -into $tb_portdepth_group -radix hex
 add_wave /apatb_pwm_top/LENGTH_cycles_hold -into $tb_portdepth_group -radix hex
 add_wave /apatb_pwm_top/LENGTH_pwm_out -into $tb_portdepth_group -radix hex
@@ -42,8 +42,8 @@ set tb_cycles_hold_group [add_wave_group cycles_hold(wire) -into $tbcinputgroup]
 add_wave /apatb_pwm_top/cycles_hold -into $tb_cycles_hold_group -radix hex
 set tb_cycles_high_group [add_wave_group cycles_high(wire) -into $tbcinputgroup]
 add_wave /apatb_pwm_top/cycles_high -into $tb_cycles_high_group -radix hex
-set tb_max_cycles_group [add_wave_group max_cycles(wire) -into $tbcinputgroup]
-add_wave /apatb_pwm_top/max_cycles -into $tb_max_cycles_group -radix hex
+set tb_per_cycles_group [add_wave_group per_cycles(wire) -into $tbcinputgroup]
+add_wave /apatb_pwm_top/per_cycles -into $tb_per_cycles_group -radix hex
 set tb_start_group [add_wave_group start(wire) -into $tbcinputgroup]
 add_wave /apatb_pwm_top/start_r -into $tb_start_group -radix hex
 save_wave_config pwm.wcfg

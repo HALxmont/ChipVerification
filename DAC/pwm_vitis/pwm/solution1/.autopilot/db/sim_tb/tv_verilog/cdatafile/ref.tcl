@@ -1,9 +1,9 @@
 set depth_list {
 {start_r 1}
-{max_cycles 1}
+{per_cycles 1}
 {cycles_high 1}
 {cycles_hold 1}
 {pwm_out 1}
 {end_r 1}
 }
-set trans_num 903
+set trans_num 60303

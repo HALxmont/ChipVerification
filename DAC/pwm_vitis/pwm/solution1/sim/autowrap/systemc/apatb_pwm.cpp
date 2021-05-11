@@ -21,8 +21,8 @@ using namespace sc_dt;
 #define AUTOTB_TVIN_start "../tv/cdatafile/c.pwm.autotvin_start_r.dat"
 #define AUTOTB_TVOUT_start "../tv/cdatafile/c.pwm.autotvout_start_r.dat"
 // wrapc file define:
-#define AUTOTB_TVIN_max_cycles "../tv/cdatafile/c.pwm.autotvin_max_cycles.dat"
-#define AUTOTB_TVOUT_max_cycles "../tv/cdatafile/c.pwm.autotvout_max_cycles.dat"
+#define AUTOTB_TVIN_per_cycles "../tv/cdatafile/c.pwm.autotvin_per_cycles.dat"
+#define AUTOTB_TVOUT_per_cycles "../tv/cdatafile/c.pwm.autotvout_per_cycles.dat"
 // wrapc file define:
 #define AUTOTB_TVIN_cycles_high "../tv/cdatafile/c.pwm.autotvin_cycles_high.dat"
 #define AUTOTB_TVOUT_cycles_high "../tv/cdatafile/c.pwm.autotvout_cycles_high.dat"
@@ -41,7 +41,7 @@ using namespace sc_dt;
 // tvout file define:
 #define AUTOTB_TVOUT_PC_start "../tv/rtldatafile/rtl.pwm.autotvout_start_r.dat"
 // tvout file define:
-#define AUTOTB_TVOUT_PC_max_cycles "../tv/rtldatafile/rtl.pwm.autotvout_max_cycles.dat"
+#define AUTOTB_TVOUT_PC_per_cycles "../tv/rtldatafile/rtl.pwm.autotvout_per_cycles.dat"
 // tvout file define:
 #define AUTOTB_TVOUT_PC_cycles_high "../tv/rtldatafile/rtl.pwm.autotvout_cycles_high.dat"
 // tvout file define:
@@ -56,7 +56,7 @@ class INTER_TCL_FILE {
 INTER_TCL_FILE(const char* name) {
   mName = name; 
   start_depth = 0;
-  max_cycles_depth = 0;
+  per_cycles_depth = 0;
   cycles_high_depth = 0;
   cycles_hold_depth = 0;
   pwm_out_depth = 0;
@@ -79,7 +79,7 @@ INTER_TCL_FILE(const char* name) {
 string get_depth_list () {
   stringstream total_list;
   total_list << "{start_r " << start_depth << "}\n";
-  total_list << "{max_cycles " << max_cycles_depth << "}\n";
+  total_list << "{per_cycles " << per_cycles_depth << "}\n";
   total_list << "{cycles_high " << cycles_high_depth << "}\n";
   total_list << "{cycles_hold " << cycles_hold_depth << "}\n";
   total_list << "{pwm_out " << pwm_out_depth << "}\n";
@@ -94,7 +94,7 @@ void set_string(std::string list, std::string* class_list) {
 }
   public:
     int start_depth;
-    int max_cycles_depth;
+    int per_cycles_depth;
     int cycles_high_depth;
     int cycles_hold_depth;
     int pwm_out_depth;
@@ -140,9 +140,9 @@ static void RTLOutputCheckAndReplacement(std::string &AESL_token, std::string Po
       no_x = true;
   }
 }
-extern "C" void pwm_hw_stub_wrapper(char, long long, long long, long long, volatile void *, volatile void *);
+extern "C" void pwm_hw_stub_wrapper(char, int, int, int, volatile void *, volatile void *);
 
-extern "C" void apatb_pwm_hw(char __xlx_apatb_param_start, long long __xlx_apatb_param_max_cycles, long long __xlx_apatb_param_cycles_high, long long __xlx_apatb_param_cycles_hold, volatile void * __xlx_apatb_param_pwm_out, volatile void * __xlx_apatb_param_end) {
+extern "C" void apatb_pwm_hw(char __xlx_apatb_param_start, int __xlx_apatb_param_per_cycles, int __xlx_apatb_param_cycles_high, int __xlx_apatb_param_cycles_hold, volatile void * __xlx_apatb_param_pwm_out, volatile void * __xlx_apatb_param_end) {
   refine_signal_handler();
   fstream wrapc_switch_file_token;
   wrapc_switch_file_token.open(".hls_cosim_wrapc_switch.log");
@@ -251,9 +251,9 @@ CodeState = ENTER_WRAPC;
 //start
 aesl_fh.touch(AUTOTB_TVIN_start);
 aesl_fh.touch(AUTOTB_TVOUT_start);
-//max_cycles
-aesl_fh.touch(AUTOTB_TVIN_max_cycles);
-aesl_fh.touch(AUTOTB_TVOUT_max_cycles);
+//per_cycles
+aesl_fh.touch(AUTOTB_TVIN_per_cycles);
+aesl_fh.touch(AUTOTB_TVOUT_per_cycles);
 //cycles_high
 aesl_fh.touch(AUTOTB_TVIN_cycles_high);
 aesl_fh.touch(AUTOTB_TVOUT_cycles_high);
@@ -281,26 +281,26 @@ CodeState = DUMP_INPUTS;
   sprintf(__xlx_sprintf_buffer.data(), "[[/transaction]] \n");
   aesl_fh.write(AUTOTB_TVIN_start, __xlx_sprintf_buffer.data());
 }
-// print max_cycles Transactions
+// print per_cycles Transactions
 {
   sprintf(__xlx_sprintf_buffer.data(), "[[transaction]] %d\n", AESL_transaction);
-  aesl_fh.write(AUTOTB_TVIN_max_cycles, __xlx_sprintf_buffer.data());
+  aesl_fh.write(AUTOTB_TVIN_per_cycles, __xlx_sprintf_buffer.data());
   {
-    sc_bv<64> __xlx_tmp_lv = *((long long*)&__xlx_apatb_param_max_cycles);
+    sc_bv<32> __xlx_tmp_lv = *((int*)&__xlx_apatb_param_per_cycles);
 
     sprintf(__xlx_sprintf_buffer.data(), "%s\n", __xlx_tmp_lv.to_string(SC_HEX).c_str());
-    aesl_fh.write(AUTOTB_TVIN_max_cycles, __xlx_sprintf_buffer.data()); 
+    aesl_fh.write(AUTOTB_TVIN_per_cycles, __xlx_sprintf_buffer.data()); 
   }
-  tcl_file.set_num(1, &tcl_file.max_cycles_depth);
+  tcl_file.set_num(1, &tcl_file.per_cycles_depth);
   sprintf(__xlx_sprintf_buffer.data(), "[[/transaction]] \n");
-  aesl_fh.write(AUTOTB_TVIN_max_cycles, __xlx_sprintf_buffer.data());
+  aesl_fh.write(AUTOTB_TVIN_per_cycles, __xlx_sprintf_buffer.data());
 }
 // print cycles_high Transactions
 {
   sprintf(__xlx_sprintf_buffer.data(), "[[transaction]] %d\n", AESL_transaction);
   aesl_fh.write(AUTOTB_TVIN_cycles_high, __xlx_sprintf_buffer.data());
   {
-    sc_bv<64> __xlx_tmp_lv = *((long long*)&__xlx_apatb_param_cycles_high);
+    sc_bv<32> __xlx_tmp_lv = *((int*)&__xlx_apatb_param_cycles_high);
 
     sprintf(__xlx_sprintf_buffer.data(), "%s\n", __xlx_tmp_lv.to_string(SC_HEX).c_str());
     aesl_fh.write(AUTOTB_TVIN_cycles_high, __xlx_sprintf_buffer.data()); 
@@ -314,7 +314,7 @@ CodeState = DUMP_INPUTS;
   sprintf(__xlx_sprintf_buffer.data(), "[[transaction]] %d\n", AESL_transaction);
   aesl_fh.write(AUTOTB_TVIN_cycles_hold, __xlx_sprintf_buffer.data());
   {
-    sc_bv<64> __xlx_tmp_lv = *((long long*)&__xlx_apatb_param_cycles_hold);
+    sc_bv<32> __xlx_tmp_lv = *((int*)&__xlx_apatb_param_cycles_hold);
 
     sprintf(__xlx_sprintf_buffer.data(), "%s\n", __xlx_tmp_lv.to_string(SC_HEX).c_str());
     aesl_fh.write(AUTOTB_TVIN_cycles_hold, __xlx_sprintf_buffer.data()); 
@@ -352,7 +352,7 @@ CodeState = DUMP_INPUTS;
   aesl_fh.write(AUTOTB_TVIN_end, __xlx_sprintf_buffer.data());
 }
 CodeState = CALL_C_DUT;
-pwm_hw_stub_wrapper(__xlx_apatb_param_start, __xlx_apatb_param_max_cycles, __xlx_apatb_param_cycles_high, __xlx_apatb_param_cycles_hold, __xlx_apatb_param_pwm_out, __xlx_apatb_param_end);
+pwm_hw_stub_wrapper(__xlx_apatb_param_start, __xlx_apatb_param_per_cycles, __xlx_apatb_param_cycles_high, __xlx_apatb_param_cycles_hold, __xlx_apatb_param_pwm_out, __xlx_apatb_param_end);
 CodeState = DUMP_OUTPUTS;
 // print pwm_out Transactions
 {

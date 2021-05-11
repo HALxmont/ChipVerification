@@ -81,7 +81,7 @@ proc check_tvin_file {} {
 	}
     set rtlfilelist {
          "c.pwm.autotvin_start_r.dat"
-         "c.pwm.autotvin_max_cycles.dat"
+         "c.pwm.autotvin_per_cycles.dat"
          "c.pwm.autotvin_cycles_high.dat"
          "c.pwm.autotvin_cycles_hold.dat"
          "c.pwm.autotvout_pwm_out.dat"

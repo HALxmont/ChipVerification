@@ -6,18 +6,18 @@
           <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
         </hw>
       </arg>
-      <arg id="1" access_type="r" src_name="max_cycles" src_type="long unsigned int" src_isptr="0" src_bitwidth="64" src_size_or_depth="1">
-        <hw hw_usage="data" hw_interface="Register" hw_name="max_cycles" hw_bitwidth="64" hw_size_or_depth="1">
+      <arg id="1" access_type="r" src_name="per_cycles" src_type="unsigned int" src_isptr="0" src_bitwidth="32" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="Register" hw_name="per_cycles" hw_bitwidth="32" hw_size_or_depth="1">
           <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
         </hw>
       </arg>
-      <arg id="2" access_type="r" src_name="cycles_high" src_type="long unsigned int" src_isptr="0" src_bitwidth="64" src_size_or_depth="1">
-        <hw hw_usage="data" hw_interface="Register" hw_name="cycles_high" hw_bitwidth="64" hw_size_or_depth="1">
+      <arg id="2" access_type="r" src_name="cycles_high" src_type="unsigned int" src_isptr="0" src_bitwidth="32" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="Register" hw_name="cycles_high" hw_bitwidth="32" hw_size_or_depth="1">
           <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
         </hw>
       </arg>
-      <arg id="3" access_type="r" src_name="cycles_hold" src_type="long unsigned int" src_isptr="0" src_bitwidth="64" src_size_or_depth="1">
-        <hw hw_usage="data" hw_interface="Register" hw_name="cycles_hold" hw_bitwidth="64" hw_size_or_depth="1">
+      <arg id="3" access_type="r" src_name="cycles_hold" src_type="unsigned int" src_isptr="0" src_bitwidth="32" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="Register" hw_name="cycles_hold" hw_bitwidth="32" hw_size_or_depth="1">
           <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
         </hw>
       </arg>

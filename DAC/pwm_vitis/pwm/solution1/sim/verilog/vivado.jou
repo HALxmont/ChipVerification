@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Wed May  5 12:32:26 2021
-# Process ID: 123756
+# Start of session at: Tue May 11 13:56:25 2021
+# Process ID: 360287
 # Current directory: /home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/solution1/sim/verilog
 # Command line: vivado -source open_wave.tcl
 # Log file: /home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/solution1/sim/verilog/vivado.log
@@ -12,4 +12,9 @@
 start_gui
 source open_wave.tcl
 open_wave_config /home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/solution1/sim/verilog/pwm.wcfg
+save_wave_config {/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/solution1/sim/verilog/pwm.wcfg}
+save_wave_config {/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/solution1/sim/verilog/pwm.wcfg}
+save_wave_config {/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/solution1/sim/verilog/pwm.wcfg}
+save_wave_config {/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/solution1/sim/verilog/pwm.wcfg}
+save_wave_config {/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/solution1/sim/verilog/pwm.wcfg}
 close_sim

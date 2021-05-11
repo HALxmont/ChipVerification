@@ -59760,24 +59760,24 @@ int main(){
   bool start;
   bool end;
   bool pwm_out;
-  unsigned long MAX_CYCLES = 200;
-  unsigned long HIGH_CYCLES = 30;
-  unsigned long HOLD_CYCLES = 100;
+  unsigned int PER_CYCLES = 20000;
+  unsigned int HIGH_CYCLES = 30;
+  unsigned int HOLD_CYCLES = 100;
 # 25 "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/pwm_tb.cpp"
   std::cout << "  " << std::endl;
-  std::cout << " // ----------- start = 1 | for i <= MAX_CYCLES = 200 | HG = 15 ---------- // " << std::endl;
+  std::cout << " // ----------- start = 1 | for i <= PER_CYCLES = 200 | HG = 15 ---------- // " << std::endl;
   std::cout << "  " << std::endl;
 
 
   HIGH_CYCLES = 50;
-  for (unsigned long i = 0; i <= MAX_CYCLES+HOLD_CYCLES; i++) {
+  for (unsigned long i = 0; i <= PER_CYCLES+HOLD_CYCLES; i++) {
    if (i == 0) {
     start = 1;
    }
    else {
     start = 0;
    }
-   pwm(start, MAX_CYCLES, HIGH_CYCLES, HOLD_CYCLES, pwm_out, end);
+   pwm(start, PER_CYCLES, HIGH_CYCLES, HOLD_CYCLES, pwm_out, end);
    std::cout << " start = " << start << " end = " << end << " pwm = " << pwm_out << std::endl;
   }
 
@@ -59786,7 +59786,7 @@ int main(){
 
 
   HIGH_CYCLES = 25;
-  for (unsigned long i = 0; i <= MAX_CYCLES+HOLD_CYCLES; i++) {
+  for (unsigned long i = 0; i <= PER_CYCLES+HOLD_CYCLES; i++) {
    if (i == 0) {
     start = 1;
    }
@@ -59794,7 +59794,7 @@ int main(){
     start = 0;
    }
 
-   pwm(start, MAX_CYCLES, HIGH_CYCLES, HOLD_CYCLES, pwm_out, end);
+   pwm(start, PER_CYCLES, HIGH_CYCLES, HOLD_CYCLES, pwm_out, end);
    std::cout << " start = " << start << " end = " << end << " pwm = " << pwm_out << std::endl; }
 
 
@@ -59802,7 +59802,7 @@ int main(){
 
 
   HIGH_CYCLES = 10;
-  for (unsigned long i = 0; i <= MAX_CYCLES+HOLD_CYCLES; i++) {
+  for (unsigned long i = 0; i <= PER_CYCLES+HOLD_CYCLES; i++) {
    if (i == 0) {
     start = 1;
    }
@@ -59810,7 +59810,7 @@ int main(){
     start = 0;
    }
 
-   pwm(start, MAX_CYCLES, HIGH_CYCLES, HOLD_CYCLES, pwm_out, end);
+   pwm(start, PER_CYCLES, HIGH_CYCLES, HOLD_CYCLES, pwm_out, end);
    std::cout << " start = " << start << " end = " << end << " pwm = " << pwm_out << std::endl; }
 
 

@@ -1,11 +1,11 @@
 #include "pwm.h"
 
 
-typedef enum{idle, TH, TL, HOLD, new_set} state_type;
+typedef enum{idle, TH, TL, HOLD} state_type;
 
-void pwm(bool start, unsigned long max_cycles, unsigned long cycles_high, unsigned long cycles_hold,bool &pwm_out, bool &end){
+void pwm(bool start, unsigned int per_cycles, unsigned int cycles_high, unsigned int cycles_hold, bool &pwm_out, bool &end){
 #pragma HLS INTERFACE ap_none port=start
-#pragma HLS INTERFACE ap_none port=max_cycles
+#pragma HLS INTERFACE ap_none port=per_cycles
 #pragma HLS INTERFACE ap_none port=cycles_high
 #pragma HLS INTERFACE ap_none port=pwm_out
 #pragma HLS INTERFACE ap_none port=end
@@ -57,7 +57,7 @@ void pwm(bool start, unsigned long max_cycles, unsigned long cycles_high, unsign
 			break;
 
 		case TL:
-			if (count < max_cycles) {
+			if (count < per_cycles) {
 				next_state = TL;
 				pwm_out = 0;
 				end_local = 0;
