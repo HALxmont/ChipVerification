@@ -15,7 +15,7 @@ set C_modelArgList {
 	{ start_r uint 1 regular  }
 	{ per_cycles int 32 regular  }
 	{ cycles_high int 32 regular  }
-	{ cycles_hold int 32 regular  }
+	{ hold uint 1 regular  }
 	{ pwm_out int 1 regular {pointer 1}  }
 	{ end_r int 1 regular {pointer 1}  }
 }
@@ -23,7 +23,7 @@ set C_modelArgMapList {[
 	{ "Name" : "start_r", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "start","cData": "int1","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
  	{ "Name" : "per_cycles", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "per_cycles","cData": "int","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
  	{ "Name" : "cycles_high", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "cycles_high","cData": "int","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
- 	{ "Name" : "cycles_hold", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "cycles_hold","cData": "int","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
+ 	{ "Name" : "hold", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "hold","cData": "int1","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
  	{ "Name" : "pwm_out", "interface" : "wire", "bitwidth" : 1, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "pwm_out","cData": "int1","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
  	{ "Name" : "end_r", "interface" : "wire", "bitwidth" : 1, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "end","cData": "int1","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} ]}
 # RTL Port declarations: 
@@ -34,7 +34,7 @@ set portList {
 	{ start_r sc_in sc_logic 1 signal 0 } 
 	{ per_cycles sc_in sc_lv 32 signal 1 } 
 	{ cycles_high sc_in sc_lv 32 signal 2 } 
-	{ cycles_hold sc_in sc_lv 32 signal 3 } 
+	{ hold sc_in sc_logic 1 signal 3 } 
 	{ pwm_out sc_out sc_logic 1 signal 4 } 
 	{ end_r sc_out sc_logic 1 signal 5 } 
 }
@@ -44,7 +44,7 @@ set NewPortList {[
  	{ "name": "start_r", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "start_r", "role": "default" }} , 
  	{ "name": "per_cycles", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "per_cycles", "role": "default" }} , 
  	{ "name": "cycles_high", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "cycles_high", "role": "default" }} , 
- 	{ "name": "cycles_hold", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "cycles_hold", "role": "default" }} , 
+ 	{ "name": "hold", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "hold", "role": "default" }} , 
  	{ "name": "pwm_out", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "pwm_out", "role": "default" }} , 
  	{ "name": "end_r", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "end_r", "role": "default" }}  ]}
 
@@ -66,7 +66,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "start_r", "Type" : "None", "Direction" : "I"},
 			{"Name" : "per_cycles", "Type" : "None", "Direction" : "I"},
 			{"Name" : "cycles_high", "Type" : "None", "Direction" : "I"},
-			{"Name" : "cycles_hold", "Type" : "None", "Direction" : "I"},
+			{"Name" : "hold", "Type" : "None", "Direction" : "I"},
 			{"Name" : "pwm_out", "Type" : "None", "Direction" : "O"},
 			{"Name" : "end_r", "Type" : "None", "Direction" : "O"},
 			{"Name" : "state", "Type" : "OVld", "Direction" : "IO"},
@@ -79,7 +79,7 @@ set ArgLastReadFirstWriteLatency {
 		start_r {Type I LastRead 0 FirstWrite -1}
 		per_cycles {Type I LastRead 0 FirstWrite -1}
 		cycles_high {Type I LastRead 0 FirstWrite -1}
-		cycles_hold {Type I LastRead 0 FirstWrite -1}
+		hold {Type I LastRead 0 FirstWrite -1}
 		pwm_out {Type O LastRead -1 FirstWrite 0}
 		end_r {Type O LastRead -1 FirstWrite 0}
 		state {Type IO LastRead -1 FirstWrite -1}
@@ -100,7 +100,7 @@ set Spec2ImplPortList {
 	start_r { ap_none {  { start_r in_data 0 1 } } }
 	per_cycles { ap_none {  { per_cycles in_data 0 32 } } }
 	cycles_high { ap_none {  { cycles_high in_data 0 32 } } }
-	cycles_hold { ap_none {  { cycles_hold in_data 0 32 } } }
+	hold { ap_none {  { hold in_data 0 1 } } }
 	pwm_out { ap_none {  { pwm_out out_data 1 1 } } }
 	end_r { ap_none {  { end_r out_data 1 1 } } }
 }

@@ -40,8 +40,8 @@ set Interface "wire"
 set DataType "int"
 set Port [list $PortName $Interface $DataType $Pointer $Dims $Const    $Volatile $ArrayOpt]
 lappend PortList $Port
-set PortName "cycles_hold"
-set BitWidth "32"
+set PortName "hold"
+set BitWidth "1"
 set ArrayOpt ""
 set Const "0"
 set Volatile "0"
@@ -49,7 +49,7 @@ set Pointer "0"
 set Reference "0"
 set Dims [list 0]
 set Interface "wire"
-set DataType "int"
+set DataType "char"
 set Port [list $PortName $Interface $DataType $Pointer $Dims $Const    $Volatile $ArrayOpt]
 lappend PortList $Port
 set PortName "pwm_out"

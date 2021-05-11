@@ -2,8 +2,8 @@
 # Webtalk v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Tue May 11 13:55:15 2021
-# Process ID: 360198
+# Start of session at: Tue May 11 18:42:26 2021
+# Process ID: 373294
 # Current directory: /home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/solution1/sim/verilog
 # Command line: wbtcv -mode batch -source /home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/solution1/sim/verilog/xsim.dir/pwm/webtalk/xsim_webtalk.tcl -notrace
 # Log file: /home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/solution1/sim/verilog/webtalk.log

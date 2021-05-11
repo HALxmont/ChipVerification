@@ -5584,17 +5584,17 @@ inline bool operator!=(
 
 typedef enum{idle, TH, TL, HOLD} state_type;
 
-__attribute__((sdx_kernel("pwm", 0))) void pwm(bool start, unsigned int per_cycles, unsigned int cycles_high, unsigned int cycles_hold, bool &pwm_out, bool &end){
+__attribute__((sdx_kernel("pwm", 0))) void pwm(bool start, unsigned int per_cycles, unsigned int cycles_high, bool hold, bool &pwm_out, bool &end){
 #pragma HLS TOP name=pwm
 # 6 "pwm/pwm.cpp"
 
+#pragma HLS INTERFACE ap_none port=end
+#pragma HLS INTERFACE ap_none port=pwm_out
 #pragma HLS INTERFACE ap_none port=start
 #pragma HLS INTERFACE ap_none port=per_cycles
 #pragma HLS INTERFACE ap_none port=cycles_high
-#pragma HLS INTERFACE ap_none port=pwm_out
-#pragma HLS INTERFACE ap_none port=end
+#pragma HLS INTERFACE ap_none port=hold
 #pragma HLS INTERFACE ap_ctrl_none port=return
-
 
  static state_type state = idle;
  static unsigned long count = 0;
@@ -5603,24 +5603,24 @@ __attribute__((sdx_kernel("pwm", 0))) void pwm(bool start, unsigned int per_cycl
 
  state_type next_state;
  static unsigned long count_next;
- static unsigned long count_hold_next;
  bool end_local;
+
 
  switch(state){
 
   case idle:
 
-   if (start == 0) {
-    next_state = idle;
-    end_local = 0;
-    pwm_out = 0;
-    count_next = 0;
-   }
-   else {
+   if(start) {
     next_state = TH;
     end_local = 0;
     pwm_out = 0;
     count_next = 1;
+   }else {
+
+    next_state = idle;
+    end_local = 0;
+    pwm_out = 0;
+    count_next = 0;
    }
 
    break;
@@ -5641,6 +5641,7 @@ __attribute__((sdx_kernel("pwm", 0))) void pwm(bool start, unsigned int per_cycl
    break;
 
   case TL:
+
    if (count < per_cycles) {
     next_state = TL;
     pwm_out = 0;
@@ -5653,19 +5654,21 @@ __attribute__((sdx_kernel("pwm", 0))) void pwm(bool start, unsigned int per_cycl
     end_local = 0;
     count_next = 1;
    }
+
    break;
 
   case HOLD:
-   if (count < cycles_hold) {
+   if (hold) {
     next_state = HOLD;
     pwm_out = 1;
     end_local = 0;
-    count_next = count + 1;
+
    }
    else {
     next_state = idle;
     pwm_out = 0;
     end_local = 1;
+    count_next = 1;
    }
    break;
 

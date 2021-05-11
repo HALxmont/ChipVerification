@@ -19,30 +19,30 @@
 `define AESL_DEPTH_start_r 1
 `define AESL_DEPTH_per_cycles 1
 `define AESL_DEPTH_cycles_high 1
-`define AESL_DEPTH_cycles_hold 1
+`define AESL_DEPTH_hold 1
 `define AESL_DEPTH_pwm_out 1
 `define AESL_DEPTH_end_r 1
 `define AUTOTB_TVIN_start_r  "./c.pwm.autotvin_start_r.dat"
 `define AUTOTB_TVIN_per_cycles  "./c.pwm.autotvin_per_cycles.dat"
 `define AUTOTB_TVIN_cycles_high  "./c.pwm.autotvin_cycles_high.dat"
-`define AUTOTB_TVIN_cycles_hold  "./c.pwm.autotvin_cycles_hold.dat"
+`define AUTOTB_TVIN_hold  "./c.pwm.autotvin_hold.dat"
 `define AUTOTB_TVIN_start_r_out_wrapc  "./rtl.pwm.autotvin_start_r.dat"
 `define AUTOTB_TVIN_per_cycles_out_wrapc  "./rtl.pwm.autotvin_per_cycles.dat"
 `define AUTOTB_TVIN_cycles_high_out_wrapc  "./rtl.pwm.autotvin_cycles_high.dat"
-`define AUTOTB_TVIN_cycles_hold_out_wrapc  "./rtl.pwm.autotvin_cycles_hold.dat"
+`define AUTOTB_TVIN_hold_out_wrapc  "./rtl.pwm.autotvin_hold.dat"
 `define AUTOTB_TVOUT_pwm_out  "./c.pwm.autotvout_pwm_out.dat"
 `define AUTOTB_TVOUT_end_r  "./c.pwm.autotvout_end_r.dat"
 `define AUTOTB_TVOUT_pwm_out_out_wrapc  "./impl_rtl.pwm.autotvout_pwm_out.dat"
 `define AUTOTB_TVOUT_end_r_out_wrapc  "./impl_rtl.pwm.autotvout_end_r.dat"
 module `AUTOTB_TOP;
 
-parameter AUTOTB_TRANSACTION_NUM = 60303;
+parameter AUTOTB_TRANSACTION_NUM = 66056;
 parameter PROGRESS_TIMEOUT = 10000000;
 parameter LATENCY_ESTIMATION = 0;
 parameter LENGTH_start_r = 1;
 parameter LENGTH_per_cycles = 1;
 parameter LENGTH_cycles_high = 1;
-parameter LENGTH_cycles_hold = 1;
+parameter LENGTH_hold = 1;
 parameter LENGTH_pwm_out = 1;
 parameter LENGTH_end_r = 1;
 
@@ -131,7 +131,7 @@ wire ready_wire;
 wire  start_r;
 wire [31 : 0] per_cycles;
 wire [31 : 0] cycles_high;
-wire [31 : 0] cycles_hold;
+wire  hold;
 wire  pwm_out;
 wire  end_r;
 integer done_cnt = 0;
@@ -154,7 +154,7 @@ wire ap_rst_n;
     .start_r(start_r),
     .per_cycles(per_cycles),
     .cycles_high(cycles_high),
-    .cycles_hold(cycles_hold),
+    .hold(hold),
     .pwm_out(pwm_out),
     .end_r(end_r));
 
@@ -329,10 +329,10 @@ initial begin : read_file_process_cycles_high
 end
 
 
-// The signal of port cycles_hold
-reg [31: 0] AESL_REG_cycles_hold = 0;
-assign cycles_hold = AESL_REG_cycles_hold;
-initial begin : read_file_process_cycles_hold
+// The signal of port hold
+reg [0: 0] AESL_REG_hold = 0;
+assign hold = AESL_REG_hold;
+initial begin : read_file_process_hold
     integer fp;
     integer err;
     integer ret;
@@ -343,9 +343,9 @@ initial begin : read_file_process_cycles_hold
     integer transaction_idx;
     transaction_idx = 0;
     wait(AESL_reset === 0);
-    fp = $fopen(`AUTOTB_TVIN_cycles_hold,"r");
+    fp = $fopen(`AUTOTB_TVIN_hold,"r");
     if(fp == 0) begin       // Failed to open file
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVIN_cycles_hold);
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVIN_hold);
         $display("ERROR: Simulation using HLS TB failed.");
         $finish;
     end
@@ -368,7 +368,7 @@ initial begin : read_file_process_cycles_hold
                 # 0.2;
             end
         if(token != "[[/transaction]]") begin
-            ret = $sscanf(token, "0x%x", AESL_REG_cycles_hold);
+            ret = $sscanf(token, "0x%x", AESL_REG_hold);
               if (ret != 1) begin
                   $display("Failed to parse token!");
                 $display("ERROR: Simulation using HLS TB failed.");
@@ -575,9 +575,9 @@ reg [31:0] size_per_cycles_backup;
 reg end_cycles_high;
 reg [31:0] size_cycles_high;
 reg [31:0] size_cycles_high_backup;
-reg end_cycles_hold;
-reg [31:0] size_cycles_hold;
-reg [31:0] size_cycles_hold_backup;
+reg end_hold;
+reg [31:0] size_hold;
+reg [31:0] size_hold_backup;
 reg end_pwm_out;
 reg [31:0] size_pwm_out;
 reg [31:0] size_pwm_out_backup;

@@ -2,7 +2,7 @@
 # Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
 # Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 # ==============================================================
-set ::env(LD_LIBRARY_PATH) $::env(LD_LIBRARY_PATH):/tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/fpo_v6_1
+set ::env(LD_LIBRARY_PATH) $::env(LD_LIBRARY_PATH):/tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/fpo_v7_0
 set ::env(LD_LIBRARY_PATH) $::env(LD_LIBRARY_PATH):/tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/fft_v9_1
 set ::env(LD_LIBRARY_PATH) $::env(LD_LIBRARY_PATH):/tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/fir_v7_0
 set ::env(LD_LIBRARY_PATH) $::env(LD_LIBRARY_PATH):/tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/dds_v6_0

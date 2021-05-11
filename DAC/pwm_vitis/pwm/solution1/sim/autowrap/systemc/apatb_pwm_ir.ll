@@ -4,12 +4,12 @@ target datalayout = "e-m:e-i64:64-i128:128-i256:256-i512:512-i1024:1024-i2048:20
 target triple = "fpga64-xilinx-none"
 
 ; Function Attrs: noinline
-define void @apatb_pwm_ir(i1 %start, i32 %per_cycles, i32 %cycles_high, i32 %cycles_hold, i1* %pwm_out, i1* %end) local_unnamed_addr #0 {
+define void @apatb_pwm_ir(i1 %start, i32 %per_cycles, i32 %cycles_high, i1 %hold, i1* %pwm_out, i1* %end) local_unnamed_addr #0 {
 entry:
   %pwm_out_copy = alloca i1, align 512
   %end_copy = alloca i1, align 512
   call fastcc void @copy_in(i1* %pwm_out, i1* nonnull align 512 %pwm_out_copy, i1* %end, i1* nonnull align 512 %end_copy)
-  call void @apatb_pwm_hw(i1 %start, i32 %per_cycles, i32 %cycles_high, i32 %cycles_hold, i1* %pwm_out_copy, i1* %end_copy)
+  call void @apatb_pwm_hw(i1 %start, i32 %per_cycles, i32 %cycles_high, i1 %hold, i1* %pwm_out_copy, i1* %end_copy)
   call fastcc void @copy_out(i1* %pwm_out, i1* nonnull align 512 %pwm_out_copy, i1* %end, i1* nonnull align 512 %end_copy)
   ret void
 }
@@ -51,17 +51,17 @@ entry:
   ret void
 }
 
-declare void @apatb_pwm_hw(i1, i32, i32, i32, i1*, i1*)
+declare void @apatb_pwm_hw(i1, i32, i32, i1, i1*, i1*)
 
-define void @pwm_hw_stub_wrapper(i1, i32, i32, i32, i1*, i1*) #5 {
+define void @pwm_hw_stub_wrapper(i1, i32, i32, i1, i1*, i1*) #5 {
 entry:
   call void @copy_out(i1* null, i1* %4, i1* null, i1* %5)
-  call void @pwm_hw_stub(i1 %0, i32 %1, i32 %2, i32 %3, i1* %4, i1* %5)
+  call void @pwm_hw_stub(i1 %0, i32 %1, i32 %2, i1 %3, i1* %4, i1* %5)
   call void @copy_in(i1* null, i1* %4, i1* null, i1* %5)
   ret void
 }
 
-declare void @pwm_hw_stub(i1, i32, i32, i32, i1*, i1*)
+declare void @pwm_hw_stub(i1, i32, i32, i1, i1*, i1*)
 
 attributes #0 = { noinline "fpga.wrapper.func"="wrapper" }
 attributes #1 = { argmemonly noinline "fpga.wrapper.func"="copyin" }

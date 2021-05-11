@@ -18,7 +18,7 @@
 <PipelineType>none</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>1.991</EstimatedClockPeriod>
+<EstimatedClockPeriod>1.942</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
@@ -36,7 +36,7 @@
 <AreaEstimates>
 <Resources>
 <FF>131</FF>
-<LUT>246</LUT>
+<LUT>217</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP>0</DSP>
 <URAM>0</URAM>
@@ -110,16 +110,16 @@
 <CType>int</CType>
 </RtlPorts>
 <RtlPorts>
-<name>cycles_hold</name>
-<Object>cycles_hold</Object>
+<name>hold</name>
+<Object>hold</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>32</Bits>
+<Bits>1</Bits>
 <Attribute>data</Attribute>
-<CType>int</CType>
+<CType>bool</CType>
 </RtlPorts>
 <RtlPorts>
 <name>pwm_out</name>

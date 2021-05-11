@@ -54,15 +54,15 @@
           "direction": "in"
         }]
     },
-    "cycles_hold": {
+    "hold": {
       "index": "3",
       "direction": "in",
-      "srcType": "unsigned int",
-      "srcSize": "32",
+      "srcType": "bool",
+      "srcSize": "1",
       "hwRefs": [{
           "type": "port",
-          "interface": "cycles_hold",
-          "name": "cycles_hold",
+          "interface": "hold",
+          "name": "hold",
           "usage": "data",
           "direction": "in"
         }]
@@ -174,20 +174,6 @@
           "argName": "cycles_high"
         }]
     },
-    "cycles_hold": {
-      "type": "data",
-      "busTypeName": "data",
-      "mode": "slave",
-      "dataWidth": "32",
-      "portMap": {"cycles_hold": "DATA"},
-      "ports": ["cycles_hold"],
-      "constraints": [{
-          "constraint_type": "pragma interface",
-          "mode": "ap_none",
-          "register_option": "0",
-          "argName": "cycles_hold"
-        }]
-    },
     "end_r": {
       "type": "data",
       "busTypeName": "data",
@@ -200,6 +186,20 @@
           "mode": "ap_none",
           "register_option": "0",
           "argName": "end"
+        }]
+    },
+    "hold": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "1",
+      "portMap": {"hold": "DATA"},
+      "ports": ["hold"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "hold"
         }]
     },
     "per_cycles": {
@@ -266,9 +266,9 @@
       "dir": "in",
       "width": "32"
     },
-    "cycles_hold": {
+    "hold": {
       "dir": "in",
-      "width": "32"
+      "width": "1"
     },
     "pwm_out": {
       "dir": "out",
@@ -300,13 +300,13 @@
         "Timing": {
           "Target": "10.00",
           "Uncertainty": "2.70",
-          "Estimate": "1.991"
+          "Estimate": "1.942"
         },
         "Area": {
           "FF": "131",
           "AVAIL_FF": "850560",
           "UTIL_FF": "~0",
-          "LUT": "246",
+          "LUT": "217",
           "AVAIL_LUT": "425280",
           "UTIL_LUT": "~0",
           "BRAM_18K": "0",
@@ -324,7 +324,7 @@
   "GenerateBdFiles": "0",
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2021-05-11 13:54:24 -04",
+    "Time": "2021-05-11 18:41:41 -04",
     "ToolName": "vivado_hls",
     "ToolVersion": "2020.2"
   }

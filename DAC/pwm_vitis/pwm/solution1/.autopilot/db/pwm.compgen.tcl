@@ -57,14 +57,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 4 \
-    name cycles_hold \
+    name hold \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_cycles_hold \
+    corename dc_hold \
     op interface \
-    ports { cycles_hold { I 32 vector } } \
+    ports { hold { I 1 bit } } \
 } "
 }
 

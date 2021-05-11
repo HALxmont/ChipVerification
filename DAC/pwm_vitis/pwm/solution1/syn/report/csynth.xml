@@ -15,7 +15,7 @@
         <PipelineType>none</PipelineType>
         <SummaryOfTimingAnalysis>
             <unit>ns</unit>
-            <EstimatedClockPeriod>1.991</EstimatedClockPeriod>
+            <EstimatedClockPeriod>1.942</EstimatedClockPeriod>
         </SummaryOfTimingAnalysis>
         <SummaryOfOverallLatency>
             <unit>clock cycles</unit>
@@ -32,7 +32,7 @@
     <AreaEstimates>
         <Resources>
             <FF>131</FF>
-            <LUT>246</LUT>
+            <LUT>217</LUT>
             <BRAM_18K>0</BRAM_18K>
             <DSP>0</DSP>
             <URAM>0</URAM>
@@ -105,16 +105,16 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>cycles_hold</name>
-            <Object>cycles_hold</Object>
+            <name>hold</name>
+            <Object>hold</Object>
             <Type>scalar</Type>
             <Scope/>
             <IOProtocol>ap_none</IOProtocol>
             <IOConfig/>
             <Dir>in</Dir>
-            <Bits>32</Bits>
+            <Bits>1</Bits>
             <Attribute>data</Attribute>
-            <CType>int</CType>
+            <CType>bool</CType>
         </RtlPorts>
         <RtlPorts>
             <name>pwm_out</name>
@@ -153,7 +153,7 @@
                 <SummaryOfTimingAnalysis>
                     <TargetClockPeriod>10.00</TargetClockPeriod>
                     <ClockUncertainty>2.70</ClockUncertainty>
-                    <EstimatedClockPeriod>1.991</EstimatedClockPeriod>
+                    <EstimatedClockPeriod>1.942</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
                     <Best-caseLatency>0</Best-caseLatency>
@@ -171,7 +171,7 @@
                     <FF>131</FF>
                     <AVAIL_FF>850560</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>246</LUT>
+                    <LUT>217</LUT>
                     <AVAIL_LUT>425280</AVAIL_LUT>
                     <UTIL_LUT>~0</UTIL_LUT>
                     <BRAM_18K>0</BRAM_18K>
@@ -245,16 +245,16 @@
                     <CType>int</CType>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>cycles_hold</name>
-                    <Object>cycles_hold</Object>
+                    <name>hold</name>
+                    <Object>hold</Object>
                     <Type>scalar</Type>
                     <Scope/>
                     <IOProtocol>ap_none</IOProtocol>
                     <IOConfig/>
                     <Dir>in</Dir>
-                    <Bits>32</Bits>
+                    <Bits>1</Bits>
                     <Attribute>data</Attribute>
-                    <CType>int</CType>
+                    <CType>bool</CType>
                 </RtlPorts>
                 <RtlPorts>
                     <name>pwm_out</name>
@@ -300,9 +300,9 @@
                 <hwRef type="port" interface="cycles_high" name="cycles_high" usage="data" direction="in"/>
             </hwRefs>
         </Arg>
-        <Arg ArgName="cycles_hold" index="3" direction="in" srcType="unsigned int" srcSize="32">
+        <Arg ArgName="hold" index="3" direction="in" srcType="bool" srcSize="1">
             <hwRefs>
-                <hwRef type="port" interface="cycles_hold" name="cycles_hold" usage="data" direction="in"/>
+                <hwRef type="port" interface="hold" name="hold" usage="data" direction="in"/>
             </hwRefs>
         </Arg>
         <Arg ArgName="pwm_out" index="4" direction="out" srcType="bool&amp;" srcSize="1">
@@ -350,17 +350,6 @@
                 <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="cycles_high"/>
             </constraints>
         </Interface>
-        <Interface InterfaceName="cycles_hold" type="data" busTypeName="data" mode="slave" dataWidth="32">
-            <portMaps>
-                <portMap portMapName="cycles_hold">DATA</portMap>
-            </portMaps>
-            <ports>
-                <port>cycles_hold</port>
-            </ports>
-            <constraints>
-                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="cycles_hold"/>
-            </constraints>
-        </Interface>
         <Interface InterfaceName="end_r" type="data" busTypeName="data" mode="master" dataWidth="1">
             <portMaps>
                 <portMap portMapName="end_r">DATA</portMap>
@@ -370,6 +359,17 @@
             </ports>
             <constraints>
                 <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="end"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="hold" type="data" busTypeName="data" mode="slave" dataWidth="1">
+            <portMaps>
+                <portMap portMapName="hold">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>hold</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="hold"/>
             </constraints>
         </Interface>
         <Interface InterfaceName="per_cycles" type="data" busTypeName="data" mode="slave" dataWidth="32">
@@ -412,8 +412,8 @@
                 <table>
                     <keys size="3">Interface, Mode, Bitwidth</keys>
                     <column name="cycles_high">ap_none, 32</column>
-                    <column name="cycles_hold">ap_none, 32</column>
                     <column name="end_r">ap_none, 1</column>
+                    <column name="hold">ap_none, 1</column>
                     <column name="per_cycles">ap_none, 32</column>
                     <column name="pwm_out">ap_none, 1</column>
                     <column name="start_r">ap_none, 1</column>
@@ -437,7 +437,7 @@
                     <column name="start">in, bool</column>
                     <column name="per_cycles">in, unsigned int</column>
                     <column name="cycles_high">in, unsigned int</column>
-                    <column name="cycles_hold">in, unsigned int</column>
+                    <column name="hold">in, bool</column>
                     <column name="pwm_out">out, bool&amp;</column>
                     <column name="end">out, bool&amp;</column>
                 </table>
@@ -448,7 +448,7 @@
                     <column name="start">start_r, port</column>
                     <column name="per_cycles">per_cycles, port</column>
                     <column name="cycles_high">cycles_high, port</column>
-                    <column name="cycles_hold">cycles_hold, port</column>
+                    <column name="hold">hold, port</column>
                     <column name="pwm_out">pwm_out, port</column>
                     <column name="end">end_r, port</column>
                 </table>

@@ -59754,14 +59754,14 @@ inline bool operator!=(
 
 typedef enum{idle, TH, TL, HOLD} state_type;
 
-void pwm(bool start, unsigned int per_cycles, unsigned int cycles_high, unsigned int cycles_hold, bool &pwm_out, bool &end){
+void pwm(bool start, unsigned int per_cycles, unsigned int cycles_high, bool hold, bool &pwm_out, bool &end){
+#pragma HLS INTERFACE ap_none port=end
+#pragma HLS INTERFACE ap_none port=pwm_out
 #pragma HLS INTERFACE ap_none port=start
 #pragma HLS INTERFACE ap_none port=per_cycles
 #pragma HLS INTERFACE ap_none port=cycles_high
-#pragma HLS INTERFACE ap_none port=pwm_out
-#pragma HLS INTERFACE ap_none port=end
+#pragma HLS INTERFACE ap_none port=hold
 #pragma HLS INTERFACE ap_ctrl_none port=return
-
 
  static state_type state = idle;
  static unsigned long count = 0;
@@ -59770,24 +59770,24 @@ void pwm(bool start, unsigned int per_cycles, unsigned int cycles_high, unsigned
 
  state_type next_state;
  static unsigned long count_next;
- static unsigned long count_hold_next;
  bool end_local;
+
 
  switch(state){
 
   case idle:
 
-   if (start == 0) {
-    next_state = idle;
-    end_local = 0;
-    pwm_out = 0;
-    count_next = 0;
-   }
-   else {
+   if(start) {
     next_state = TH;
     end_local = 0;
     pwm_out = 0;
     count_next = 1;
+   }else {
+
+    next_state = idle;
+    end_local = 0;
+    pwm_out = 0;
+    count_next = 0;
    }
 
    break;
@@ -59808,6 +59808,7 @@ void pwm(bool start, unsigned int per_cycles, unsigned int cycles_high, unsigned
    break;
 
   case TL:
+
    if (count < per_cycles) {
     next_state = TL;
     pwm_out = 0;
@@ -59820,19 +59821,21 @@ void pwm(bool start, unsigned int per_cycles, unsigned int cycles_high, unsigned
     end_local = 0;
     count_next = 1;
    }
+
    break;
 
   case HOLD:
-   if (count < cycles_hold) {
+   if (hold) {
     next_state = HOLD;
     pwm_out = 1;
     end_local = 0;
-    count_next = count + 1;
+
    }
    else {
     next_state = idle;
     pwm_out = 0;
     end_local = 1;
+    count_next = 1;
    }
    break;
 
@@ -59854,21 +59857,21 @@ void pwm(bool start, unsigned int per_cycles, unsigned int cycles_high, unsigned
 #ifdef __cplusplus
 extern "C"
 #endif
-void apatb_pwm_ir(bool, unsigned int, unsigned int, unsigned int, bool &, bool &);
+void apatb_pwm_ir(bool, unsigned int, unsigned int, bool, bool &, bool &);
 #ifdef __cplusplus
 extern "C"
 #endif
-void pwm_hw_stub(bool start, unsigned int per_cycles, unsigned int cycles_high, unsigned int cycles_hold, bool &pwm_out, bool &end){
-pwm(start, per_cycles, cycles_high, cycles_hold, pwm_out, end);
+void pwm_hw_stub(bool start, unsigned int per_cycles, unsigned int cycles_high, bool hold, bool &pwm_out, bool &end){
+pwm(start, per_cycles, cycles_high, hold, pwm_out, end);
 return ;
 }
 #ifdef __cplusplus
 extern "C"
 #endif
-void apatb_pwm_sw(bool start, unsigned int per_cycles, unsigned int cycles_high, unsigned int cycles_hold, bool &pwm_out, bool &end){
-apatb_pwm_ir(start, per_cycles, cycles_high, cycles_hold, pwm_out, end);
+void apatb_pwm_sw(bool start, unsigned int per_cycles, unsigned int cycles_high, bool hold, bool &pwm_out, bool &end){
+apatb_pwm_ir(start, per_cycles, cycles_high, hold, pwm_out, end);
 return ;
 }
 #endif
-# 101 "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/pwm.cpp"
+# 104 "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/DAC/pwm_vitis/pwm/pwm.cpp"
 
