@@ -29,7 +29,7 @@ void pwm(bool start, unsigned int per_cycles, unsigned int cycles_high, bool hol
 			if(start) {
 				next_state = TH;
 				end_local = 0;
-				pwm_out = 0;  		// start idle state and transit to TH (TIME HIGH)
+				pwm_out = 0;  		//transit to TH (TIME HIGH)
 				count_next = 1;
 			}else {
 				//default conditions
