@@ -1,0 +1,26 @@
+Circuit: * C:\users\mxmont\My Documents\Universidad\TESIS\ChipVerification\PulseGenerator\PulseGenDAC.asc
+
+Warning: Multiple definitions of model "aons66402" Type: Vdmos1
+WARNING: Node N013 is floating.
+WARNING: Node N004 is floating.
+
+Direct Newton iteration for .op point succeeded.
+Heightened Def Con from 3.43e-007 to 3.4302e-007
+
+Date: Tue Jun 22 20:20:29 2021
+Total elapsed time: 1.848 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 100694
+traniter = 100663
+tranpoints = 50207
+accept = 50176
+rejected = 32
+matrix size = 28
+fillins = 0
+solver = Normal
+Matrix Compiler1: 1.23 KB object code size  0.3/0.2/[0.1]
+Matrix Compiler2: off  [0.2]/0.3/0.2
+

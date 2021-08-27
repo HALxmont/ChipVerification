@@ -1,0 +1,44 @@
+Circuit: * Z:\home\mxmont\Documents\Universidad\TESIS\ChipVerification\PulseGenerator\kh\Draft2.asc
+
+Warning: Multiple definitions of model "aons66402" Type: Vdmos1
+WARNING: Node N008 is floating.
+WARNING: Node N005 is floating.
+
+Model "pmosx": Oxide thickness thinner than recommended for a level 2 MOSFET.
+Instance "m3": Length shorter than recommended for a level 2 MOSFET.
+Model "nmosx": Oxide thickness thinner than recommended for a level 2 MOSFET.
+Instance "m1": Length shorter than recommended for a level 2 MOSFET.
+Direct Newton iteration for .op point succeeded.
+.step vdaq=0.1
+Changing Tseed to 1e-014
+Heightened Def Con from 1.00021e-007 +++++++++++++++++++++++++++++++++++++++++to 1.00521e-007
+Heightened Def Con from 1.01539e-007 +++++++++++++++++++++++++++++++++++++++++to 1.01939e-007
+Heightened Def Con from 1.01939e-007 ++++++++++++++++++++++++++++++to 1.01939e-007
+Heightened Def Con from 1.01939e-007 +++++++++++++++++++to 1.0194e-007
+.step vdaq=0.2
+.step vdaq=0.3
+.step vdaq=0.4
+.step vdaq=0.5
+.step vdaq=0.6
+.step vdaq=0.7
+.step vdaq=0.8
+.step vdaq=0.9
+.step vdaq=1
+
+Date: Thu Jun 24 22:47:52 2021
+Total elapsed time: 4.239 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 47781
+traniter = 47750
+tranpoints = 13918
+accept = 11838
+rejected = 2154
+matrix size = 26
+fillins = 0
+solver = Normal
+Matrix Compiler1: 1.61 KB object code size  0.3/0.2/[0.1]
+Matrix Compiler2: off  [0.2]/0.3/0.2
+

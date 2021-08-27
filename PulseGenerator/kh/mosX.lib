@@ -1,0 +1,2 @@
+.model NmosX nmos(level=2 W=300m L=1u vto=1 kp=50u lambda=.1 gamma=.6 phi=.8 tox=15n  cgdo=.5e-9 cgso=.5e-9 cj=.1e-3 cjsw=.5e-9 mj=.5 pb=.95)
+.model PmosX pmos(level=2 W=300m L=1u vto=-1 kp=50u lambda=.1 gamma=.6 phi=.8 tox=15e-9 cgdo=.5e-9 cgso=.5e-9 cj=.3e-3 cjsw=.35e-9 mj=.5 pb=.89)

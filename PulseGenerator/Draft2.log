@@ -1,0 +1,24 @@
+Circuit: * C:\users\mxmont\My Documents\Universidad\TESIS\ChipVerification\PulseGenerator\Draft2.asc
+
+WARNING: Node N002 is floating.
+
+WARNING: Less than two connections to node NC_01.  This node is used by B1.
+.OP point found by inspection.
+
+Date: Thu Jun 17 14:06:37 2021
+Total elapsed time: 0.152 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 10112
+traniter = 10112
+tranpoints = 5057
+accept = 5048
+rejected = 9
+matrix size = 6
+fillins = 0
+solver = Normal
+Matrix Compiler1:      10 opcodes  0.1/[0.1]/0.1
+Matrix Compiler2: off  [0.0]/0.1/0.1
+

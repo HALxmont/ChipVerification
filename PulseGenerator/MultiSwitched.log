@@ -1,0 +1,22 @@
+Circuit: * C:\users\mxmont\My Documents\Universidad\TESIS\ChipVerification\PulseGenerator\MultiSwitched.asc
+
+WARNING: Less than two connections to node NC_01.  This node is used by B2.
+Direct Newton iteration for .op point succeeded.
+
+Date: Thu Jun 17 13:57:45 2021
+Total elapsed time: 0.400 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 22115
+traniter = 22083
+tranpoints = 10927
+accept = 10791
+rejected = 136
+matrix size = 80
+fillins = 19
+solver = Normal
+Matrix Compiler1: 6.76 KB object code size  2.2/0.7/[0.4]
+Matrix Compiler2: 6.97 KB object code size  0.6/1.0/[0.3]
+
