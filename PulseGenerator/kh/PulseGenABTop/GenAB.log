@@ -1,33 +1,42 @@
-Circuit: * C:\users\mxmont\My Documents\Universidad\TESIS\ChipVerification\PulseGenerator\kh\PulseGenABTop\GenAB.asc
+Circuit: * Z:\home\mxmont\Documents\Universidad\TESIS\ChipVerification\PulseGenerator\kh\PulseGenABTop\GenAB.asc
 
 Warning: Multiple definitions of model "aons66402" Type: Vdmos1
-WARNING: Node N007 is floating.
-WARNING: Node N003 is floating.
+Control_sw4: both pins shorted together -- ignoring.
+Control_sw1: both pins shorted together -- ignoring.
+WARNING: Node N010 is floating.
+WARNING: Node N002 is floating.
 
+WARNING: Less than two connections to node N003.  This node is used by VDAC3.
+WARNING: Less than two connections to node NC_01.  This node is used by B1.
 Model "pmosx": Oxide thickness thinner than recommended for a level 2 MOSFET.
 Instance "m2": Length shorter than recommended for a level 2 MOSFET.
 Model "nmosx": Oxide thickness thinner than recommended for a level 2 MOSFET.
 Instance "m7": Length shorter than recommended for a level 2 MOSFET.
 Direct Newton iteration for .op point succeeded.
 .step vdaq=0.1
-Heightened Def Con from 2.14607e-011 ++++++++++++++++++++++++++to 3.0002e-009
-Heightened Def Con from 3.0002e-009 ++++++++++++++++to 3.00023e-009
-Heightened Def Con from 1.02938e-007 ++++++++++++++++++++++++++++++++to 1.03187e-007
-Heightened Def Con from 1.03187e-007 ++++++++++++++++++++++++to 1.07187e-007
-Heightened Def Con from 2.00021e-007 ++++++++++++++++++to 2.01037e-007
-Heightened Def Con from 3.02931e-007 ++++++++++++++++++++++++++to 3.06931e-007
-Heightened Def Con from 4.0002e-007 +++++++++++++++++++++++++to 4.0002e-007
-Heightened Def Con from 4.0002e-007 ++++++++++++++++++++++++++to 4.0002e-007
-Heightened Def Con from 4.0002e-007 ++++++++++++++++to 4.0002e-007
-Heightened Def Con from 4.0002e-007 +++++++++++++++++++++++++to 4.0002e-007
-Heightened Def Con from 4.0002e-007 ++++++++++++++++++++++++++to 4.0002e-007
-Heightened Def Con from 4.0002e-007 ++++++++++++++++to 4.0002e-007
-Heightened Def Con from 4.0002e-007 ++++++++++++++++++++++++++to 4.0302e-007
-Heightened Def Con from 4.0302e-007 ++++++++++++++++to 4.04145e-007
-Heightened Def Con from 5.02931e-007 +++++++++++++++++++++++++++++++to 5.06931e-007
-Heightened Def Con from 6.00021e-007 ++++++++++++++++++++++++++to 6.03021e-007
-Heightened Def Con from 6.03021e-007 ++++++++++++++++to 6.04146e-007
-Heightened Def Con from 7.02932e-007 ++++++++++++++++++++++++++++++to 7.06932e-007
+Changing Tseed to 1e-013
+Changing Tseed to 1e-015
+Changing Tseed to 1e-012
+Changing Tseed to 1e-016
+Changing Tseed to 1e-011
+Changing Tseed to 1e-017
+Changing Tseed to 1e-010
+Changing Tseed to 1e-018
+Changing Tseed to 1e-009
+Changing Tseed to 1e-019
+Changing Tseed to 1e-008
+Changing Tseed to 1e-020
+Heightened Def Con from 0 Changing Tseed to 3e-010
+Changing Tseed to 3e-012
+Changing Tseed to 3e-009
+Changing Tseed to 3e-013
+Changing Tseed to 3e-008
+Changing Tseed to 3e-014
+Changing Tseed to 3e-007
+to 3.01e-007
+Heightened Def Con from 4e-007 ++++++++++++++++++++++++++to 4.07e-007
+Heightened Def Con from 4.07e-007 ++++++++++++++++to 4.07002e-007
+Heightened Def Con from 4.56e-007 to 4.59e-007
 .step vdaq=0.3
 .step vdaq=0.5
 .step vdaq=0.7
@@ -44,20 +53,20 @@ Heightened Def Con from 7.02932e-007 ++++++++++++++++++++++++++++++to 7.06932e-0
 .step vdaq=2.9
 .step vdaq=3
 
-Date: Wed Aug 18 18:42:36 2021
-Total elapsed time: 2.191 seconds.
+Date: Fri Oct 01 17:34:17 2021
+Total elapsed time: 1.148 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 11759
-traniter = 11354
-tranpoints = 2775
-accept = 2230
-rejected = 547
-matrix size = 28
+totiter = 5269
+traniter = 5239
+tranpoints = 1695
+accept = 1450
+rejected = 246
+matrix size = 32
 fillins = 0
 solver = Normal
-Matrix Compiler1: 1.25 KB object code size  0.3/0.2/[0.1]
-Matrix Compiler2: 2.12 KB object code size  0.3/0.2/[0.2]
+Matrix Compiler1: 1.31 KB object code size  0.3/0.2/[0.1]
+Matrix Compiler2: off  [0.2]/0.3/0.3
 
