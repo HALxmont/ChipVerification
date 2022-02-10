@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Dec 31 12:27:34 2021
+# Process ID: 320489
+# Current directory: /home/mxmont/AXI_TESTS/Chip_test_env/chip_test_env/chip_test_env.runs/chip_test_env_xbar_0_synth_1
+# Command line: vivado -log chip_test_env_xbar_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source chip_test_env_xbar_0.tcl
+# Log file: /home/mxmont/AXI_TESTS/Chip_test_env/chip_test_env/chip_test_env.runs/chip_test_env_xbar_0_synth_1/chip_test_env_xbar_0.vds
+# Journal file: /home/mxmont/AXI_TESTS/Chip_test_env/chip_test_env/chip_test_env.runs/chip_test_env_xbar_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source chip_test_env_xbar_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/DAC_MODULE_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/chip_fsm_controller_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/discriminator_counter_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP chip_test_env_xbar_0, cache-ID = 5048a74ee15b6d8e.
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 31 12:27:48 2021...

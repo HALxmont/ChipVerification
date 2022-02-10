@@ -1,0 +1,10 @@
+20:01:44 **** Incremental Build of configuration Debug for project CHIP_ENV_APP_system ****
+make all 
+Generating bif file for the system project
+Executing command '::scw::generate_bif -xpfm /home/mxmont/AXI_TESTS/Chip_test_env/chip_test_env_wrapper/export/chip_test_env_wrapper/chip_test_env_wrapper.xpfm -domains standalone_ps7_cortexa9_0 -bifpath /home/mxmont/AXI_TESTS/Chip_test_env/CHIP_ENV_APP_system/Debug/system.bif' on XSCT
+sdcard_gen --xpfm /home/mxmont/AXI_TESTS/Chip_test_env/chip_test_env_wrapper/export/chip_test_env_wrapper/chip_test_env_wrapper.xpfm --sys_config chip_test_env_wrapper --bif /home/mxmont/AXI_TESTS/Chip_test_env/CHIP_ENV_APP_system/Debug/system.bif --bitstream /home/mxmont/AXI_TESTS/Chip_test_env/CHIP_ENV_APP/_ide/bitstream/chip_test_env_wrapper.bit --elf /home/mxmont/AXI_TESTS/Chip_test_env/CHIP_ENV_APP/Debug/CHIP_ENV_APP.elf,ps7_cortexa9_0
+creating BOOT.BIN using /home/mxmont/AXI_TESTS/Chip_test_env/CHIP_ENV_APP/_ide/bitstream/chip_test_env_wrapper.bit
+Running /tools/Xilinx/Vitis/2020.2/bin/bootgen  -image /home/mxmont/AXI_TESTS/Chip_test_env/CHIP_ENV_APP_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+20:01:52 Build Finished (took 8s.136ms)
+

@@ -1,0 +1,24 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Sat Feb  5 19:56:18 2022
+[*]
+[dumpfile] "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/FPGA/ADC.vcd"
+[dumpfile_mtime] "Sat Feb  5 19:52:54 2022"
+[dumpfile_size] 767202
+[savefile] "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/FPGA/adc_for_resultsf.gtkw"
+[timestart] 7696000
+[size] 1880 1016
+[pos] -51 -51
+*-18.623032 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 233
+[signals_width] 134
+[sst_expanded] 1
+[sst_vpaned_height] 289
+@29
+ADC_test.adc_clk
+@28
+ADC_test.trigger_gnd_0
+ADC_test.trigger_vdd_0
+ADC_test.end_flag
+[pattern_trace] 1
+[pattern_trace] 0

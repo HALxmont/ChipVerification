@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="CHIP_ENV_APP_system-bitFile" value="${project_loc:CHIP_ENV_APP}/_ide/bitstream/chip_test_env_wrapper.bit"/>
+	<item key="CHIP_ENV_APP_system-bmmFile" value=""/>
+	<item key="CHIP_ENV_APP_system-target" value="Local"/>
+	<item key="CHIP_ENV_APP_system-device" value="Auto Detect"/>
+	<item key="CHIP_ENV_APP_system-partial_bit" value="false"/>
+	<item key="CHIP_ENV_APP_system-skip_rev_check" value="false"/>
+	<item key="programfpga.sdxproject" value="CHIP_ENV_APP_system"/>
+	<item key="devices_info_Local" value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Digilent Zybo 210279A42739A&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-Zybo-210279A42739A-4ba00477-0&quot;,&quot;3&quot;:&quot;jsn-Zybo-210279A42739A-13722093-0&quot;}}]}"/>
+</section>

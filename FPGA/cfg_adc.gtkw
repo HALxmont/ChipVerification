@@ -1,23 +1,55 @@
 [*]
 [*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
-[*] Wed Nov 10 23:26:41 2021
+[*] Tue Jan  4 01:57:51 2022
 [*]
 [dumpfile] "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/FPGA/ADC.vcd"
-[dumpfile_mtime] "Wed Nov 10 23:25:09 2021"
-[dumpfile_size] 3287
+[dumpfile_mtime] "Tue Jan  4 01:57:19 2022"
+[dumpfile_size] 767138
 [savefile] "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/FPGA/cfg_adc.gtkw"
 [timestart] 0
 [size] 1880 1016
-[pos] -39 -39
-*-16.373150 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[pos] 40 0
+*-20.466991 10177970 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] ADC_test.
 [sst_width] 233
-[signals_width] 86
+[signals_width] 229
 [sst_expanded] 1
 [sst_vpaned_height] 289
 @28
 ADC_test.dut.clk
-@29
 ADC_test.dut.adc_clk
+ADC_test.dut.we
+ADC_test.dut.rst
+@22
+ADC_test.dut.internal_count[10:0]
+@24
+ADC_test.dut.fsm_counter_clk[11:0]
+@22
+ADC_test.dut.trigger_sel[3:0]
+ADC_test.dut.bn[13:0]
+ADC_test.dut.s3_3[13:0]
+@28
+ADC_test.dut.trigger_vdd_0
+@800022
+ADC_test.dut.trigger_sel[3:0]
+@28
+ADC_test.dut.trigger_gnd_0
+@22
+ADC_test.dut.state[6:0]
+ADC_test.dut.next_state[6:0]
+@28
+ADC_test.dut.end_flag
+@22
+ADC_test.dut.mean_s1[15:0]
+ADC_test.dut.mean_s2[15:0]
+ADC_test.dut.mean_s3[15:0]
+ADC_test.dut.mean_s4[15:0]
+ADC_test.dut.mean_s5[15:0]
+ADC_test.dut.s1_1[13:0]
+ADC_test.dut.s1_2[13:0]
+@23
+ADC_test.dut.s1_3[13:0]
+@1001200
+-group_end
 [pattern_trace] 1
 [pattern_trace] 0

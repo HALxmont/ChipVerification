@@ -1,0 +1,33 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Thu Dec  9 00:47:29 2021
+[*]
+[dumpfile] "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/FPGA/CHIP_FSM.vcd"
+[dumpfile_mtime] "Thu Dec  9 00:47:00 2021"
+[dumpfile_size] 17148594
+[savefile] "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/FPGA/cfg_chip_fsm.gtkw"
+[timestart] 269200000
+[size] 1880 1016
+[pos] -1 -1
+*-27.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] chip_fsm_test.
+[treeopen] chip_fsm_test.dut.
+[sst_width] 233
+[signals_width] 344
+[sst_expanded] 1
+[sst_vpaned_height] 289
+@28
+chip_fsm_test.clk
+chip_fsm_test.we
+chip_fsm_test.chip_clk
+chip_fsm_test.chip_data_in
+chip_fsm_test.chip_rst
+chip_fsm_test.dac_add[2:0]
+@22
+chip_fsm_test.dac_level_voltage[7:0]
+@24
+chip_fsm_test.dut.CHIP_FSM.state[6:0]
+@29
+chip_fsm_test.dut.CHIP_FSM.dac_repeat
+[pattern_trace] 1
+[pattern_trace] 0

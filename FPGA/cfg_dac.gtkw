@@ -1,0 +1,32 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Sun Dec  5 02:04:01 2021
+[*]
+[dumpfile] "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/FPGA/DAC.vcd"
+[dumpfile_mtime] "Sun Dec  5 02:03:38 2021"
+[dumpfile_size] 814
+[savefile] "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/FPGA/cfg_dac.gtkw"
+[timestart] 0
+[size] 1880 1016
+[pos] -1 -1
+*-16.000000 21600 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] DAC_test.
+[sst_width] 233
+[signals_width] 486
+[sst_expanded] 1
+[sst_vpaned_height] 289
+@29
+DAC_test.dut.serial_val[9:0]
+@28
+DAC_test.dut.b9
+DAC_test.dut.b8
+DAC_test.dut.b7
+DAC_test.dut.b6
+DAC_test.dut.b5
+DAC_test.dut.b4
+DAC_test.dut.b3
+DAC_test.dut.b2
+DAC_test.dut.b1
+DAC_test.dut.b0
+[pattern_trace] 1
+[pattern_trace] 0

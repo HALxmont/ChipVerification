@@ -1,0 +1,550 @@
+
+*** Running vivado
+    with args -log ADC_board_v1_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ADC_board_v1_0.tcl
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source ADC_board_v1_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/DAC_MODULE_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/chip_fsm_controller_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/discriminator_counter_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top ADC_board_v1_0 -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 740675
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2400.250 ; gain = 0.000 ; free physical = 3840 ; free virtual = 8312
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ADC_board_v1_0' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/hdl/ADC_board_v1_0.v:4]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ADC_board_v1_0_S00_AXI' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/hdl/ADC_board_v1_0_S00_AXI.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 3 - type: integer 
+WARNING: [Synth 8-6104] Input port 'bn' has an internal driver [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/hdl/ADC_board_v1_0_S00_AXI.v:534]
+INFO: [Synth 8-6157] synthesizing module 'adc_module' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:4]
+	Parameter adc_setting_cycles bound to: 100 - type: integer 
+	Parameter clk_div bound to: 20 - type: integer 
+	Parameter cycles_for_s1 bound to: 20 - type: integer 
+	Parameter cycles_for_s2 bound to: 19 - type: integer 
+	Parameter cycles_for_s3 bound to: 18 - type: integer 
+	Parameter cycles_for_s4 bound to: 17 - type: integer 
+	Parameter cycles_for_s5 bound to: 16 - type: integer 
+	Parameter repeat_samples bound to: 8 - type: integer 
+	Parameter s1 bound to: 0 - type: integer 
+	Parameter s2 bound to: 1 - type: integer 
+	Parameter s3 bound to: 2 - type: integer 
+	Parameter s4 bound to: 3 - type: integer 
+	Parameter s5 bound to: 4 - type: integer 
+	Parameter s6 bound to: 5 - type: integer 
+	Parameter s7 bound to: 6 - type: integer 
+	Parameter s8 bound to: 7 - type: integer 
+	Parameter s9 bound to: 8 - type: integer 
+	Parameter s10 bound to: 9 - type: integer 
+	Parameter s11 bound to: 10 - type: integer 
+	Parameter s12 bound to: 11 - type: integer 
+	Parameter s13 bound to: 12 - type: integer 
+	Parameter s14 bound to: 13 - type: integer 
+	Parameter s15 bound to: 14 - type: integer 
+	Parameter s16 bound to: 15 - type: integer 
+	Parameter s17 bound to: 16 - type: integer 
+	Parameter s18 bound to: 17 - type: integer 
+	Parameter s19 bound to: 18 - type: integer 
+	Parameter s20 bound to: 19 - type: integer 
+	Parameter s21 bound to: 20 - type: integer 
+	Parameter s22 bound to: 21 - type: integer 
+WARNING: [Synth 8-567] referenced signal 'internal_count' should be on the sensitivity list [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:187]
+WARNING: [Synth 8-567] referenced signal 's1_1' should be on the sensitivity list [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:905]
+WARNING: [Synth 8-567] referenced signal 's1_2' should be on the sensitivity list [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:905]
+WARNING: [Synth 8-567] referenced signal 's1_3' should be on the sensitivity list [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:905]
+WARNING: [Synth 8-567] referenced signal 's1_4' should be on the sensitivity list [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:905]
+WARNING: [Synth 8-567] referenced signal 's2_1' should be on the sensitivity list [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:905]
+WARNING: [Synth 8-567] referenced signal 's2_2' should be on the sensitivity list [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:905]
+WARNING: [Synth 8-567] referenced signal 's2_3' should be on the sensitivity list [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:905]
+WARNING: [Synth 8-567] referenced signal 's2_4' should be on the sensitivity list [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:905]
+WARNING: [Synth 8-567] referenced signal 's3_1' should be on the sensitivity list [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:905]
+WARNING: [Synth 8-567] referenced signal 's3_2' should be on the sensitivity list [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:905]
+WARNING: [Synth 8-567] referenced signal 's3_3' should be on the sensitivity list [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:905]
+WARNING: [Synth 8-567] referenced signal 's3_4' should be on the sensitivity list [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:905]
+WARNING: [Synth 8-567] referenced signal 's4_1' should be on the sensitivity list [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:905]
+WARNING: [Synth 8-567] referenced signal 's4_2' should be on the sensitivity list [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:905]
+WARNING: [Synth 8-567] referenced signal 's4_3' should be on the sensitivity list [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:905]
+WARNING: [Synth 8-567] referenced signal 's4_4' should be on the sensitivity list [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:905]
+WARNING: [Synth 8-567] referenced signal 's5_1' should be on the sensitivity list [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:905]
+WARNING: [Synth 8-567] referenced signal 's5_2' should be on the sensitivity list [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:905]
+WARNING: [Synth 8-567] referenced signal 's5_3' should be on the sensitivity list [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:905]
+WARNING: [Synth 8-567] referenced signal 's5_4' should be on the sensitivity list [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:905]
+WARNING: [Synth 8-567] referenced signal 'bn' should be on the sensitivity list [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:1639]
+INFO: [Synth 8-6155] done synthesizing module 'adc_module' (1#1) [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'ADC_board_v1_0_S00_AXI' (2#1) [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/hdl/ADC_board_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'ADC_board_v1_0' (3#1) [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/hdl/ADC_board_v1_0.v:4]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2400.250 ; gain = 0.000 ; free physical = 4557 ; free virtual = 9030
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2400.250 ; gain = 0.000 ; free physical = 4617 ; free virtual = 9089
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2400.250 ; gain = 0.000 ; free physical = 4617 ; free virtual = 9089
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2400.250 ; gain = 0.000 ; free physical = 4610 ; free virtual = 9082
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc.xdc]
+Finished Parsing XDC File [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2527.938 ; gain = 0.000 ; free physical = 4529 ; free virtual = 9001
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2527.938 ; gain = 0.000 ; free physical = 4529 ; free virtual = 9001
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2527.938 ; gain = 127.688 ; free physical = 4582 ; free virtual = 9060
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2527.938 ; gain = 127.688 ; free physical = 4582 ; free virtual = 9060
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2527.938 ; gain = 127.688 ; free physical = 4582 ; free virtual = 9060
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'end_flag_reg' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:1619]
+WARNING: [Synth 8-327] inferring latch for variable 'trigger_vdd_0_reg' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:912]
+WARNING: [Synth 8-327] inferring latch for variable 'trigger_vdd_1_reg' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:917]
+WARNING: [Synth 8-327] inferring latch for variable 'trigger_vdd_2_reg' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:922]
+WARNING: [Synth 8-327] inferring latch for variable 'trigger_vdd_3_reg' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:927]
+WARNING: [Synth 8-327] inferring latch for variable 'trigger_gnd_0_reg' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:913]
+WARNING: [Synth 8-327] inferring latch for variable 'trigger_gnd_1_reg' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:918]
+WARNING: [Synth 8-327] inferring latch for variable 'trigger_gnd_2_reg' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:923]
+WARNING: [Synth 8-327] inferring latch for variable 'trigger_gnd_3_reg' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:928]
+WARNING: [Synth 8-327] inferring latch for variable 'mean_s1_reg' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:1614]
+WARNING: [Synth 8-327] inferring latch for variable 'mean_s2_reg' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:1615]
+WARNING: [Synth 8-327] inferring latch for variable 'mean_s3_reg' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:1616]
+WARNING: [Synth 8-327] inferring latch for variable 'mean_s4_reg' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:1617]
+WARNING: [Synth 8-327] inferring latch for variable 'mean_s5_reg' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:1618]
+WARNING: [Synth 8-327] inferring latch for variable 's1_2_reg' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:1649]
+WARNING: [Synth 8-327] inferring latch for variable 's1_3_reg' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:1653]
+WARNING: [Synth 8-327] inferring latch for variable 's1_4_reg' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:1657]
+WARNING: [Synth 8-327] inferring latch for variable 's1_1_reg' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:1645]
+WARNING: [Synth 8-327] inferring latch for variable 's2_2_reg' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:1671]
+WARNING: [Synth 8-327] inferring latch for variable 's2_3_reg' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:1675]
+WARNING: [Synth 8-327] inferring latch for variable 's2_4_reg' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:1679]
+WARNING: [Synth 8-327] inferring latch for variable 's2_1_reg' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:1667]
+WARNING: [Synth 8-327] inferring latch for variable 's3_2_reg' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:1694]
+WARNING: [Synth 8-327] inferring latch for variable 's3_3_reg' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:1698]
+WARNING: [Synth 8-327] inferring latch for variable 's3_4_reg' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:1702]
+WARNING: [Synth 8-327] inferring latch for variable 's3_1_reg' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:1690]
+WARNING: [Synth 8-327] inferring latch for variable 's4_2_reg' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:1716]
+WARNING: [Synth 8-327] inferring latch for variable 's4_3_reg' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:1720]
+WARNING: [Synth 8-327] inferring latch for variable 's4_4_reg' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:1724]
+WARNING: [Synth 8-327] inferring latch for variable 's4_1_reg' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:1712]
+WARNING: [Synth 8-327] inferring latch for variable 's5_2_reg' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:1738]
+WARNING: [Synth 8-327] inferring latch for variable 's5_3_reg' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:1742]
+WARNING: [Synth 8-327] inferring latch for variable 's5_4_reg' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:1746]
+WARNING: [Synth 8-327] inferring latch for variable 's5_1_reg' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:1734]
+WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:198]
+WARNING: [Synth 8-327] inferring latch for variable 'fsm_counter_repeat_reg' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:196]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2527.938 ; gain = 127.688 ; free physical = 4584 ; free virtual = 9053
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input   16 Bit       Adders := 5     
+	   2 Input   11 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 9     
+	               11 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 8     
+	  15 Input   32 Bit        Muxes := 8     
+	   2 Input   11 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 3     
+	   4 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 7     
+	   4 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 11    
+	   4 Input    5 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 21    
+	   4 Input    4 Bit        Muxes := 4     
+	   2 Input    3 Bit        Muxes := 6     
+	   4 Input    3 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 74    
+	  22 Input    1 Bit        Muxes := 13    
+	   4 Input    1 Bit        Muxes := 7     
+	   6 Input    1 Bit        Muxes := 21    
+	   3 Input    1 Bit        Muxes := 1     
+	   5 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/end_flag_reg__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:107]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:107]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:107]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s1_reg[15]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s1_reg[14]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s1_reg[13]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s1_reg[12]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s1_reg[11]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s1_reg[10]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s1_reg[9]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s1_reg[8]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s1_reg[7]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s1_reg[6]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s1_reg[5]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s1_reg[4]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s1_reg[3]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s1_reg[2]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s1_reg[1]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s1_reg[0]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:136]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s2_reg[15]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s2_reg[14]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s2_reg[13]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s2_reg[12]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s2_reg[11]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s2_reg[10]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s2_reg[9]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s2_reg[8]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s2_reg[7]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s2_reg[6]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s2_reg[5]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s2_reg[4]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s2_reg[3]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s2_reg[2]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s2_reg[1]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s2_reg[0]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:137]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s3_reg[15]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s3_reg[14]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s3_reg[13]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s3_reg[12]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s3_reg[11]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s3_reg[10]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s3_reg[9]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s3_reg[8]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s3_reg[7]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s3_reg[6]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s3_reg[5]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s3_reg[4]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s3_reg[3]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s3_reg[2]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s3_reg[1]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s3_reg[0]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:138]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'ADC_board_v1_0_S00_AXI_inst/my_adc/mean_s4_reg[15]__0/Q' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:139]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:139]
+INFO: [Common 17-14] Message 'Synth 8-6859' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:139]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:139]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:139]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:139]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:139]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:139]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:139]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:139]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:139]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:139]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:139]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:139]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:139]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:139]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:139]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:139]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:140]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:140]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:140]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:140]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:140]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:140]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:140]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:140]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:140]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:140]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:140]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:140]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:140]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:140]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:140]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:140]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:112]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:112]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:112]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:112]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:112]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:112]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:112]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:112]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:112]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:112]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:112]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:112]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:112]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:112]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:113]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:113]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:113]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:113]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/mxmont/AXI_TESTS/Chip_test_env/ip_repo/ADC_board_1.0/src/adc_module.v:113]
+INFO: [Common 17-14] Message 'Synth 8-6858' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2527.938 ; gain = 127.688 ; free physical = 4574 ; free virtual = 9044
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2527.938 ; gain = 127.688 ; free physical = 4455 ; free virtual = 8924
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 2527.938 ; gain = 127.688 ; free physical = 4455 ; free virtual = 8924
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2527.938 ; gain = 127.688 ; free physical = 4453 ; free virtual = 8922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2527.938 ; gain = 127.688 ; free physical = 4453 ; free virtual = 8922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2527.938 ; gain = 127.688 ; free physical = 4453 ; free virtual = 8922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2527.938 ; gain = 127.688 ; free physical = 4453 ; free virtual = 8922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2527.938 ; gain = 127.688 ; free physical = 4453 ; free virtual = 8922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2527.938 ; gain = 127.688 ; free physical = 4453 ; free virtual = 8922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2527.938 ; gain = 127.688 ; free physical = 4453 ; free virtual = 8922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     3|
+|3     |LUT1   |     3|
+|4     |LUT2   |     6|
+|5     |LUT3   |    11|
+|6     |LUT4   |    22|
+|7     |LUT5   |    15|
+|8     |LUT6   |   156|
+|9     |FDRE   |   329|
+|10    |FDSE   |     1|
+|11    |LD     |    12|
+|12    |IBUF   |    51|
+|13    |OBUF   |    50|
+|14    |OBUFT  |     1|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2527.938 ; gain = 127.688 ; free physical = 4453 ; free virtual = 8922
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1101 critical warnings and 36 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2527.938 ; gain = 0.000 ; free physical = 4508 ; free virtual = 8977
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2527.938 ; gain = 127.688 ; free physical = 4508 ; free virtual = 8977
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2527.938 ; gain = 0.000 ; free physical = 4595 ; free virtual = 9064
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2527.938 ; gain = 0.000 ; free physical = 4538 ; free virtual = 9007
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  LD => LDCE: 12 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+28 Infos, 59 Warnings, 200 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:27 . Memory (MB): peak = 2527.938 ; gain = 127.844 ; free physical = 4683 ; free virtual = 9152
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint '/home/mxmont/AXI_TESTS/Chip_test_env/chip_test_env/chip_test_env.tmp/ADC_board_v1_0_project/ADC_board_v1_0_project.runs/synth_1/ADC_board_v1_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ADC_board_v1_0_utilization_synth.rpt -pb ADC_board_v1_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jan  3 22:55:38 2022...

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jan  3 22:42:28 2022
+# Process ID: 732529
+# Current directory: /home/mxmont/AXI_TESTS/Chip_test_env/chip_test_env/chip_test_env.runs/chip_test_env_ADC_board_0_1_synth_1
+# Command line: vivado -log chip_test_env_ADC_board_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source chip_test_env_ADC_board_0_1.tcl
+# Log file: /home/mxmont/AXI_TESTS/Chip_test_env/chip_test_env/chip_test_env.runs/chip_test_env_ADC_board_0_1_synth_1/chip_test_env_ADC_board_0_1.vds
+# Journal file: /home/mxmont/AXI_TESTS/Chip_test_env/chip_test_env/chip_test_env.runs/chip_test_env_ADC_board_0_1_synth_1/vivado.jou
+#-----------------------------------------------------------
+source chip_test_env_ADC_board_0_1.tcl -notrace

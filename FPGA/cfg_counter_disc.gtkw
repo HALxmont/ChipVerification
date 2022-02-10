@@ -1,0 +1,32 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Sat Dec  4 23:00:27 2021
+[*]
+[dumpfile] "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/FPGA/counter_disc.vcd"
+[dumpfile_mtime] "Sat Dec  4 22:59:41 2021"
+[dumpfile_size] 18526
+[savefile] "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/FPGA/cfg_counter_disc.gtkw"
+[timestart] 0
+[size] 1542 413
+[pos] -1 -1
+*-18.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 233
+[signals_width] 166
+[sst_expanded] 1
+[sst_vpaned_height] 80
+@28
+counter_disc_test.clk
+counter_disc_test.rst
+counter_disc_test.we
+counter_disc_test.disc1
+counter_disc_test.disc2
+counter_disc_test.disc3
+counter_disc_test.disc4
+@25
+counter_disc_test.count_disc1[15:0]
+@24
+counter_disc_test.count_disc2[15:0]
+counter_disc_test.count_disc3[15:0]
+counter_disc_test.count_disc4[15:0]
+[pattern_trace] 1
+[pattern_trace] 0

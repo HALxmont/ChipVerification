@@ -1,0 +1,85 @@
+$date
+	Thu Dec  9 17:12:05 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module DAC_test $end
+$var wire 1 ! b9 $end
+$var wire 1 " b8 $end
+$var wire 1 # b7 $end
+$var wire 1 $ b6 $end
+$var wire 1 % b5 $end
+$var wire 1 & b4 $end
+$var wire 1 ' b3 $end
+$var wire 1 ( b2 $end
+$var wire 1 ) b1 $end
+$var wire 1 * b0 $end
+$var reg 10 + serial_val [9:0] $end
+$scope module dut $end
+$var wire 10 , serial_val [9:0] $end
+$var reg 1 * b0 $end
+$var reg 1 ) b1 $end
+$var reg 1 ( b2 $end
+$var reg 1 ' b3 $end
+$var reg 1 & b4 $end
+$var reg 1 % b5 $end
+$var reg 1 $ b6 $end
+$var reg 1 # b7 $end
+$var reg 1 " b8 $end
+$var reg 1 ! b9 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b101 ,
+b101 +
+1*
+0)
+1(
+0'
+0&
+0%
+0$
+0#
+0"
+0!
+$end
+#10000
+0(
+0*
+b0 +
+b0 ,
+#20000
+1'
+1)
+b1010 +
+b1010 ,
+#30000
+1%
+1&
+0'
+b110010 +
+b110010 ,
+#40000
+1#
+1$
+0%
+0&
+1'
+0)
+b11001000 +
+b11001000 ,
+#50000
+0$
+1&
+0'
+1(
+1)
+b10010110 +
+b10010110 ,
+#80000

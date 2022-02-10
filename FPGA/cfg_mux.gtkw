@@ -1,0 +1,25 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Thu Dec  9 20:12:42 2021
+[*]
+[dumpfile] "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/FPGA/mux_test.vcd"
+[dumpfile_mtime] "Thu Dec  9 20:12:11 2021"
+[dumpfile_size] 558
+[savefile] "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/FPGA/cfg_mux.gtkw"
+[timestart] 0
+[size] 2480 1312
+[pos] -51 -51
+*-9.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] MUX_test.
+[sst_width] 388
+[signals_width] 567
+[sst_expanded] 1
+[sst_vpaned_height] 367
+@28
+MUX_test.dut.serial_val[2:0]
+MUX_test.dut.b0
+MUX_test.dut.b1
+@29
+MUX_test.dut.b2
+[pattern_trace] 1
+[pattern_trace] 0

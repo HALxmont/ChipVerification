@@ -1,0 +1,226 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Mon Jan  3 22:42:03 2022
+| Host         : HALx1 running 64-bit Ubuntu 20.04.1 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'chip_test_env_ADC_board_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of chip_test_env_ADC_board_0_1 (user.org:user:ADC_board:1.0) from (Rev. 20) to (Rev. 21)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Sun Jan  2 14:23:08 2022
+| Host         : HALx1 running 64-bit Ubuntu 20.04.1 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'chip_test_env_ADC_board_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of chip_test_env_ADC_board_0_1 (user.org:user:ADC_board:1.0) from (Rev. 19) to (Rev. 20)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Sat Jan  1 21:39:01 2022
+| Host         : HALx1 running 64-bit Ubuntu 20.04.1 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'chip_test_env_ADC_board_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of chip_test_env_ADC_board_0_1 (user.org:user:ADC_board:1.0) from (Rev. 18) to (Rev. 19)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Sat Jan  1 21:21:27 2022
+| Host         : HALx1 running 64-bit Ubuntu 20.04.1 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'chip_test_env_ADC_board_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of chip_test_env_ADC_board_0_1 (user.org:user:ADC_board:1.0) from (Rev. 17) to (Rev. 18)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Sat Jan  1 21:15:43 2022
+| Host         : HALx1 running 64-bit Ubuntu 20.04.1 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'chip_test_env_ADC_board_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of chip_test_env_ADC_board_0_1 (user.org:user:ADC_board:1.0) from (Rev. 16) to (Rev. 17)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Fri Dec 31 19:21:44 2021
+| Host         : HALx1 running 64-bit Ubuntu 20.04.1 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'chip_test_env_ADC_board_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of chip_test_env_ADC_board_0_1 (user.org:user:ADC_board:1.0) from (Rev. 15) to (Rev. 16)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Fri Dec 31 19:05:36 2021
+| Host         : HALx1 running 64-bit Ubuntu 20.04.1 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'chip_test_env_ADC_board_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of chip_test_env_ADC_board_0_1 (user.org:user:ADC_board:1.0) from (Rev. 14) to (Rev. 15)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Fri Dec 31 18:46:21 2021
+| Host         : HALx1 running 64-bit Ubuntu 20.04.1 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'chip_test_env_ADC_board_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of chip_test_env_ADC_board_0_1 (user.org:user:ADC_board:1.0) from (Rev. 12) to (Rev. 14)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Fri Dec 31 18:21:01 2021
+| Host         : HALx1 running 64-bit Ubuntu 20.04.1 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'chip_test_env_ADC_board_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of chip_test_env_ADC_board_0_1 (user.org:user:ADC_board:1.0) from (Rev. 11) to (Rev. 12)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Fri Dec 31 15:51:03 2021
+| Host         : HALx1 running 64-bit Ubuntu 20.04.1 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'chip_test_env_ADC_board_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of chip_test_env_ADC_board_0_1 (user.org:user:ADC_board:1.0) from (Rev. 10) to (Rev. 11)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Fri Dec 31 15:43:15 2021
+| Host         : HALx1 running 64-bit Ubuntu 20.04.1 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'chip_test_env_ADC_board_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of chip_test_env_ADC_board_0_1 (user.org:user:ADC_board:1.0 (Rev. 10)) to Vivado generation flows.
+

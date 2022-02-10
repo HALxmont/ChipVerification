@@ -1,0 +1,55 @@
+$date
+	Thu Dec  9 17:12:11 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module MUX_test $end
+$var wire 1 ! b2 $end
+$var wire 1 " b1 $end
+$var wire 1 # b0 $end
+$var reg 3 $ serial_val [2:0] $end
+$scope module dut $end
+$var wire 3 % serial_val [2:0] $end
+$var reg 1 # b0 $end
+$var reg 1 " b1 $end
+$var reg 1 ! b2 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b101 %
+b101 $
+1#
+0"
+1!
+$end
+#10000
+0!
+0#
+b0 $
+b0 %
+#20000
+1"
+1#
+b11 $
+b11 %
+#30000
+1!
+0"
+b101 $
+b101 %
+#40000
+1"
+b111 $
+b111 %
+#50000
+0!
+0"
+b1 $
+b1 %
+#80000

@@ -1,0 +1,24 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Sat Jan  1 00:05:38 2022
+[*]
+[dumpfile] "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/Experiments/adc_clk_and_dac_val/disc 1seg toggle  _ chipfsm clk.vcd"
+[dumpfile_mtime] "Fri Dec 31 23:24:55 2021"
+[dumpfile_size] 49299823
+[savefile] "/home/mxmont/Documents/Universidad/TESIS/ChipVerification/Experiments/cfg_chip_fsm.gtkw"
+[timestart] 1013663000
+[size] 1880 1016
+[pos] -434 -1
+*-16.110971 1013779250 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] libsigrok.
+[sst_width] 233
+[signals_width] 348
+[sst_expanded] 1
+[sst_vpaned_height] 289
+@29
+libsigrok.D0
+@28
+libsigrok.D1
+libsigrok.D3
+[pattern_trace] 1
+[pattern_trace] 0

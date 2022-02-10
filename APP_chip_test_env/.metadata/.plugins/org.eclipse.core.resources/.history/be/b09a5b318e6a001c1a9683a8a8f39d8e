@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="CHIP_ENV_APP" location="/home/mxmont/AXI_TESTS/Chip_test_env/CHIP_ENV_APP" platform="/home/mxmont/AXI_TESTS/Chip_test_env/chip_test_env_wrapper/export/chip_test_env_wrapper/chip_test_env_wrapper.xpfm" platformUID="xilinx:zybo::0.0(custom)" systemProject="CHIP_ENV_APP_system" sysConfig="chip_test_env_wrapper" runtime="cpp" cpu="standalone_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="b525f59bfe048c2fea05ed1e4ad00f0c">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.758281240" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.1644183011" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>
